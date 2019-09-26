@@ -67,10 +67,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-GitHub快速学习-二" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-秘钥连接" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/09/26/GitHub快速学习-二/" class="article-date">
-  <time datetime="2019-09-26T11:23:49.000Z" itemprop="datePublished">2019-09-26</time>
+    <a href="/2019/06/26/秘钥连接/" class="article-date">
+  <time datetime="2019-06-26T11:35:55.000Z" itemprop="datePublished">2019-06-26</time>
 </a>
     
   </div>
@@ -81,7 +81,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/26/GitHub快速学习-二/">GitHub快速学习(二)</a>
+      <a class="article-title" href="/2019/06/26/秘钥连接/">秘钥连接</a>
     </h1>
   
 
@@ -89,7 +89,62 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="设置SSH-Key"><a href="#设置SSH-Key" class="headerlink" title="设置SSH Key"></a>设置SSH Key</h1><h3 id="一、创建秘钥"><a href="#一、创建秘钥" class="headerlink" title="一、创建秘钥"></a>一、<a href="/article/a4d86718b6e7156e7b72c064c4e73847">创建秘钥</a></h3><h3 id="二、在github中添加公开秘钥"><a href="#二、在github中添加公开秘钥" class="headerlink" title="二、在github中添加公开秘钥"></a>二、在github中添加公开秘钥</h3><pre><code>账号设置内-&gt; SSH &amp; GPG keys -&gt; 添加公钥</code></pre><h3 id="三、社区功能-Follow-关注其他用户"><a href="#三、社区功能-Follow-关注其他用户" class="headerlink" title="三、社区功能　Follow 关注其他用户"></a>三、社区功能　Follow 关注其他用户</h3><hr>
+        <h1 id="什么是linux的秘钥？"><a href="#什么是linux的秘钥？" class="headerlink" title="什么是linux的秘钥？"></a>什么是linux的秘钥？</h1><p>一个字符串对，分公钥和私钥</p>
+<h1 id="作用："><a href="#作用：" class="headerlink" title="作用："></a>作用：</h1><p>拥有私钥的客户端，可以直接访问拥有公钥的服务端。</p>
+<h2 id="一、秘钥的生成（一般在客户端生成秘钥对，将公钥存入服务端）"><a href="#一、秘钥的生成（一般在客户端生成秘钥对，将公钥存入服务端）" class="headerlink" title="一、秘钥的生成（一般在客户端生成秘钥对，将公钥存入服务端）"></a>一、秘钥的生成（一般在客户端生成秘钥对，将公钥存入服务端）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen</span><br><span class="line">Enter file in which to save the key (/your_home_path/.ssh/id_rsa): #直接回车</span><br><span class="line">Enter passphrase (empty for no passphrase): [Type a passphrase]</span><br><span class="line">Enter same passphrase again: [Type passphrase again]</span><br></pre></td></tr></table></figure>
+
+<h4 id="设置passphrase后，进行版本控制时，每次与GitHub通信都会要求输入passphrase，以避免某些“失误”"><a href="#设置passphrase后，进行版本控制时，每次与GitHub通信都会要求输入passphrase，以避免某些“失误”" class="headerlink" title="设置passphrase后，进行版本控制时，每次与GitHub通信都会要求输入passphrase，以避免某些“失误”"></a>设置passphrase后，进行版本控制时，每次与GitHub通信都会要求输入passphrase，以避免某些“失误”</h4><h4 id="都可以直接回车跳过"><a href="#都可以直接回车跳过" class="headerlink" title="都可以直接回车跳过"></a>都可以直接回车跳过</h4><h2 id="二、将公钥存到服务端两种方法："><a href="#二、将公钥存到服务端两种方法：" class="headerlink" title="二、将公钥存到服务端两种方法："></a>二、将公钥存到服务端两种方法：</h2><ul>
+<li><p>1.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp /root/.ssh/id_ras.pub root@xxx.xxx.xxx.xxx:/root/.ssh/authorized_keys</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>2.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-copy-id -i /root/.ssh/id_ras root@xxx.xxx.xxx.xxx</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="三、一些必要配置"><a href="#三、一些必要配置" class="headerlink" title="三、一些必要配置"></a>三、一些必要配置</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/ssh/sshd_config</span><br><span class="line">RSAAuthentication yes # 启用 RSA 认证，默认为yes</span><br><span class="line">PubkeyAuthentication yes # 启用公钥认证，默认为yes</span><br><span class="line"></span><br><span class="line">AuthorizedKeysFile      .ssh/authorized_keys # 公钥认证文件，默认为.ssh/authorized_keys</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 另外，如果对服务器安全性比较高的情况下，可以设置用户只允许通过公钥认证，禁止用户用密码方式登录，只要修改一下服务器的配置文件/etc/sshd/sshd_config</span><br><span class="line"></span><br><span class="line">PasswordAuthentication no</span><br></pre></td></tr></table></figure>
+
+<h4 id="修改完后重启sshd"><a href="#修改完后重启sshd" class="headerlink" title="修改完后重启sshd"></a>修改完后重启sshd</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod 600 authorized_keys</span><br></pre></td></tr></table></figure>
+
+<h2 id="四、连接"><a href="#四、连接" class="headerlink" title="四、连接"></a>四、连接</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -l root xxx.xxx.xxx.xxx</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://liyafei.top/2019/06/26/秘钥连接/" data-id="ck10mgr6o0004ten5myoyg4fx" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-GitHub快速学习-二" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/06/26/GitHub快速学习-二/" class="article-date">
+  <time datetime="2019-06-26T11:23:49.000Z" itemprop="datePublished">2019-06-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/26/GitHub快速学习-二/">GitHub快速学习(二)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="设置SSH-Key"><a href="#设置SSH-Key" class="headerlink" title="设置SSH Key"></a>设置SSH Key</h1><h3 id="一、创建秘钥"><a href="#一、创建秘钥" class="headerlink" title="一、创建秘钥"></a>一、<a href="/秘钥链接.md">创建秘钥</a></h3><h3 id="二、在github中添加公开秘钥"><a href="#二、在github中添加公开秘钥" class="headerlink" title="二、在github中添加公开秘钥"></a>二、在github中添加公开秘钥</h3><pre><code>账号设置内-&gt; SSH &amp; GPG keys -&gt; 添加公钥</code></pre><h3 id="三、社区功能-Follow-关注其他用户"><a href="#三、社区功能-Follow-关注其他用户" class="headerlink" title="三、社区功能　Follow 关注其他用户"></a>三、社区功能　Follow 关注其他用户</h3><hr>
 <h1 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h1><ul>
 <li><strong>New repository</strong><ul>
 <li>repository name 仓库名</li>
@@ -123,7 +178,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://liyafei.top/2019/09/26/GitHub快速学习-二/" data-id="ck10m2svf0000kqn5h30njnah" class="article-share-link">Share</a>
+      <a data-url="http://liyafei.top/2019/06/26/GitHub快速学习-二/" data-id="ck10mgr6l0002ten5hpz98bab" class="article-share-link">Share</a>
       
       
     </footer>
@@ -176,7 +231,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://liyafei.top/2019/06/26/GitHub快速学习-一/" data-id="ck10m2svl0002kqn50z4dauti" class="article-share-link">Share</a>
+      <a data-url="http://liyafei.top/2019/06/26/GitHub快速学习-一/" data-id="ck10mgr6e0000ten5bsg58ydm" class="article-share-link">Share</a>
       
       
     </footer>
@@ -204,7 +259,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li></ul>
     </div>
   </div>
 
@@ -217,7 +272,11 @@
       <ul>
         
           <li>
-            <a href="/2019/09/26/GitHub快速学习-二/">GitHub快速学习(二)</a>
+            <a href="/2019/06/26/秘钥连接/">秘钥连接</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/26/GitHub快速学习-二/">GitHub快速学习(二)</a>
           </li>
         
           <li>

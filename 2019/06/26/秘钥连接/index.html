@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>秘钥连接 | 李亚飞的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="什么是linux的秘钥？一个字符串对，分公钥和私钥 作用：拥有私钥的客户端，可以直接访问拥有公钥的服务端。 一、秘钥的生成（一般在客户端生成秘钥对，将公钥存入服务端）1234ssh-keygenEnter file in which to save the key (/your_home_path/.ssh/id_rsa): #直接回车Enter passphrase (empty for no">
+<meta name="keywords" content="java,linux,数据结构,算法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="秘钥连接">
+<meta property="og:url" content="http://liyafei.top/2019/06/26/秘钥连接/index.html">
+<meta property="og:site_name" content="李亚飞的博客">
+<meta property="og:description" content="什么是linux的秘钥？一个字符串对，分公钥和私钥 作用：拥有私钥的客户端，可以直接访问拥有公钥的服务端。 一、秘钥的生成（一般在客户端生成秘钥对，将公钥存入服务端）1234ssh-keygenEnter file in which to save the key (/your_home_path/.ssh/id_rsa): #直接回车Enter passphrase (empty for no">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-09-26T11:36:20.466Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="秘钥连接">
+<meta name="twitter:description" content="什么是linux的秘钥？一个字符串对，分公钥和私钥 作用：拥有私钥的客户端，可以直接访问拥有公钥的服务端。 一、秘钥的生成（一般在客户端生成秘钥对，将公钥存入服务端）1234ssh-keygenEnter file in which to save the key (/your_home_path/.ssh/id_rsa): #直接回车Enter passphrase (empty for no">
+  
+    <link rel="alternate" href="/atom.xml" title="李亚飞的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">李亚飞的博客</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">——漫漫程序人生路</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://liyafei.top"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-秘钥连接" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/06/26/秘钥连接/" class="article-date">
+  <time datetime="2019-06-26T11:35:55.000Z" itemprop="datePublished">2019-06-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      秘钥连接
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="什么是linux的秘钥？"><a href="#什么是linux的秘钥？" class="headerlink" title="什么是linux的秘钥？"></a>什么是linux的秘钥？</h1><p>一个字符串对，分公钥和私钥</p>
+<h1 id="作用："><a href="#作用：" class="headerlink" title="作用："></a>作用：</h1><p>拥有私钥的客户端，可以直接访问拥有公钥的服务端。</p>
+<h2 id="一、秘钥的生成（一般在客户端生成秘钥对，将公钥存入服务端）"><a href="#一、秘钥的生成（一般在客户端生成秘钥对，将公钥存入服务端）" class="headerlink" title="一、秘钥的生成（一般在客户端生成秘钥对，将公钥存入服务端）"></a>一、秘钥的生成（一般在客户端生成秘钥对，将公钥存入服务端）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen</span><br><span class="line">Enter file in which to save the key (/your_home_path/.ssh/id_rsa): #直接回车</span><br><span class="line">Enter passphrase (empty for no passphrase): [Type a passphrase]</span><br><span class="line">Enter same passphrase again: [Type passphrase again]</span><br></pre></td></tr></table></figure>
+
+<h4 id="设置passphrase后，进行版本控制时，每次与GitHub通信都会要求输入passphrase，以避免某些“失误”"><a href="#设置passphrase后，进行版本控制时，每次与GitHub通信都会要求输入passphrase，以避免某些“失误”" class="headerlink" title="设置passphrase后，进行版本控制时，每次与GitHub通信都会要求输入passphrase，以避免某些“失误”"></a>设置passphrase后，进行版本控制时，每次与GitHub通信都会要求输入passphrase，以避免某些“失误”</h4><h4 id="都可以直接回车跳过"><a href="#都可以直接回车跳过" class="headerlink" title="都可以直接回车跳过"></a>都可以直接回车跳过</h4><h2 id="二、将公钥存到服务端两种方法："><a href="#二、将公钥存到服务端两种方法：" class="headerlink" title="二、将公钥存到服务端两种方法："></a>二、将公钥存到服务端两种方法：</h2><ul>
+<li><p>1.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp /root/.ssh/id_ras.pub root@xxx.xxx.xxx.xxx:/root/.ssh/authorized_keys</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>2.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-copy-id -i /root/.ssh/id_ras root@xxx.xxx.xxx.xxx</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="三、一些必要配置"><a href="#三、一些必要配置" class="headerlink" title="三、一些必要配置"></a>三、一些必要配置</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/ssh/sshd_config</span><br><span class="line">RSAAuthentication yes # 启用 RSA 认证，默认为yes</span><br><span class="line">PubkeyAuthentication yes # 启用公钥认证，默认为yes</span><br><span class="line"></span><br><span class="line">AuthorizedKeysFile      .ssh/authorized_keys # 公钥认证文件，默认为.ssh/authorized_keys</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 另外，如果对服务器安全性比较高的情况下，可以设置用户只允许通过公钥认证，禁止用户用密码方式登录，只要修改一下服务器的配置文件/etc/sshd/sshd_config</span><br><span class="line"></span><br><span class="line">PasswordAuthentication no</span><br></pre></td></tr></table></figure>
+
+<h4 id="修改完后重启sshd"><a href="#修改完后重启sshd" class="headerlink" title="修改完后重启sshd"></a>修改完后重启sshd</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod 600 authorized_keys</span><br></pre></td></tr></table></figure>
+
+<h2 id="四、连接"><a href="#四、连接" class="headerlink" title="四、连接"></a>四、连接</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -l root xxx.xxx.xxx.xxx</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://liyafei.top/2019/06/26/秘钥连接/" data-id="ck10mgr6o0004ten5myoyg4fx" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/06/26/GitHub快速学习-二/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">GitHub快速学习(二)</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/06/26/秘钥连接/">秘钥连接</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/26/GitHub快速学习-二/">GitHub快速学习(二)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/26/GitHub快速学习-一/">GitHub快速学习(一)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Leeyf<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
