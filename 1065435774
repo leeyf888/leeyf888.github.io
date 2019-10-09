@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="李亚飞的博客">
 <meta property="og:description" content="常用指令学习 git init 初始化仓库 1234mkdir git-tutorial  #创建git文件夹cd git-tutorialgit init #执行成功在该目录下生成 .git目录初始化成～～～～～～  git status 查看仓库状态 12345$ git status位于分支 master您的分支与上游分支 &amp;apos;origin/master&amp;apos; 一致。无文件要提">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-27T06:39:11.359Z">
+<meta property="og:updated_time" content="2019-10-09T13:18:33.659Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitHub快速学习(三)">
 <meta name="twitter:description" content="常用指令学习 git init 初始化仓库 1234mkdir git-tutorial  #创建git文件夹cd git-tutorialgit init #执行成功在该目录下生成 .git目录初始化成～～～～～～  git status 查看仓库状态 12345$ git status位于分支 master您的分支与上游分支 &amp;apos;origin/master&amp;apos; 一致。无文件要提">

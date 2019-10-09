@@ -113,13 +113,13 @@
 <meta property="og:site_name" content="李亚飞的博客">
 <meta property="og:description" content="小结 链表是以节点的方式来存储，链式存储   每个节点包含data域，next域：指向下一个节点 如图：发现链表的各个节点不一定是连续存储      链表分带头节点的链表和没有头节点的链表，根据实际的需求来   头节点 不存放数据 作用就是表示单链表头 next  链表创建 先创建一个head头节点，作用就是表示单链表的头 后面每添加一个节点，就直接加入到链表的最后遍历  代码实例12345678">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://liyafei.top/undefined/1.png">
+<meta property="og:image" content="https://liyafei.top/1908805843/1.png">
 <meta property="og:image" content="https://liyafei.top/%E5%8D%95%E9%93%BE%E8%A1%A8/1.png">
-<meta property="og:updated_time" content="2019-10-08T11:04:01.922Z">
+<meta property="og:updated_time" content="2019-10-09T13:18:33.659Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="单链表">
 <meta name="twitter:description" content="小结 链表是以节点的方式来存储，链式存储   每个节点包含data域，next域：指向下一个节点 如图：发现链表的各个节点不一定是连续存储      链表分带头节点的链表和没有头节点的链表，根据实际的需求来   头节点 不存放数据 作用就是表示单链表头 next  链表创建 先创建一个head头节点，作用就是表示单链表的头 后面每添加一个节点，就直接加入到链表的最后遍历  代码实例12345678">
-<meta name="twitter:image" content="https://liyafei.top/undefined/1.png">
+<meta name="twitter:image" content="https://liyafei.top/1908805843/1.png">
 
 
 
@@ -429,7 +429,7 @@
 <li>每个节点包含data域，next域：指向下一个节点</li>
 <li>如图：发现链表的各个节点不一定是连续存储</li>
 </ul>
-<img src="/undefined/1.png">
+<img src="/1908805843/1.png">
 
 <p><img src="%E5%8D%95%E9%93%BE%E8%A1%A8/1.png" alt="链表"></p>
 <ul>

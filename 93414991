@@ -133,7 +133,7 @@
 <meta property="og:image" content="https://liyafei.top/pic/22-1569569340609.png">
 <meta property="og:image" content="https://liyafei.top/pic/23-1569569340609.png">
 <meta property="og:image" content="https://liyafei.top/pic/24-1569569340609.png">
-<meta property="og:updated_time" content="2019-09-27T07:45:45.872Z">
+<meta property="og:updated_time" content="2019-10-09T13:18:33.667Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="第五章 Linux实操篇">
 <meta name="twitter:description" content="第五章 Linux实操篇 远程登录Linux系统5.1 为什么要远程登录服务器5.2 xhell5(windows)远程登录软件 需要Linux开启sshd服务 22端口  5.3 xftp 远程文件操纵第六章 Linux实操篇  vi和vim编辑器6.1 vi 和vim介绍vi是系统自带的文本编辑器 vim是vi的增强版 6.2 三种模式6.2.1 正常模式正常模式下，我们可以使用快捷键 6.2">

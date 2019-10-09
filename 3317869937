@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="李亚飞的博客">
 <meta property="og:description" content="分支操作一、分支 一个仓库有一条主支master，还可以创建多条分支。各个分支互不干扰，独立开发。 开发完成后，分支合并  二、分支操作 branch``` 显示分支一览表1234 - 将分支名列出，同时可以确定当前分支（*分支 表示当前分支）- ```git checkout -b``` 创建、切换分支- ```git ckeckout -b feature-A``` 创建分支 feature-">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-27T06:47:27.388Z">
+<meta property="og:updated_time" content="2019-10-09T13:18:33.659Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitHub快速学习(四)">
 <meta name="twitter:description" content="分支操作一、分支 一个仓库有一条主支master，还可以创建多条分支。各个分支互不干扰，独立开发。 开发完成后，分支合并  二、分支操作 branch``` 显示分支一览表1234 - 将分支名列出，同时可以确定当前分支（*分支 表示当前分支）- ```git checkout -b``` 创建、切换分支- ```git ckeckout -b feature-A``` 创建分支 feature-">

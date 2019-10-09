@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="李亚飞的博客">
 <meta property="og:description" content="什么是linux的秘钥？一个字符串对，分公钥和私钥 作用：拥有私钥的客户端，可以直接访问拥有公钥的服务端。 一、秘钥的生成（一般在客户端生成秘钥对，将公钥存入服务端）1234ssh-keygenEnter file in which to save the key (/your_home_path/.ssh/id_rsa): #直接回车Enter passphrase (empty for no">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-27T06:42:01.795Z">
+<meta property="og:updated_time" content="2019-10-09T13:18:33.663Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="秘钥连接">
 <meta name="twitter:description" content="什么是linux的秘钥？一个字符串对，分公钥和私钥 作用：拥有私钥的客户端，可以直接访问拥有公钥的服务端。 一、秘钥的生成（一般在客户端生成秘钥对，将公钥存入服务端）1234ssh-keygenEnter file in which to save the key (/your_home_path/.ssh/id_rsa): #直接回车Enter passphrase (empty for no">

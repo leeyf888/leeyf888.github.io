@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="李亚飞的博客">
 <meta property="og:description" content="一、为什么使用maven?1.一般的一个项目就是一个工程当一个项目非常庞大，可以借助maven拆分成一个个工程。 2.项目中使用到的jar包，需要复制粘贴到lib目录下借助maven可以将jar保存在仓库，直接引用就行。不用累赘的一个个导包。 3.jar的下载与使用借助maven可以更加便捷快捷，规范化的使用jar包 4.jar包的版本不一致有风险借助maven所有jar存放在仓库，所有项目使用仓">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-27T06:46:37.038Z">
+<meta property="og:updated_time" content="2019-10-09T13:18:33.663Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="maven学习">
 <meta name="twitter:description" content="一、为什么使用maven?1.一般的一个项目就是一个工程当一个项目非常庞大，可以借助maven拆分成一个个工程。 2.项目中使用到的jar包，需要复制粘贴到lib目录下借助maven可以将jar保存在仓库，直接引用就行。不用累赘的一个个导包。 3.jar的下载与使用借助maven可以更加便捷快捷，规范化的使用jar包 4.jar包的版本不一致有风险借助maven所有jar存放在仓库，所有项目使用仓">
