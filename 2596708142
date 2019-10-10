@@ -94,7 +94,7 @@
 
 
 
-  <meta name="keywords" content="github,">
+  <meta name="keywords" content="english,">
 
 
 
@@ -105,18 +105,18 @@
 
 
 
-<meta name="description" content="设置SSH Key一、创建秘钥二、在github中添加公开秘钥账号设置内-&amp;gt; SSH &amp;amp; GPG keys -&amp;gt; 添加公钥三、社区功能　Follow 关注其他用户 创建仓库 New repository repository name 仓库名 description 仓库说明 Public Or Private 仓库是否公开 Initialize this repository">
-<meta name="keywords" content="github">
+<meta name="description" content="英语四级听力视听一致 不是简单的听到什么选什么，而是把更多的单词和短语被读到的选项或吻合程度更高的选项选出来  如何看选项 看相同与不同  竖读选项，看相同点：确定定位词 a.人称相同 b.相同实词 c.结构相同   横读选项，看不同点：确定出题点（名词，形容词，特殊含义词，否定，数字）   总原则：划词代表选项大致含义   定位原则开头原则 长对话前三个回合，新闻和短文的首三句  顺序原则 题文">
+<meta name="keywords" content="english">
 <meta property="og:type" content="article">
-<meta property="og:title" content="GitHub快速学习(二)">
-<meta property="og:url" content="https://liyafei.top/1098015317">
+<meta property="og:title" content="英语四级——听力">
+<meta property="og:url" content="https://liyafei.top/2596708142">
 <meta property="og:site_name" content="李亚飞的博客">
-<meta property="og:description" content="设置SSH Key一、创建秘钥二、在github中添加公开秘钥账号设置内-&amp;gt; SSH &amp;amp; GPG keys -&amp;gt; 添加公钥三、社区功能　Follow 关注其他用户 创建仓库 New repository repository name 仓库名 description 仓库说明 Public Or Private 仓库是否公开 Initialize this repository">
+<meta property="og:description" content="英语四级听力视听一致 不是简单的听到什么选什么，而是把更多的单词和短语被读到的选项或吻合程度更高的选项选出来  如何看选项 看相同与不同  竖读选项，看相同点：确定定位词 a.人称相同 b.相同实词 c.结构相同   横读选项，看不同点：确定出题点（名词，形容词，特殊含义词，否定，数字）   总原则：划词代表选项大致含义   定位原则开头原则 长对话前三个回合，新闻和短文的首三句  顺序原则 题文">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-09T13:18:33.659Z">
+<meta property="og:updated_time" content="2019-10-10T14:32:36.987Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="GitHub快速学习(二)">
-<meta name="twitter:description" content="设置SSH Key一、创建秘钥二、在github中添加公开秘钥账号设置内-&amp;gt; SSH &amp;amp; GPG keys -&amp;gt; 添加公钥三、社区功能　Follow 关注其他用户 创建仓库 New repository repository name 仓库名 description 仓库说明 Public Or Private 仓库是否公开 Initialize this repository">
+<meta name="twitter:title" content="英语四级——听力">
+<meta name="twitter:description" content="英语四级听力视听一致 不是简单的听到什么选什么，而是把更多的单词和短语被读到的选项或吻合程度更高的选项选出来  如何看选项 看相同与不同  竖读选项，看相同点：确定定位词 a.人称相同 b.相同实词 c.结构相同   横读选项，看不同点：确定出题点（名词，形容词，特殊含义词，否定，数字）   总原则：划词代表选项大致含义   定位原则开头原则 长对话前三个回合，新闻和短文的首三句  顺序原则 题文">
 
 
 
@@ -146,13 +146,13 @@
 
 
 
-  <link rel="canonical" href="https://liyafei.top/1098015317">
+  <link rel="canonical" href="https://liyafei.top/2596708142">
 
 
 
 
 
-  <title>GitHub快速学习(二) | 李亚飞的博客</title>
+  <title>英语四级——听力 | 李亚飞的博客</title>
   
 
 
@@ -299,7 +299,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://liyafei.top/1098015317">
+    <link itemprop="mainEntityOfPage" href="https://liyafei.top/2596708142">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Leeyf">
@@ -316,7 +316,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">GitHub快速学习(二)</h1>
+          <h1 class="post-title" itemprop="name headline">英语四级——听力</h1>
         
 
         <div class="post-meta">
@@ -328,8 +328,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-26T19:23:49+08:00">
-                2019-06-26
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-10T22:31:36+08:00">
+                2019-10-10
               </time>
             
 
@@ -351,8 +351,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/GitHub/" itemprop="url" rel="index">
-                    <span itemprop="name">GitHub</span>
+                  <a href="/categories/English/" itemprop="url" rel="index">
+                    <span itemprop="name">English</span>
                   </a>
                 </span>
 
@@ -382,7 +382,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  316字
+                  198字
                 </span>
               
 
@@ -419,36 +419,39 @@
       
 
       
-        <h1 id="设置SSH-Key"><a href="#设置SSH-Key" class="headerlink" title="设置SSH Key"></a>设置SSH Key</h1><h3 id="一、创建秘钥"><a href="#一、创建秘钥" class="headerlink" title="一、创建秘钥"></a>一、<a href="/秘钥链接.md">创建秘钥</a></h3><h3 id="二、在github中添加公开秘钥"><a href="#二、在github中添加公开秘钥" class="headerlink" title="二、在github中添加公开秘钥"></a>二、在github中添加公开秘钥</h3><pre><code>账号设置内-&gt; SSH &amp; GPG keys -&gt; 添加公钥</code></pre><h3 id="三、社区功能-Follow-关注其他用户"><a href="#三、社区功能-Follow-关注其他用户" class="headerlink" title="三、社区功能　Follow 关注其他用户"></a>三、社区功能　Follow 关注其他用户</h3><hr>
-<h1 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h1><ul>
-<li><strong>New repository</strong><ul>
-<li>repository name 仓库名</li>
-<li>description 仓库说明</li>
-<li>Public Or Private 仓库是否公开</li>
-<li>Initialize this repository with a README 自动初始化仓库并且设置README文件</li>
-<li>Add .gitignore 这个设定帮助我们把不需要在Git仓库中进行版本管理的文件记录在 .gitignore文件中</li>
-<li>Add a license 添加许可协议</li>
+        <h1 id="英语四级"><a href="#英语四级" class="headerlink" title="英语四级"></a>英语四级</h1><h2 id="听力"><a href="#听力" class="headerlink" title="听力"></a>听力</h2><h3 id="视听一致"><a href="#视听一致" class="headerlink" title="视听一致"></a>视听一致</h3><ul>
+<li>不是简单的听到什么选什么，而是把<strong>更多的单词和短语被读到的选项</strong>或吻合程度更高的选项选出来</li>
+</ul>
+<h3 id="如何看选项"><a href="#如何看选项" class="headerlink" title="如何看选项"></a>如何看选项</h3><ul>
+<li><p>看相同与不同</p>
+<ul>
+<li>竖读选项，看相同点：确定定位词<ul>
+<li>a.人称相同</li>
+<li>b.相同实词</li>
+<li>c.结构相同</li>
 </ul>
 </li>
-<li><strong>Create repository</strong> 完成仓库创建</li>
+<li>横读选项，看不同点：确定出题点（名词，形容词，特殊含义词，否定，数字）</li>
 </ul>
-<h2 id="README-md"><a href="#README-md" class="headerlink" title="README.md"></a>README.md</h2><p>一般添加本仓库中所包含的</p>
-<ul>
-<li>软件的概要</li>
-<li>使用流程</li>
-<li>许可协议等</li>
+</li>
+<li><p>总原则：划词代表选项大致含义</p>
+</li>
 </ul>
-<hr>
-<h1 id="公开代码"><a href="#公开代码" class="headerlink" title="公开代码"></a>公开代码</h1><h3 id="clone已有仓库"><a href="#clone已有仓库" class="headerlink" title="clone已有仓库"></a>clone已有仓库</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">git clone https:<span class="comment">//github.com/leeyf888/MyNote.git</span></span><br><span class="line"></span><br><span class="line">正克隆到 'MyNote'...</span><br><span class="line">remote: Enumerating objects: <span class="number">34</span>, done.</span><br><span class="line">remote: Counting objects: <span class="number">100</span>% (<span class="number">34</span>/<span class="number">34</span>), done.</span><br><span class="line">remote: Compressing objects: <span class="number">100</span>% (<span class="number">28</span>/<span class="number">28</span>), done.</span><br><span class="line">remote: Total <span class="number">34</span> (delta <span class="number">6</span>), reused <span class="number">0</span> (delta <span class="number">0</span>), pack-reused <span class="number">0</span></span><br><span class="line">接收对象中: <span class="number">100</span>% (<span class="number">34</span>/<span class="number">34</span>), <span class="number">703.11</span> KiB | <span class="number">95.00</span> KiB/s, 完成.</span><br><span class="line">处理 delta 中: <span class="number">100</span>% (<span class="number">6</span>/<span class="number">6</span>), 完成.</span><br><span class="line"></span><br><span class="line">cd MyNote</span><br></pre></td></tr></table></figure>
-
-<h3 id="添加代码"><a href="#添加代码" class="headerlink" title="添加代码"></a>添加代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim a.class</span><br></pre></td></tr></table></figure>
-
-<h3 id="查看仓库状态"><a href="#查看仓库状态" class="headerlink" title="查看仓库状态"></a>查看仓库状态</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure>
-
-<h3 id="提交"><a href="#提交" class="headerlink" title="提交"></a>提交</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git add a.class #将文件加入到暂存区</span><br><span class="line">git commit -m <span class="string">"提交说明"</span></span><br><span class="line"># 提交成功后可以</span><br><span class="line">git <span class="built_in">log</span> </span><br><span class="line"># 查看提交日志</span><br></pre></td></tr></table></figure>
-
-<h3 id="Push"><a href="#Push" class="headerlink" title="Push"></a>Push</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push #将本地代码更新到Github仓库</span><br></pre></td></tr></table></figure>
-
+<h3 id="定位原则"><a href="#定位原则" class="headerlink" title="定位原则"></a>定位原则</h3><h4 id="开头原则"><a href="#开头原则" class="headerlink" title="开头原则"></a>开头原则</h4><ul>
+<li>长对话前三个回合，新闻和短文的首三句</li>
+</ul>
+<h4 id="顺序原则"><a href="#顺序原则" class="headerlink" title="顺序原则"></a>顺序原则</h4><ul>
+<li>题文同序</li>
+</ul>
+<h4 id="选项词提示"><a href="#选项词提示" class="headerlink" title="选项词提示"></a>选项词提示</h4><p>生词：</p>
+<p>nutrition 营养</p>
+<p>candidates 候选人</p>
+<p>overestimate 高估</p>
+<p>conception 概念</p>
+<p>criteria 标准</p>
+<p>overemphasis 过度强调</p>
+<p>illustrate 说明</p>
+<p>demonstrate 展示</p>
 
       
     </div>
@@ -505,7 +508,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/github/" rel="tag"># github</a>
+            <a href="/tags/english/" rel="tag"># english</a>
           
         </div>
       
@@ -518,8 +521,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/3997432119" rel="next" title="GitHub快速学习(一)">
-                <i class="fa fa-chevron-left"></i> GitHub快速学习(一)
+              <a href="/1908805843" rel="next" title="单链表">
+                <i class="fa fa-chevron-left"></i> 单链表
               </a>
             
           </div>
@@ -527,10 +530,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/948825382" rel="prev" title="秘钥连接">
-                秘钥连接 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -699,7 +698,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#设置SSH-Key"><span class="nav-number">1.</span> <span class="nav-text">设置SSH Key</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、创建秘钥"><span class="nav-number">1.0.1.</span> <span class="nav-text">一、创建秘钥</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、在github中添加公开秘钥"><span class="nav-number">1.0.2.</span> <span class="nav-text">二、在github中添加公开秘钥</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、社区功能-Follow-关注其他用户"><span class="nav-number">1.0.3.</span> <span class="nav-text">三、社区功能　Follow 关注其他用户</span></a></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#创建仓库"><span class="nav-number">2.</span> <span class="nav-text">创建仓库</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#README-md"><span class="nav-number">2.1.</span> <span class="nav-text">README.md</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#公开代码"><span class="nav-number">3.</span> <span class="nav-text">公开代码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#clone已有仓库"><span class="nav-number">3.0.1.</span> <span class="nav-text">clone已有仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加代码"><span class="nav-number">3.0.2.</span> <span class="nav-text">添加代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看仓库状态"><span class="nav-number">3.0.3.</span> <span class="nav-text">查看仓库状态</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提交"><span class="nav-number">3.0.4.</span> <span class="nav-text">提交</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Push"><span class="nav-number">3.0.5.</span> <span class="nav-text">Push</span></a></li></ol></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#英语四级"><span class="nav-number">1.</span> <span class="nav-text">英语四级</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#听力"><span class="nav-number">1.1.</span> <span class="nav-text">听力</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#视听一致"><span class="nav-number">1.1.1.</span> <span class="nav-text">视听一致</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何看选项"><span class="nav-number">1.1.2.</span> <span class="nav-text">如何看选项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定位原则"><span class="nav-number">1.1.3.</span> <span class="nav-text">定位原则</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#开头原则"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">开头原则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#顺序原则"><span class="nav-number">1.1.3.2.</span> <span class="nav-text">顺序原则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#选项词提示"><span class="nav-number">1.1.3.3.</span> <span class="nav-text">选项词提示</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
