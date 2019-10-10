@@ -94,7 +94,7 @@
 
 
 
-  <meta name="keywords" content="linux,ssh,">
+  <meta name="keywords" content="ssh,linux,">
 
 
 
@@ -106,7 +106,7 @@
 
 
 <meta name="description" content="什么是linux的秘钥？一个字符串对，分公钥和私钥 作用：拥有私钥的客户端，可以直接访问拥有公钥的服务端。 一、秘钥的生成（一般在客户端生成秘钥对，将公钥存入服务端）1234ssh-keygenEnter file in which to save the key (/your_home_path/.ssh/id_rsa): #直接回车Enter passphrase (empty for no">
-<meta name="keywords" content="linux,ssh">
+<meta name="keywords" content="ssh,linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="秘钥连接">
 <meta property="og:url" content="https://liyafei.top/948825382">
@@ -432,7 +432,7 @@
 
 </li>
 </ul>
-<h2 id="三、一些必要配置"><a href="#三、一些必要配置" class="headerlink" title="三、一些必要配置"></a>三、一些必要配置</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/ssh/sshd_config</span><br><span class="line">RSAAuthentication yes # 启用 RSA 认证，默认为yes</span><br><span class="line">PubkeyAuthentication yes # 启用公钥认证，默认为yes</span><br><span class="line"></span><br><span class="line">AuthorizedKeysFile      .ssh/authorized_keys # 公钥认证文件，默认为.ssh/authorized_keys</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 另外，如果对服务器安全性比较高的情况下，可以设置用户只允许通过公钥认证，禁止用户用密码方式登录，只要修改一下服务器的配置文件/etc/sshd/sshd_config</span><br><span class="line"></span><br><span class="line">PasswordAuthentication no</span><br></pre></td></tr></table></figure>
+<h2 id="三、一些必要配置"><a href="#三、一些必要配置" class="headerlink" title="三、一些必要配置"></a>三、一些必要配置</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/ssh/sshd_config</span><br><span class="line">RSAAuthentication yes # 启用 RSA 认证，默认为yes</span><br><span class="line">PubkeyAuthentication yes # 启用公钥认证，默认为yes</span><br><span class="line"></span><br><span class="line">AuthorizedKeysFile      .ssh/authorized_keys # 公钥认证文件，默认为.ssh/authorized_keys</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 另外，如果对服务器安全性比较高的情况下，可以设置用户只允许通过公钥认证，禁止用户用密码方式登录，只要修改一下服务器的配置文件/etc/sshd/sshd_config</span></span><br><span class="line"></span><br><span class="line">PasswordAuthentication no</span><br></pre></td></tr></table></figure>
 
 <h4 id="修改完后重启sshd"><a href="#修改完后重启sshd" class="headerlink" title="修改完后重启sshd"></a>修改完后重启sshd</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod 600 authorized_keys</span><br></pre></td></tr></table></figure>
 
@@ -494,9 +494,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/linux/" rel="tag"># linux</a>
-          
             <a href="/tags/ssh/" rel="tag"># ssh</a>
+          
+            <a href="/tags/linux/" rel="tag"># linux</a>
           
         </div>
       
@@ -605,7 +605,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -724,7 +724,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">13.4k</span>
+    <span title="Site words total count">13.5k</span>
   
 </div>
 
