@@ -113,12 +113,10 @@
 <meta property="og:site_name" content="李亚飞的博客">
 <meta property="og:description" content="第二章 Linux基础篇 linux入门2.1 Linux介绍 一款操作系统，免费、开源、安全、高效、稳定、处理高并发强悍。 创始人：linus 吉祥物：企鹅 tux 主要发行版本： Ubuntu、centOS、Redhat、Suse、红旗Linux 主要操作系统：windows、linux、Ios等  2.2 Linux与Unix的关系第三章 Linux基础篇 VM和Linux系统安装qemu的">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://liyafei.top/3791945740/3.png">
 <meta property="og:updated_time" content="2019-10-09T13:18:33.663Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="第二章 Linux基础篇 linux入门">
 <meta name="twitter:description" content="第二章 Linux基础篇 linux入门2.1 Linux介绍 一款操作系统，免费、开源、安全、高效、稳定、处理高并发强悍。 创始人：linus 吉祥物：企鹅 tux 主要发行版本： Ubuntu、centOS、Redhat、Suse、红旗Linux 主要操作系统：windows、linux、Ios等  2.2 Linux与Unix的关系第三章 Linux基础篇 VM和Linux系统安装qemu的">
-<meta name="twitter:image" content="https://liyafei.top/3791945740/3.png">
 
 
 
@@ -453,7 +451,7 @@
 <p><strong>/opt</strong> 给主机额外安装软件所摆放的目录，默认为空</p>
 <p><strong>/usr/local</strong> 另一个主机额外安装软件所安装的目录</p>
 <p><strong>/var</strong> 存放不断扩充的东西，习惯将经常被修改的目录放这个目录下，日志等</p>
-<img src="/3791945740/3.png">
+
 
 <h2 id="4-3总结一下"><a href="#4-3总结一下" class="headerlink" title="4.3总结一下"></a>4.3总结一下</h2><ul>
 <li>linux的目录只有一个根目录</li>
