@@ -94,7 +94,7 @@
 
 
 
-  <meta name="keywords" content="linux,">
+  <meta name="keywords" content="数据结构,">
 
 
 
@@ -105,18 +105,20 @@
 
 
 
-<meta name="description" content="第二章 Linux基础篇 linux入门2.1 Linux介绍 一款操作系统，免费、开源、安全、高效、稳定、处理高并发强悍。 创始人：linus 吉祥物：企鹅 tux 主要发行版本： Ubuntu、centOS、Redhat、Suse、红旗Linux 主要操作系统：windows、linux、Ios等  2.2 Linux与Unix的关系第三章 Linux基础篇 VM和Linux系统安装qemu的">
-<meta name="keywords" content="linux">
+<meta name="description" content="双向链表 与单链表，查找方向只能是一个方向，而双向链表可以向前后查找 单链表不能够自我删除，需要靠辅助节点，而双向链表则可以自我删除，所以前面单链表删除通过辅助节点来删除。 图示">
+<meta name="keywords" content="数据结构">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第二章 Linux基础篇 linux入门">
-<meta property="og:url" content="https://liyafei.top/3791945740">
+<meta property="og:title" content="双向链表">
+<meta property="og:url" content="https://liyafei.top/939368149">
 <meta property="og:site_name" content="李亚飞的博客">
-<meta property="og:description" content="第二章 Linux基础篇 linux入门2.1 Linux介绍 一款操作系统，免费、开源、安全、高效、稳定、处理高并发强悍。 创始人：linus 吉祥物：企鹅 tux 主要发行版本： Ubuntu、centOS、Redhat、Suse、红旗Linux 主要操作系统：windows、linux、Ios等  2.2 Linux与Unix的关系第三章 Linux基础篇 VM和Linux系统安装qemu的">
+<meta property="og:description" content="双向链表 与单链表，查找方向只能是一个方向，而双向链表可以向前后查找 单链表不能够自我删除，需要靠辅助节点，而双向链表则可以自我删除，所以前面单链表删除通过辅助节点来删除。 图示">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-09T13:18:33.663Z">
+<meta property="og:image" content="https://liyafei.top/pic/1571395974744.png">
+<meta property="og:updated_time" content="2019-10-18T11:01:30.339Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="第二章 Linux基础篇 linux入门">
-<meta name="twitter:description" content="第二章 Linux基础篇 linux入门2.1 Linux介绍 一款操作系统，免费、开源、安全、高效、稳定、处理高并发强悍。 创始人：linus 吉祥物：企鹅 tux 主要发行版本： Ubuntu、centOS、Redhat、Suse、红旗Linux 主要操作系统：windows、linux、Ios等  2.2 Linux与Unix的关系第三章 Linux基础篇 VM和Linux系统安装qemu的">
+<meta name="twitter:title" content="双向链表">
+<meta name="twitter:description" content="双向链表 与单链表，查找方向只能是一个方向，而双向链表可以向前后查找 单链表不能够自我删除，需要靠辅助节点，而双向链表则可以自我删除，所以前面单链表删除通过辅助节点来删除。 图示">
+<meta name="twitter:image" content="https://liyafei.top/pic/1571395974744.png">
 
 
 
@@ -146,13 +148,13 @@
 
 
 
-  <link rel="canonical" href="https://liyafei.top/3791945740">
+  <link rel="canonical" href="https://liyafei.top/939368149">
 
 
 
 
 
-  <title>第二章 Linux基础篇 linux入门 | 李亚飞的博客</title>
+  <title>双向链表 | 李亚飞的博客</title>
   
 
 
@@ -299,7 +301,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://liyafei.top/3791945740">
+    <link itemprop="mainEntityOfPage" href="https://liyafei.top/939368149">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Leeyf">
@@ -316,7 +318,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">第二章 Linux基础篇 linux入门</h1>
+          <h1 class="post-title" itemprop="name headline">双向链表</h1>
         
 
         <div class="post-meta">
@@ -328,8 +330,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-05T15:16:47+08:00">
-                2019-08-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-18T18:38:16+08:00">
+                2019-10-18
               </time>
             
 
@@ -351,8 +353,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux</span>
+                  <a href="/categories/数据结构/" itemprop="url" rel="index">
+                    <span itemprop="name">数据结构</span>
                   </a>
                 </span>
 
@@ -382,7 +384,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  501字
+                  80字
                 </span>
               
 
@@ -419,46 +421,14 @@
       
 
       
-        <h1 id="第二章-Linux基础篇-linux入门"><a href="#第二章-Linux基础篇-linux入门" class="headerlink" title="第二章 Linux基础篇 linux入门"></a>第二章 Linux基础篇 linux入门</h1><h2 id="2-1-Linux介绍"><a href="#2-1-Linux介绍" class="headerlink" title="2.1 Linux介绍"></a>2.1 Linux介绍</h2><ul>
-<li>一款操作系统，免费、开源、安全、高效、稳定、处理高并发强悍。</li>
-<li>创始人：linus</li>
-<li>吉祥物：企鹅 tux</li>
-<li>主要发行版本： Ubuntu、centOS、Redhat、Suse、红旗Linux</li>
-<li>主要操作系统：windows、linux、Ios等</li>
-</ul>
-<h2 id="2-2-Linux与Unix的关系"><a href="#2-2-Linux与Unix的关系" class="headerlink" title="2.2 Linux与Unix的关系"></a>2.2 Linux与Unix的关系</h2><h1 id="第三章-Linux基础篇-VM和Linux系统安装"><a href="#第三章-Linux基础篇-VM和Linux系统安装" class="headerlink" title="第三章 Linux基础篇 VM和Linux系统安装"></a>第三章 Linux基础篇 VM和Linux系统安装</h1><p>qemu的安装和使用</p>
-<h2 id="3-1qumu安装"><a href="#3-1qumu安装" class="headerlink" title="3.1qumu安装"></a>3.1<a href="https://wiki.qemu.org/Hosts/Linux" target="_blank" rel="noopener">qumu安装</a></h2><h2 id="3-2创建虚拟机并启动"><a href="#3-2创建虚拟机并启动" class="headerlink" title="3.2创建虚拟机并启动"></a>3.2<a href="https://my.oschina.net/kelvinxupt/blog/265108" target="_blank" rel="noopener">创建虚拟机并启动</a></h2><p><code>sudo x86_64-softmmu/qemu-system-x86_64 -m 2048 -enable-kvm centos.img -cdrom ./linux-iso/CentOS-7-x86_64-Minimal-1810.iso</code></p>
-<h1 id="第四章-Linux基础篇-Linux目录结构"><a href="#第四章-Linux基础篇-Linux目录结构" class="headerlink" title="第四章 Linux基础篇 Linux目录结构"></a>第四章 Linux基础篇 Linux目录结构</h1><h2 id="4-１树状目录结构，在结构的最上层是根目录-，在次目录下创建其他目录"><a href="#4-１树状目录结构，在结构的最上层是根目录-，在次目录下创建其他目录" class="headerlink" title="4.１树状目录结构，在结构的最上层是根目录　/，在次目录下创建其他目录"></a>4.１树状目录结构，在结构的最上层是根目录　/，在次目录下创建其他目录</h2><p>经典的话：*<em>在Linux世界中，一切皆文件 *</em></p>
-<h2 id="4-2目录结构"><a href="#4-2目录结构" class="headerlink" title="4.2目录结构"></a>4.2目录结构</h2><p><strong>/bin</strong> 常用指令</p>
-<p><strong>/sbin</strong> 超级管理员指令</p>
-<p><strong>/home</strong> 存放普通用户的目录</p>
-<p><strong>/root</strong> 系统管理员目录</p>
-<p><strong>/lib</strong> 动态库</p>
-<p> <strong>/lost+found</strong> 一般为空，系统非法关机后存放一些文件</p>
-<p><strong>/etc</strong> 配置文件和子目录</p>
-<p><strong>/usr</strong> 用户的应用程序和文件存放目录</p>
-<p><strong>/boot</strong> 启动linux的核心文件 </p>
-<p><strong>/dev</strong> 管理设备</p>
-<p><strong>/media</strong> 设备目录</p>
-<p><strong>不要操作的 目录</strong></p>
+        <hr>
 <hr>
-<p><strong>/proc</strong> 系统内存的映射</p>
-<p><strong>/srv</strong> 存放一些服务启动之后需要提取的数据</p>
-<p><strong>/sys</strong> 该目录安装了2.6内核中新出现的的一个文件系统</p>
-<hr>
-<p><strong>/tmp</strong> 存放临时文件</p>
-<p><strong>/mnt</strong> 让用户临时挂载别的系统</p>
-<p><strong>/opt</strong> 给主机额外安装软件所摆放的目录，默认为空</p>
-<p><strong>/usr/local</strong> 另一个主机额外安装软件所安装的目录</p>
-<p><strong>/var</strong> 存放不断扩充的东西，习惯将经常被修改的目录放这个目录下，日志等</p>
-
-
-<h2 id="4-3总结一下"><a href="#4-3总结一下" class="headerlink" title="4.3总结一下"></a>4.3总结一下</h2><ul>
-<li>linux的目录只有一个根目录</li>
-<li>linux各个目录存放的内容是规划好的</li>
-<li>linux以文件的形式管理我们的设备的，因此linux一切皆文件</li>
-<li>linux各文件目录下存放内容，有一定认识</li>
-</ul>
+<h1 id="双向链表"><a href="#双向链表" class="headerlink" title="双向链表"></a>双向链表</h1><ol>
+<li>与单链表，查找方向只能是一个方向，而双向链表可以向前后查找</li>
+<li>单链表不能够自我删除，需要靠辅助节点，而双向链表则可以自我删除，所以前面单链表删除通过辅助节点来删除。</li>
+<li>图示</li>
+</ol>
+<p><img src="/pic/1571395974744.png" alt="1571395974744"></p>
 
       
     </div>
@@ -515,7 +485,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/linux/" rel="tag"># linux</a>
+            <a href="/tags/数据结构/" rel="tag"># 数据结构</a>
           
         </div>
       
@@ -528,8 +498,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/3143810621" rel="next" title="第一章 Linux开山篇">
-                <i class="fa fa-chevron-left"></i> 第一章 Linux开山篇
+              <a href="/3119202597" rel="next" title="Elasticsearch回顾">
+                <i class="fa fa-chevron-left"></i> Elasticsearch回顾
               </a>
             
           </div>
@@ -537,10 +507,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/93414991" rel="prev" title="第五章 Linux实操篇">
-                第五章 Linux实操篇 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -709,7 +675,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第二章-Linux基础篇-linux入门"><span class="nav-number">1.</span> <span class="nav-text">第二章 Linux基础篇 linux入门</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-Linux介绍"><span class="nav-number">1.1.</span> <span class="nav-text">2.1 Linux介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-Linux与Unix的关系"><span class="nav-number">1.2.</span> <span class="nav-text">2.2 Linux与Unix的关系</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第三章-Linux基础篇-VM和Linux系统安装"><span class="nav-number">2.</span> <span class="nav-text">第三章 Linux基础篇 VM和Linux系统安装</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1qumu安装"><span class="nav-number">2.1.</span> <span class="nav-text">3.1qumu安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2创建虚拟机并启动"><span class="nav-number">2.2.</span> <span class="nav-text">3.2创建虚拟机并启动</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第四章-Linux基础篇-Linux目录结构"><span class="nav-number">3.</span> <span class="nav-text">第四章 Linux基础篇 Linux目录结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-１树状目录结构，在结构的最上层是根目录-，在次目录下创建其他目录"><span class="nav-number">3.1.</span> <span class="nav-text">4.１树状目录结构，在结构的最上层是根目录　/，在次目录下创建其他目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2目录结构"><span class="nav-number">3.2.</span> <span class="nav-text">4.2目录结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-3总结一下"><span class="nav-number">3.3.</span> <span class="nav-text">4.3总结一下</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#双向链表"><span class="nav-number">1.</span> <span class="nav-text">双向链表</span></a></li></ol></div>
             
 
           </div>
