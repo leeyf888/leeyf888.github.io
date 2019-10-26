@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="李亚飞的博客">
 <meta property="og:description" content="安装下载最新版的frp github安装地址 内网配置(通俗讲本地)修改frp.ini文件 1234567891011121314151617181920[common]server_addr = 127.0.0.1  //服务器地址server_port = 7000   //服务器端监听frps端口[ssh]type = tcplocal_ip = 127.0.0.1  //本地iplocal">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-24T14:30:46.355Z">
+<meta property="og:updated_time" content="2019-10-25T12:22:05.690Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="frp内网穿透">
 <meta name="twitter:description" content="安装下载最新版的frp github安装地址 内网配置(通俗讲本地)修改frp.ini文件 1234567891011121314151617181920[common]server_addr = 127.0.0.1  //服务器地址server_port = 7000   //服务器端监听frps端口[ssh]type = tcplocal_ip = 127.0.0.1  //本地iplocal">
@@ -508,6 +508,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/652256356" rel="prev" title="获取请求真实ip并找到中文地址">
+                获取请求真实ip并找到中文地址 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -590,7 +594,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">19</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -709,7 +713,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">16.1k</span>
+    <span title="Site words total count">16.3k</span>
   
 </div>
 
