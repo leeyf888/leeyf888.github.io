@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="李亚飞的博客">
 <meta property="og:description" content="忘记密码怎么办？1.kip-grant-tables 指令 数据库登录时跳过权限库，不用验证密码直接登录 在/etc/my.cnf文件中 【mysqld】下面加上上面指令 就跳过密码登录 然后重启mysql服务 2.登录之后，使用指令更改root密码  use mysql；  mysql 5.7之前使用   update user set password=PASSWORD(&amp;#39;newPas">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-28T07:14:20.061Z">
+<meta property="og:updated_time" content="2019-10-28T07:55:24.652Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mysql忘记root密码找回">
 <meta name="twitter:description" content="忘记密码怎么办？1.kip-grant-tables 指令 数据库登录时跳过权限库，不用验证密码直接登录 在/etc/my.cnf文件中 【mysqld】下面加上上面指令 就跳过密码登录 然后重启mysql服务 2.登录之后，使用指令更改root密码  use mysql；  mysql 5.7之前使用   update user set password=PASSWORD(&amp;#39;newPas">
@@ -537,6 +537,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/1597126306" rel="prev" title="Mysqldump的使用——备份与恢复">
+                Mysqldump的使用——备份与恢复 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -619,7 +623,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">20</span>
+                  <span class="site-state-item-count">21</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -641,7 +645,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -738,7 +742,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">16.5k</span>
+    <span title="Site words total count">16.8k</span>
   
 </div>
 
