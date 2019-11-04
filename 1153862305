@@ -94,7 +94,7 @@
 
 
 
-  <meta name="keywords" content="linux,">
+  <meta name="keywords" content="esay,">
 
 
 
@@ -105,18 +105,18 @@
 
 
 
-<meta name="description" content="第二章 Linux基础篇 linux入门2.1 Linux介绍 一款操作系统，免费、开源、安全、高效、稳定、处理高并发强悍。 创始人：linus 吉祥物：企鹅 tux 主要发行版本： Ubuntu、centOS、Redhat、Suse、红旗Linux 主要操作系统：windows、linux、Ios等  2.2 Linux与Unix的关系第三章 Linux基础篇 VM和Linux系统安装qemu的">
-<meta name="keywords" content="linux">
+<meta name="description" content="描述给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。 示例示例1: 12输入: 123输出: 321   示例 2: 12输入: -123输出: -321  示例 3: 12输入: 120输出: 21  注意:假设我们的环境只能存储得下 32 位的有符号整数，则其数值范围为 [−2^31,  2^31 − 1]。请根据这个假设，如果反转后整数溢出那么就返回 0。 ###　代">
+<meta name="keywords" content="esay">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第二章 Linux基础篇 linux入门">
-<meta property="og:url" content="https://liyafei.top/3791945740">
+<meta property="og:title" content="算法小练——整数反转">
+<meta property="og:url" content="https://liyafei.top/1153862305">
 <meta property="og:site_name" content="李亚飞的博客">
-<meta property="og:description" content="第二章 Linux基础篇 linux入门2.1 Linux介绍 一款操作系统，免费、开源、安全、高效、稳定、处理高并发强悍。 创始人：linus 吉祥物：企鹅 tux 主要发行版本： Ubuntu、centOS、Redhat、Suse、红旗Linux 主要操作系统：windows、linux、Ios等  2.2 Linux与Unix的关系第三章 Linux基础篇 VM和Linux系统安装qemu的">
+<meta property="og:description" content="描述给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。 示例示例1: 12输入: 123输出: 321   示例 2: 12输入: -123输出: -321  示例 3: 12输入: 120输出: 21  注意:假设我们的环境只能存储得下 32 位的有符号整数，则其数值范围为 [−2^31,  2^31 − 1]。请根据这个假设，如果反转后整数溢出那么就返回 0。 ###　代">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-09T13:18:33.663Z">
+<meta property="og:updated_time" content="2019-11-04T06:31:09.889Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="第二章 Linux基础篇 linux入门">
-<meta name="twitter:description" content="第二章 Linux基础篇 linux入门2.1 Linux介绍 一款操作系统，免费、开源、安全、高效、稳定、处理高并发强悍。 创始人：linus 吉祥物：企鹅 tux 主要发行版本： Ubuntu、centOS、Redhat、Suse、红旗Linux 主要操作系统：windows、linux、Ios等  2.2 Linux与Unix的关系第三章 Linux基础篇 VM和Linux系统安装qemu的">
+<meta name="twitter:title" content="算法小练——整数反转">
+<meta name="twitter:description" content="描述给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。 示例示例1: 12输入: 123输出: 321   示例 2: 12输入: -123输出: -321  示例 3: 12输入: 120输出: 21  注意:假设我们的环境只能存储得下 32 位的有符号整数，则其数值范围为 [−2^31,  2^31 − 1]。请根据这个假设，如果反转后整数溢出那么就返回 0。 ###　代">
 
 
 
@@ -146,13 +146,13 @@
 
 
 
-  <link rel="canonical" href="https://liyafei.top/3791945740">
+  <link rel="canonical" href="https://liyafei.top/1153862305">
 
 
 
 
 
-  <title>第二章 Linux基础篇 linux入门 | 李亚飞的博客</title>
+  <title>算法小练——整数反转 | 李亚飞的博客</title>
   
 
 
@@ -299,7 +299,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://liyafei.top/3791945740">
+    <link itemprop="mainEntityOfPage" href="https://liyafei.top/1153862305">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Leeyf">
@@ -316,7 +316,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">第二章 Linux基础篇 linux入门</h1>
+          <h1 class="post-title" itemprop="name headline">算法小练——整数反转</h1>
         
 
         <div class="post-meta">
@@ -328,8 +328,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-05T15:16:47+08:00">
-                2019-08-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-04T14:18:52+08:00">
+                2019-11-04
               </time>
             
 
@@ -351,8 +351,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux</span>
+                  <a href="/categories/Algorithms/" itemprop="url" rel="index">
+                    <span itemprop="name">Algorithms</span>
                   </a>
                 </span>
 
@@ -382,7 +382,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  501字
+                  329字
                 </span>
               
 
@@ -419,46 +419,33 @@
       
 
       
-        <h1 id="第二章-Linux基础篇-linux入门"><a href="#第二章-Linux基础篇-linux入门" class="headerlink" title="第二章 Linux基础篇 linux入门"></a>第二章 Linux基础篇 linux入门</h1><h2 id="2-1-Linux介绍"><a href="#2-1-Linux介绍" class="headerlink" title="2.1 Linux介绍"></a>2.1 Linux介绍</h2><ul>
-<li>一款操作系统，免费、开源、安全、高效、稳定、处理高并发强悍。</li>
-<li>创始人：linus</li>
-<li>吉祥物：企鹅 tux</li>
-<li>主要发行版本： Ubuntu、centOS、Redhat、Suse、红旗Linux</li>
-<li>主要操作系统：windows、linux、Ios等</li>
-</ul>
-<h2 id="2-2-Linux与Unix的关系"><a href="#2-2-Linux与Unix的关系" class="headerlink" title="2.2 Linux与Unix的关系"></a>2.2 Linux与Unix的关系</h2><h1 id="第三章-Linux基础篇-VM和Linux系统安装"><a href="#第三章-Linux基础篇-VM和Linux系统安装" class="headerlink" title="第三章 Linux基础篇 VM和Linux系统安装"></a>第三章 Linux基础篇 VM和Linux系统安装</h1><p>qemu的安装和使用</p>
-<h2 id="3-1qumu安装"><a href="#3-1qumu安装" class="headerlink" title="3.1qumu安装"></a>3.1<a href="https://wiki.qemu.org/Hosts/Linux" target="_blank" rel="noopener">qumu安装</a></h2><h2 id="3-2创建虚拟机并启动"><a href="#3-2创建虚拟机并启动" class="headerlink" title="3.2创建虚拟机并启动"></a>3.2<a href="https://my.oschina.net/kelvinxupt/blog/265108" target="_blank" rel="noopener">创建虚拟机并启动</a></h2><p><code>sudo x86_64-softmmu/qemu-system-x86_64 -m 2048 -enable-kvm centos.img -cdrom ./linux-iso/CentOS-7-x86_64-Minimal-1810.iso</code></p>
-<h1 id="第四章-Linux基础篇-Linux目录结构"><a href="#第四章-Linux基础篇-Linux目录结构" class="headerlink" title="第四章 Linux基础篇 Linux目录结构"></a>第四章 Linux基础篇 Linux目录结构</h1><h2 id="4-１树状目录结构，在结构的最上层是根目录-，在次目录下创建其他目录"><a href="#4-１树状目录结构，在结构的最上层是根目录-，在次目录下创建其他目录" class="headerlink" title="4.１树状目录结构，在结构的最上层是根目录　/，在次目录下创建其他目录"></a>4.１树状目录结构，在结构的最上层是根目录　/，在次目录下创建其他目录</h2><p>经典的话：*<em>在Linux世界中，一切皆文件 *</em></p>
-<h2 id="4-2目录结构"><a href="#4-2目录结构" class="headerlink" title="4.2目录结构"></a>4.2目录结构</h2><p><strong>/bin</strong> 常用指令</p>
-<p><strong>/sbin</strong> 超级管理员指令</p>
-<p><strong>/home</strong> 存放普通用户的目录</p>
-<p><strong>/root</strong> 系统管理员目录</p>
-<p><strong>/lib</strong> 动态库</p>
-<p> <strong>/lost+found</strong> 一般为空，系统非法关机后存放一些文件</p>
-<p><strong>/etc</strong> 配置文件和子目录</p>
-<p><strong>/usr</strong> 用户的应用程序和文件存放目录</p>
-<p><strong>/boot</strong> 启动linux的核心文件 </p>
-<p><strong>/dev</strong> 管理设备</p>
-<p><strong>/media</strong> 设备目录</p>
-<p><strong>不要操作的 目录</strong></p>
-<hr>
-<p><strong>/proc</strong> 系统内存的映射</p>
-<p><strong>/srv</strong> 存放一些服务启动之后需要提取的数据</p>
-<p><strong>/sys</strong> 该目录安装了2.6内核中新出现的的一个文件系统</p>
-<hr>
-<p><strong>/tmp</strong> 存放临时文件</p>
-<p><strong>/mnt</strong> 让用户临时挂载别的系统</p>
-<p><strong>/opt</strong> 给主机额外安装软件所摆放的目录，默认为空</p>
-<p><strong>/usr/local</strong> 另一个主机额外安装软件所安装的目录</p>
-<p><strong>/var</strong> 存放不断扩充的东西，习惯将经常被修改的目录放这个目录下，日志等</p>
+        <h3 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h3><p>给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。</p>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><p><strong>示例1:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: 123</span><br><span class="line">输出: 321</span><br></pre></td></tr></table></figure>
 
+<p> <strong>示例 2:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: -123</span><br><span class="line">输出: -321</span><br></pre></td></tr></table></figure>
 
-<h2 id="4-3总结一下"><a href="#4-3总结一下" class="headerlink" title="4.3总结一下"></a>4.3总结一下</h2><ul>
-<li>linux的目录只有一个根目录</li>
-<li>linux各个目录存放的内容是规划好的</li>
-<li>linux以文件的形式管理我们的设备的，因此linux一切皆文件</li>
-<li>linux各文件目录下存放内容，有一定认识</li>
-</ul>
+<p><strong>示例 3:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: 120</span><br><span class="line">输出: 21</span><br></pre></td></tr></table></figure>
+
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意:"></a>注意:</h3><p>假设我们的环境只能存储得下 32 位的有符号整数，则其数值范围为 [−2^31,  2^31 − 1]。请根据这个假设，如果反转后整数溢出那么就返回 0。</p>
+<p>###　代码</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">reverse</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> a=<span class="number">0</span>,b=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (x!=<span class="number">0</span>)&#123;</span><br><span class="line">            b =x%<span class="number">10</span>;</span><br><span class="line">            x/=<span class="number">10</span>;</span><br><span class="line">            </span><br><span class="line">            <span class="comment">//越界的情况,比最大值大 a&gt;2^31 或者a=2^31 但是首字母&gt;7</span></span><br><span class="line">            <span class="keyword">if</span>(a&gt;Integer.MAX_VALUE/<span class="number">10</span> ||a==Integer.MAX_VALUE/<span class="number">10</span>&amp;&amp;b&gt;Integer.MAX_VALUE%<span class="number">10</span>)&#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">//越界情况,比最小值小</span></span><br><span class="line">            <span class="keyword">if</span>(a&lt;Integer.MIN_VALUE/<span class="number">10</span> ||a==Integer.MIN_VALUE/<span class="number">10</span>&amp;&amp;b&lt;Integer.MIN_VALUE%<span class="number">10</span>)&#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            a =a*<span class="number">10</span>+b;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> a;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h3><blockquote>
+<p>难点,处理越界。</p>
+<p>如何会越界呢  a<em>10+b&gt;Integer.MAX_VALUE时，故可知 a一定 &gt;Integer.MAX_VALUE /10 越界。</em></p>
+<p>同样的， a*10+b&lt;Integer.MIN_VALUE也越界，故可知a一定&lt;Integer.MIN_VALUE/10.</p>
+<p>再具体化区间，假如 a=Integer.MAX_VALUE/10呢 则 代替到上式</p>
+<blockquote>
+<p>Integer.MAX_VALUE /10 *10+b &gt;Integer.MAX_VALUE</p>
+</blockquote>
+<blockquote>
+<p>Integer.MAX_VALUE/10 *10 +Integer.MAX_VALUE%10 =Integer&gt;MAX_VALUE</p>
+</blockquote>
+<p>负数的同理</p>
+</blockquote>
 
       
     </div>
@@ -523,7 +510,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/linux/" rel="tag"># linux</a>
+            <a href="/tags/esay/" rel="tag"># esay</a>
           
         </div>
       
@@ -536,8 +523,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/3143810621" rel="next" title="第一章 Linux开山篇">
-                <i class="fa fa-chevron-left"></i> 第一章 Linux开山篇
+              <a href="/1282388112" rel="next" title="算法小练——两数相加">
+                <i class="fa fa-chevron-left"></i> 算法小练——两数相加
               </a>
             
           </div>
@@ -545,10 +532,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/93414991" rel="prev" title="第五章 Linux实操篇">
-                第五章 Linux实操篇 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -703,7 +686,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第二章-Linux基础篇-linux入门"><span class="nav-number">1.</span> <span class="nav-text">第二章 Linux基础篇 linux入门</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-Linux介绍"><span class="nav-number">1.1.</span> <span class="nav-text">2.1 Linux介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-Linux与Unix的关系"><span class="nav-number">1.2.</span> <span class="nav-text">2.2 Linux与Unix的关系</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第三章-Linux基础篇-VM和Linux系统安装"><span class="nav-number">2.</span> <span class="nav-text">第三章 Linux基础篇 VM和Linux系统安装</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1qumu安装"><span class="nav-number">2.1.</span> <span class="nav-text">3.1qumu安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2创建虚拟机并启动"><span class="nav-number">2.2.</span> <span class="nav-text">3.2创建虚拟机并启动</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第四章-Linux基础篇-Linux目录结构"><span class="nav-number">3.</span> <span class="nav-text">第四章 Linux基础篇 Linux目录结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-１树状目录结构，在结构的最上层是根目录-，在次目录下创建其他目录"><span class="nav-number">3.1.</span> <span class="nav-text">4.１树状目录结构，在结构的最上层是根目录　/，在次目录下创建其他目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2目录结构"><span class="nav-number">3.2.</span> <span class="nav-text">4.2目录结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-3总结一下"><span class="nav-number">3.3.</span> <span class="nav-text">4.3总结一下</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述"><span class="nav-number">1.</span> <span class="nav-text">描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#示例"><span class="nav-number">2.</span> <span class="nav-text">示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注意"><span class="nav-number">3.</span> <span class="nav-text">注意:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#笔记"><span class="nav-number">4.</span> <span class="nav-text">笔记</span></a></li></ol></div>
             
 
           </div>
