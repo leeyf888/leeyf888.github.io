@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="李亚飞的博客">
 <meta property="og:description" content="罗马数字转整数描述罗马数字包含以下七种字符: I， V， X， L，C，D 和 M。 字符          数值I             1V             5X             10L             50C             100D             500M             1000例如， 罗马数字 2 写做 II ，即为两个并列的 1。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-05T09:28:39.503Z">
+<meta property="og:updated_time" content="2019-11-05T11:39:18.498Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法小练——罗马数字转整数">
 <meta name="twitter:description" content="罗马数字转整数描述罗马数字包含以下七种字符: I， V， X， L，C，D 和 M。 字符          数值I             1V             5X             10L             50C             100D             500M             1000例如， 罗马数字 2 写做 II ，即为两个并列的 1。">
@@ -616,7 +616,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">29</span>
+                  <span class="site-state-item-count">30</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -721,7 +721,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">20k</span>
+    <span title="Site words total count">20.3k</span>
   
 </div>
 
