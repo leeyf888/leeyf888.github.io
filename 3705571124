@@ -105,18 +105,18 @@
 
 
 
-<meta name="description" content="描述给出两个整数 aa 和 bb , 求他们的和。 你不需要从输入流读入数据，只需要根据aplusb的两个参数a和b，计算他们的和并返回就行。 您在真实的面试中是否遇到过这个题？ 是 题目纠错 说明a和b都是 32位 整数么？  是的  我可以使用位运算符么？  当然可以  样例样例 1: 123输入:  a = 1, b = 2输出: 3	样例解释: 返回a+b的结果.  样例 2: 123输">
+<meta name="description" content="有效的括号描述给定一个只包括 ‘(‘，’)’，’{‘，’}’，’[‘，’]’ 的字符串，判断字符串是否有效。 有效字符串需满足： 左括号必须用相同类型的右括号闭合。左括号必须以正确的顺序闭合。注意空字符串可被认为是有效字符串。 示例示例 1: 输入: “()”输出: true  示例 2: 输入: “()[]{}”输出: true  示例 3: 输入: “(]”输出: false  示例 4:">
 <meta name="keywords" content="esay">
 <meta property="og:type" content="article">
-<meta property="og:title" content="算法小练——A + B 问题">
-<meta property="og:url" content="https://liyafei.top/115354012">
+<meta property="og:title" content="算法小练——有效的括号">
+<meta property="og:url" content="https://liyafei.top/3705571124">
 <meta property="og:site_name" content="李亚飞的博客">
-<meta property="og:description" content="描述给出两个整数 aa 和 bb , 求他们的和。 你不需要从输入流读入数据，只需要根据aplusb的两个参数a和b，计算他们的和并返回就行。 您在真实的面试中是否遇到过这个题？ 是 题目纠错 说明a和b都是 32位 整数么？  是的  我可以使用位运算符么？  当然可以  样例样例 1: 123输入:  a = 1, b = 2输出: 3	样例解释: 返回a+b的结果.  样例 2: 123输">
+<meta property="og:description" content="有效的括号描述给定一个只包括 ‘(‘，’)’，’{‘，’}’，’[‘，’]’ 的字符串，判断字符串是否有效。 有效字符串需满足： 左括号必须用相同类型的右括号闭合。左括号必须以正确的顺序闭合。注意空字符串可被认为是有效字符串。 示例示例 1: 输入: “()”输出: true  示例 2: 输入: “()[]{}”输出: true  示例 3: 输入: “(]”输出: false  示例 4:">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-02T05:30:14.296Z">
+<meta property="og:updated_time" content="2019-11-06T11:10:09.520Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="算法小练——A + B 问题">
-<meta name="twitter:description" content="描述给出两个整数 aa 和 bb , 求他们的和。 你不需要从输入流读入数据，只需要根据aplusb的两个参数a和b，计算他们的和并返回就行。 您在真实的面试中是否遇到过这个题？ 是 题目纠错 说明a和b都是 32位 整数么？  是的  我可以使用位运算符么？  当然可以  样例样例 1: 123输入:  a = 1, b = 2输出: 3	样例解释: 返回a+b的结果.  样例 2: 123输">
+<meta name="twitter:title" content="算法小练——有效的括号">
+<meta name="twitter:description" content="有效的括号描述给定一个只包括 ‘(‘，’)’，’{‘，’}’，’[‘，’]’ 的字符串，判断字符串是否有效。 有效字符串需满足： 左括号必须用相同类型的右括号闭合。左括号必须以正确的顺序闭合。注意空字符串可被认为是有效字符串。 示例示例 1: 输入: “()”输出: true  示例 2: 输入: “()[]{}”输出: true  示例 3: 输入: “(]”输出: false  示例 4:">
 
 
 
@@ -146,13 +146,13 @@
 
 
 
-  <link rel="canonical" href="https://liyafei.top/115354012">
+  <link rel="canonical" href="https://liyafei.top/3705571124">
 
 
 
 
 
-  <title>算法小练——A + B 问题 | 李亚飞的博客</title>
+  <title>算法小练——有效的括号 | 李亚飞的博客</title>
   
 
 
@@ -299,7 +299,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://liyafei.top/115354012">
+    <link itemprop="mainEntityOfPage" href="https://liyafei.top/3705571124">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Leeyf">
@@ -316,7 +316,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">算法小练——A + B 问题</h1>
+          <h1 class="post-title" itemprop="name headline">算法小练——有效的括号</h1>
         
 
         <div class="post-meta">
@@ -328,8 +328,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-02T12:47:29+08:00">
-                2019-11-02
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-06T19:05:48+08:00">
+                2019-11-06
               </time>
             
 
@@ -382,7 +382,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  483字
+                  351字
                 </span>
               
 
@@ -419,38 +419,31 @@
       
 
       
-        <hr>
-<h3 id="描述"><a href="#描述" class="headerlink" title="描述"></a><strong>描述</strong></h3><p>给出两个整数 a<em>a</em> 和 b<em>b</em> , 求他们的和。</p>
-<p>你不需要从输入流读入数据，只需要根据<code>aplusb</code>的两个参数a和b，计算他们的和并返回就行。</p>
-<p>您在真实的面试中是否遇到过这个题？ 是</p>
-<p>题目纠错</p>
-<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a><strong>说明</strong></h3><p>a和b都是 <code>32位</code> 整数么？</p>
-<ul>
-<li>是的</li>
-</ul>
-<p>我可以使用位运算符么？</p>
-<ul>
-<li>当然可以</li>
-</ul>
-<h3 id="样例"><a href="#样例" class="headerlink" title="样例"></a><strong>样例</strong></h3><p><strong>样例 1:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入:  a = 1, b = 2</span><br><span class="line">输出: 3	</span><br><span class="line">样例解释: 返回a+b的结果.</span><br></pre></td></tr></table></figure>
+        <h4 id="有效的括号"><a href="#有效的括号" class="headerlink" title=" 有效的括号"></a><a href="https://leetcode-cn.com/problems/valid-parentheses/" target="_blank" rel="noopener"> 有效的括号</a></h4><h3 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h3><p>给定一个只包括 ‘(‘，’)’，’{‘，’}’，’[‘，’]’ 的字符串，判断字符串是否有效。</p>
+<p>有效字符串需满足：</p>
+<p>左括号必须用相同类型的右括号闭合。<br>左括号必须以正确的顺序闭合。<br>注意空字符串可被认为是有效字符串。</p>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><h4 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1:"></a>示例 1:</h4><blockquote>
+<p>输入: “()”<br>输出: true</p>
+</blockquote>
+<h4 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2:"></a>示例 2:</h4><blockquote>
+<p>输入: “()[]{}”<br>输出: true</p>
+</blockquote>
+<h4 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3:"></a>示例 3:</h4><blockquote>
+<p>输入: “(]”<br>输出: false</p>
+</blockquote>
+<h4 id="示例-4"><a href="#示例-4" class="headerlink" title="示例 4:"></a>示例 4:</h4><blockquote>
+<p>输入: “([)]”<br>输出: false</p>
+</blockquote>
+<h4 id="示例-5"><a href="#示例-5" class="headerlink" title="示例 5:"></a>示例 5:</h4><blockquote>
+<p>输入: “{[]}”<br>输出: true</p>
+</blockquote>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isValid</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">        Stack&lt;Character&gt; stack = <span class="keyword">new</span> Stack&lt;&gt;(s.length());</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; s.length(); i++) &#123;</span><br><span class="line">            <span class="keyword">char</span> ch = s.charAt(i);</span><br><span class="line">            <span class="keyword">switch</span> (s.charAt(i))&#123;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">'('</span>:</span><br><span class="line">                <span class="keyword">case</span> <span class="string">'['</span>:</span><br><span class="line">                <span class="keyword">case</span> <span class="string">'&#123;'</span>:</span><br><span class="line">                    stack.push(s.charAt(i));</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">')'</span>:</span><br><span class="line">                <span class="keyword">case</span> <span class="string">']'</span>:</span><br><span class="line">                <span class="keyword">case</span> <span class="string">'&#125;'</span>:</span><br><span class="line">                    <span class="keyword">if</span>(!stack.isEmpty()) &#123;</span><br><span class="line">                        <span class="keyword">char</span> chx = (<span class="keyword">char</span>) stack.pop();</span><br><span class="line">                        <span class="keyword">if</span>((chx==<span class="string">'('</span>&amp;&amp;ch!=<span class="string">')'</span>)</span><br><span class="line">                                ||(chx==<span class="string">'['</span>&amp;&amp;ch!=<span class="string">']'</span>)</span><br><span class="line">                                ||(chx==<span class="string">'&#123;'</span>&amp;&amp;ch!=<span class="string">'&#125;'</span>))&#123;</span><br><span class="line">                            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                <span class="keyword">default</span>:<span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> stack.isEmpty();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><strong>样例 2:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入:  a = -1, b = 1</span><br><span class="line">输出: 0	</span><br><span class="line">样例解释: 返回a+b的结果.</span><br></pre></td></tr></table></figure>
+<h3 id="代码-栈的使用"><a href="#代码-栈的使用" class="headerlink" title="代码 栈的使用"></a>代码 栈的使用</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Stack</span>&lt;<span class="title">T</span>&gt; </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> size; <span class="comment">//栈的大小</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> top; <span class="comment">//栈顶下标</span></span><br><span class="line">    <span class="keyword">private</span> Object[] stackArray;</span><br><span class="line"><span class="comment">//构造函数</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">Stack</span><span class="params">(<span class="keyword">int</span> size)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.size = size;</span><br><span class="line">    <span class="keyword">this</span>.top = -<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">this</span>.stackArray = <span class="keyword">new</span> Object[size];</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//入栈，同时，栈顶元素下标加一</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">push</span><span class="params">(T elem)</span></span>&#123;</span><br><span class="line">    stackArray[++top] = elem;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//出栈，删除栈顶元素，下标减一</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Object <span class="title">pop</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> stackArray[top--];</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//判断为空</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isEmpty</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (top==-<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isFull</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (top == size-<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="挑战"><a href="#挑战" class="headerlink" title="挑战"></a><strong>挑战</strong></h3><p>显然你可以直接 return a + b，但是你是否可以挑战一下不这样做？（不使用++等算数运算符）</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> a: An integer</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> b: An integer</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span>: The sum of a and b </span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">aplusb</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// write your code he</span></span><br><span class="line">      <span class="keyword">return</span> a+b;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>这道题目前为止，都很简单。但是如果你关注到了挑战的话，就引出思考的问题了。</p>
-<p>对于作者这种初次接触算法的新手来说，对于不使用算术运算符的思路完全没有，于是便查询了下资料，才了解到算术运算符的底层是位运算符，可以用位运算符来替代算数运算符。</p>
-<p>那么就科普下位运算符的知识：</p>
-<p><code>XOR</code>异或 :当 a、b 不等时，为1,反之，为0</p>
-<p><code>AND</code> 且：当 aANDb 就是 a与b 在位上的相加，需要进位</p>
-<p><code>&lt;&lt;</code>：进位</p>
-<p>eg: 5+6 =&gt; 101 +110 =&gt; 1011 =&gt; 11</p>
-<p>那么把一个十进制数先转化为二进制数，就发现，非进位部分通过XOR来运算，进位部分通过AND来运算。因为 0和0得0 0和1为1 符合异或的规则，1和1为10 符合AND的规则。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public static int aplusb(int a, int b) &#123;</span><br><span class="line">        // write your code he</span><br><span class="line">        return b==0?a:aplusb(a^b,(a&amp;b)&lt;&lt;1);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
+<h3 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h3><blockquote>
+<p>难度几乎没有，主要是对栈的理解。</p>
+</blockquote>
 
       
     </div>
@@ -528,8 +521,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/1597126306" rel="next" title="Mysqldump的使用——备份与恢复">
-                <i class="fa fa-chevron-left"></i> Mysqldump的使用——备份与恢复
+              <a href="/3489373181" rel="next" title="算法小练——无重复字符的最长子串">
+                <i class="fa fa-chevron-left"></i> 算法小练——无重复字符的最长子串
               </a>
             
           </div>
@@ -538,8 +531,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/1163077827" rel="prev" title="算法小练——尾部的零">
-                算法小练——尾部的零 <i class="fa fa-chevron-right"></i>
+              <a href="/332301884" rel="prev" title="数据结构——栈的使用">
+                数据结构——栈的使用 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -695,7 +688,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述"><span class="nav-number">1.</span> <span class="nav-text">描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说明"><span class="nav-number">2.</span> <span class="nav-text">说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例"><span class="nav-number">3.</span> <span class="nav-text">样例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#挑战"><span class="nav-number">4.</span> <span class="nav-text">挑战</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number"></span> <span class="nav-text">代码</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#有效的括号"><span class="nav-number">1.</span> <span class="nav-text"> 有效的括号</span></a></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#描述"><span class="nav-number"></span> <span class="nav-text">描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#示例"><span class="nav-number"></span> <span class="nav-text">示例</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#示例-1"><span class="nav-number">1.</span> <span class="nav-text">示例 1:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#示例-2"><span class="nav-number">2.</span> <span class="nav-text">示例 2:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#示例-3"><span class="nav-number">3.</span> <span class="nav-text">示例 3:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#示例-4"><span class="nav-number">4.</span> <span class="nav-text">示例 4:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#示例-5"><span class="nav-number">5.</span> <span class="nav-text">示例 5:</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码"><span class="nav-number"></span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码-栈的使用"><span class="nav-number"></span> <span class="nav-text">代码 栈的使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#笔记"><span class="nav-number"></span> <span class="nav-text">笔记</span></a></li></div>
             
 
           </div>
