@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="李亚飞的博客">
 <meta property="og:description" content="有效的括号描述给定一个只包括 ‘(‘，’)’，’{‘，’}’，’[‘，’]’ 的字符串，判断字符串是否有效。 有效字符串需满足： 左括号必须用相同类型的右括号闭合。左括号必须以正确的顺序闭合。注意空字符串可被认为是有效字符串。 示例示例 1: 输入: “()”输出: true  示例 2: 输入: “()[]{}”输出: true  示例 3: 输入: “(]”输出: false  示例 4:">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-06T11:10:09.520Z">
+<meta property="og:updated_time" content="2019-11-06T11:14:13.412Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法小练——有效的括号">
 <meta name="twitter:description" content="有效的括号描述给定一个只包括 ‘(‘，’)’，’{‘，’}’，’[‘，’]’ 的字符串，判断字符串是否有效。 有效字符串需满足： 左括号必须用相同类型的右括号闭合。左括号必须以正确的顺序闭合。注意空字符串可被认为是有效字符串。 示例示例 1: 输入: “()”输出: true  示例 2: 输入: “()[]{}”输出: true  示例 3: 输入: “(]”输出: false  示例 4:">
@@ -617,7 +617,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">32</span>
+                  <span class="site-state-item-count">33</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -722,7 +722,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">21.3k</span>
+    <span title="Site words total count">21.7k</span>
   
 </div>
 
