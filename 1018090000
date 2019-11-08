@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="李亚飞的博客">
 <meta property="og:description" content="移除元素描述给定一个数组 nums 和一个值 val，你需要原地移除所有数值等于 val 的元素，返回移除后数组的新长度。 不要使用额外的数组空间，你必须在原地修改输入数组并在使用 O(1) 额外空间的条件下完成。 元素的顺序可以改变。你不需要考虑数组中超出新长度后面的元素。 示例示例 1:给定 nums = [3,2,2,3], val = 3, 函数应该返回新的长度 2, 并且 nums 中的">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-07T11:00:11.693Z">
+<meta property="og:updated_time" content="2019-11-07T13:05:36.559Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法小练——移除元素">
 <meta name="twitter:description" content="移除元素描述给定一个数组 nums 和一个值 val，你需要原地移除所有数值等于 val 的元素，返回移除后数组的新长度。 不要使用额外的数组空间，你必须在原地修改输入数组并在使用 O(1) 额外空间的条件下完成。 元素的顺序可以改变。你不需要考虑数组中超出新长度后面的元素。 示例示例 1:给定 nums = [3,2,2,3], val = 3, 函数应该返回新的长度 2, 并且 nums 中的">
@@ -590,7 +590,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">37</span>
+                  <span class="site-state-item-count">39</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -695,7 +695,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">23.4k</span>
+    <span title="Site words total count">24.4k</span>
   
 </div>
 
