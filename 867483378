@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="李亚飞的博客">
 <meta property="og:description" content="报数描述报数序列是一个整数序列，按照其中的整数的顺序进行报数，得到下一个数。其前五项如下： 123451.     12.     113.     214.     12115.     111221  1231 被读作  &amp;quot;one 1&amp;quot;  (&amp;quot;一个一&amp;quot;) , 即 11。11 被读作 &amp;quot;two 1s&amp;quot; (&amp;quot;两个一&amp;quot;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-08T06:26:57.179Z">
+<meta property="og:updated_time" content="2019-11-08T13:27:12.204Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法小练——报数">
 <meta name="twitter:description" content="报数描述报数序列是一个整数序列，按照其中的整数的顺序进行报数，得到下一个数。其前五项如下： 123451.     12.     113.     214.     12115.     111221  1231 被读作  &amp;quot;one 1&amp;quot;  (&amp;quot;一个一&amp;quot;) , 即 11。11 被读作 &amp;quot;two 1s&amp;quot; (&amp;quot;两个一&amp;quot;">
@@ -623,7 +623,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">39</span>
+                  <span class="site-state-item-count">42</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -728,7 +728,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">24.4k</span>
+    <span title="Site words total count">25.1k</span>
   
 </div>
 
