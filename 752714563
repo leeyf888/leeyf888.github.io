@@ -94,7 +94,7 @@
 
 
 
-  <meta name="keywords" content="english,">
+  <meta name="keywords" content="esay,">
 
 
 
@@ -105,18 +105,18 @@
 
 
 
-<meta name="description" content="英语四级听力视听一致 不是简单的听到什么选什么，而是把更多的单词和短语被读到的选项或吻合程度更高的选项选出来  如何看选项 看相同与不同  竖读选项，看相同点：确定定位词 a.人称相同 b.相同实词 c.结构相同   横读选项，看不同点：确定出题点（名词，形容词，特殊含义词，否定，数字）   总原则：划词代表选项大致含义   定位原则开头原则 长对话前三个回合，新闻和短文的首三句  顺序原则 题文">
-<meta name="keywords" content="english">
+<meta name="description" content="合并两个有序数组描述给定两个有序整数数组 nums1 和 nums2*，将 *nums2 合并到 nums1 中，使得 num1 成为一个有序数组。 说明初始化 nums1 和 nums2 的元素数量分别为 m 和 n。你可以假设 nums1 有足够的空间（空间大小大于或等于 m + n）来保存 nums2 中的元素。 示例: 输入:nums1 = [1,2,3,0,0,0], m = 3nums">
+<meta name="keywords" content="esay">
 <meta property="og:type" content="article">
-<meta property="og:title" content="英语四级——听力">
-<meta property="og:url" content="https://liyafei.top/2596708142">
+<meta property="og:title" content="算法小练——合并两个有序数组">
+<meta property="og:url" content="https://liyafei.top/752714563">
 <meta property="og:site_name" content="李亚飞的博客">
-<meta property="og:description" content="英语四级听力视听一致 不是简单的听到什么选什么，而是把更多的单词和短语被读到的选项或吻合程度更高的选项选出来  如何看选项 看相同与不同  竖读选项，看相同点：确定定位词 a.人称相同 b.相同实词 c.结构相同   横读选项，看不同点：确定出题点（名词，形容词，特殊含义词，否定，数字）   总原则：划词代表选项大致含义   定位原则开头原则 长对话前三个回合，新闻和短文的首三句  顺序原则 题文">
+<meta property="og:description" content="合并两个有序数组描述给定两个有序整数数组 nums1 和 nums2*，将 *nums2 合并到 nums1 中，使得 num1 成为一个有序数组。 说明初始化 nums1 和 nums2 的元素数量分别为 m 和 n。你可以假设 nums1 有足够的空间（空间大小大于或等于 m + n）来保存 nums2 中的元素。 示例: 输入:nums1 = [1,2,3,0,0,0], m = 3nums">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-10T14:32:47.051Z">
+<meta property="og:updated_time" content="2019-11-12T13:16:45.232Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="英语四级——听力">
-<meta name="twitter:description" content="英语四级听力视听一致 不是简单的听到什么选什么，而是把更多的单词和短语被读到的选项或吻合程度更高的选项选出来  如何看选项 看相同与不同  竖读选项，看相同点：确定定位词 a.人称相同 b.相同实词 c.结构相同   横读选项，看不同点：确定出题点（名词，形容词，特殊含义词，否定，数字）   总原则：划词代表选项大致含义   定位原则开头原则 长对话前三个回合，新闻和短文的首三句  顺序原则 题文">
+<meta name="twitter:title" content="算法小练——合并两个有序数组">
+<meta name="twitter:description" content="合并两个有序数组描述给定两个有序整数数组 nums1 和 nums2*，将 *nums2 合并到 nums1 中，使得 num1 成为一个有序数组。 说明初始化 nums1 和 nums2 的元素数量分别为 m 和 n。你可以假设 nums1 有足够的空间（空间大小大于或等于 m + n）来保存 nums2 中的元素。 示例: 输入:nums1 = [1,2,3,0,0,0], m = 3nums">
 
 
 
@@ -146,13 +146,13 @@
 
 
 
-  <link rel="canonical" href="https://liyafei.top/2596708142">
+  <link rel="canonical" href="https://liyafei.top/752714563">
 
 
 
 
 
-  <title>英语四级——听力 | 李亚飞的博客</title>
+  <title>算法小练——合并两个有序数组 | 李亚飞的博客</title>
   
 
 
@@ -299,7 +299,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://liyafei.top/2596708142">
+    <link itemprop="mainEntityOfPage" href="https://liyafei.top/752714563">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Leeyf">
@@ -316,7 +316,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">英语四级——听力</h1>
+          <h1 class="post-title" itemprop="name headline">算法小练——合并两个有序数组</h1>
         
 
         <div class="post-meta">
@@ -328,8 +328,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-10T22:31:36+08:00">
-                2019-10-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-12T20:33:39+08:00">
+                2019-11-12
               </time>
             
 
@@ -351,8 +351,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/English/" itemprop="url" rel="index">
-                    <span itemprop="name">English</span>
+                  <a href="/categories/Algorithms/" itemprop="url" rel="index">
+                    <span itemprop="name">Algorithms</span>
                   </a>
                 </span>
 
@@ -382,7 +382,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  198字
+                  224字
                 </span>
               
 
@@ -419,39 +419,13 @@
       
 
       
-        <h1 id="英语四级"><a href="#英语四级" class="headerlink" title="英语四级"></a>英语四级</h1><h2 id="听力"><a href="#听力" class="headerlink" title="听力"></a>听力</h2><h3 id="视听一致"><a href="#视听一致" class="headerlink" title="视听一致"></a>视听一致</h3><ul>
-<li>不是简单的听到什么选什么，而是把<strong>更多的单词和短语被读到的选项</strong>或吻合程度更高的选项选出来</li>
-</ul>
-<h3 id="如何看选项"><a href="#如何看选项" class="headerlink" title="如何看选项"></a>如何看选项</h3><ul>
-<li><p>看相同与不同</p>
-<ul>
-<li>竖读选项，看相同点：确定定位词<ul>
-<li>a.人称相同</li>
-<li>b.相同实词</li>
-<li>c.结构相同</li>
-</ul>
-</li>
-<li>横读选项，看不同点：确定出题点（名词，形容词，特殊含义词，否定，数字）</li>
-</ul>
-</li>
-<li><p>总原则：划词代表选项大致含义</p>
-</li>
-</ul>
-<h3 id="定位原则"><a href="#定位原则" class="headerlink" title="定位原则"></a>定位原则</h3><h4 id="开头原则"><a href="#开头原则" class="headerlink" title="开头原则"></a>开头原则</h4><ul>
-<li>长对话前三个回合，新闻和短文的首三句</li>
-</ul>
-<h4 id="顺序原则"><a href="#顺序原则" class="headerlink" title="顺序原则"></a>顺序原则</h4><ul>
-<li>题文同序</li>
-</ul>
-<h4 id="选项词提示"><a href="#选项词提示" class="headerlink" title="选项词提示"></a>选项词提示</h4><p>生词：</p>
-<p>nutrition 营养</p>
-<p>candidates 候选人</p>
-<p>overestimate 高估</p>
-<p>conception 概念</p>
-<p>criteria 标准</p>
-<p>overemphasis 过度强调</p>
-<p>illustrate 说明</p>
-<p>demonstrate 展示</p>
+        <h1 id="合并两个有序数组"><a href="#合并两个有序数组" class="headerlink" title="合并两个有序数组"></a><a href="https://leetcode-cn.com/problems/merge-sorted-array/" target="_blank" rel="noopener">合并两个有序数组</a></h1><h3 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h3><p>给定两个有序整数数组 <em>nums1</em> 和 <em>nums2*，将 *nums2</em> 合并到 <em>nums1</em> 中<em>，</em>使得 <em>num1</em> 成为一个有序数组。</p>
+<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>初始化 nums1 和 nums2 的元素数量分别为 m 和 n。<br>你可以假设 nums1 有足够的空间（空间大小大于或等于 m + n）来保存 nums2 中的元素。</p>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例:"></a>示例:</h3><blockquote>
+<p>输入:<br>nums1 = [1,2,3,0,0,0], m = 3<br>nums2 = [2,5,6],       n = 3<br>输出: [1,2,2,3,5,6]</p>
+</blockquote>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">merge</span><span class="params">(<span class="keyword">int</span>[] nums1, <span class="keyword">int</span> m, <span class="keyword">int</span>[] nums2, <span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> q=m-<span class="number">1</span>,p=n-<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> k = p+q-<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span>(q&lt;<span class="number">0</span>)&#123;</span><br><span class="line">            q=<span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums1.length; i++) &#123;</span><br><span class="line">           <span class="keyword">if</span>(p&lt;<span class="number">0</span> || q&lt;<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(nums1[q]&gt;=nums2[p])&#123;</span><br><span class="line">                nums1[nums1.length-i-<span class="number">1</span>] = nums1[q];</span><br><span class="line">                q--;</span><br><span class="line">            &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                nums1[nums1.length-i-<span class="number">1</span>] = nums2[p];</span><br><span class="line">                p--;</span><br><span class="line">            &#125;</span><br><span class="line">            k--;</span><br><span class="line">            <span class="keyword">if</span>(p&lt;<span class="number">0</span>)&#123;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//将未改变</span></span><br><span class="line">        System.arraycopy(nums2, <span class="number">0</span>, nums1, <span class="number">0</span>, p+<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 
       
     </div>
@@ -516,7 +490,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/english/" rel="tag"># english</a>
+            <a href="/tags/esay/" rel="tag"># esay</a>
           
         </div>
       
@@ -529,8 +503,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/1908805843" rel="next" title="单链表">
-                <i class="fa fa-chevron-left"></i> 单链表
+              <a href="/65557854" rel="next" title="算法小练——删除排序链表中的重复元素">
+                <i class="fa fa-chevron-left"></i> 算法小练——删除排序链表中的重复元素
               </a>
             
           </div>
@@ -538,10 +512,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/3119202597" rel="prev" title="Elasticsearch回顾">
-                Elasticsearch回顾 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -696,7 +666,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#英语四级"><span class="nav-number">1.</span> <span class="nav-text">英语四级</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#听力"><span class="nav-number">1.1.</span> <span class="nav-text">听力</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#视听一致"><span class="nav-number">1.1.1.</span> <span class="nav-text">视听一致</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何看选项"><span class="nav-number">1.1.2.</span> <span class="nav-text">如何看选项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定位原则"><span class="nav-number">1.1.3.</span> <span class="nav-text">定位原则</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#开头原则"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">开头原则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#顺序原则"><span class="nav-number">1.1.3.2.</span> <span class="nav-text">顺序原则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#选项词提示"><span class="nav-number">1.1.3.3.</span> <span class="nav-text">选项词提示</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#合并两个有序数组"><span class="nav-number">1.</span> <span class="nav-text">合并两个有序数组</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述"><span class="nav-number">1.0.1.</span> <span class="nav-text">描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说明"><span class="nav-number">1.0.2.</span> <span class="nav-text">说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#示例"><span class="nav-number">1.0.3.</span> <span class="nav-text">示例:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码"><span class="nav-number">1.0.4.</span> <span class="nav-text">代码</span></a></li></ol></li></ol></div>
             
 
           </div>
