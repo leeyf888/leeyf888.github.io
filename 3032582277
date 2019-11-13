@@ -114,7 +114,7 @@
 <meta property="og:description" content="杨辉三角描述给定一个非负整数 numRows，*生成杨辉三角的前 *numRows 行。   在杨辉三角中，每个数是它左上方和右上方的数的和。 示例123456789输入: 5输出:[     [1],    [1,1],   [1,2,1],  [1,3,3,1], [1,4,6,4,1]]  代码1234567891011121314151617181920212223242526272829">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif">
-<meta property="og:updated_time" content="2019-11-13T10:12:42.911Z">
+<meta property="og:updated_time" content="2019-11-13T12:18:45.452Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法小练——杨辉三角">
 <meta name="twitter:description" content="杨辉三角描述给定一个非负整数 numRows，*生成杨辉三角的前 *numRows 行。   在杨辉三角中，每个数是它左上方和右上方的数的和。 示例123456789输入: 5输出:[     [1],    [1,1],   [1,2,1],  [1,3,3,1], [1,4,6,4,1]]  代码1234567891011121314151617181920212223242526272829">
@@ -506,8 +506,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/752714563" rel="next" title="算法小练——合并两个有序数组">
-                <i class="fa fa-chevron-left"></i> 算法小练——合并两个有序数组
+              <a href="/3168603061" rel="next" title="算法小练——相同的树">
+                <i class="fa fa-chevron-left"></i> 算法小练——相同的树
               </a>
             
           </div>
@@ -598,7 +598,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">47</span>
+                  <span class="site-state-item-count">48</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -703,7 +703,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">26.4k</span>
+    <span title="Site words total count">26.6k</span>
   
 </div>
 
