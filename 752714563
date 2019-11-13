@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="李亚飞的博客">
 <meta property="og:description" content="合并两个有序数组描述给定两个有序整数数组 nums1 和 nums2*，将 *nums2 合并到 nums1 中，使得 num1 成为一个有序数组。 说明初始化 nums1 和 nums2 的元素数量分别为 m 和 n。你可以假设 nums1 有足够的空间（空间大小大于或等于 m + n）来保存 nums2 中的元素。 示例: 输入:nums1 = [1,2,3,0,0,0], m = 3nums">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-12T13:16:45.232Z">
+<meta property="og:updated_time" content="2019-11-12T13:16:57.444Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法小练——合并两个有序数组">
 <meta name="twitter:description" content="合并两个有序数组描述给定两个有序整数数组 nums1 和 nums2*，将 *nums2 合并到 nums1 中，使得 num1 成为一个有序数组。 说明初始化 nums1 和 nums2 的元素数量分别为 m 和 n。你可以假设 nums1 有足够的空间（空间大小大于或等于 m + n）来保存 nums2 中的元素。 示例: 输入:nums1 = [1,2,3,0,0,0], m = 3nums">
@@ -513,6 +513,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/3032582277" rel="prev" title="算法小练——杨辉三角">
+                算法小练——杨辉三角 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -595,7 +599,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">46</span>
+                  <span class="site-state-item-count">47</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -617,7 +621,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -700,7 +704,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">26.2k</span>
+    <span title="Site words total count">26.4k</span>
   
 </div>
 

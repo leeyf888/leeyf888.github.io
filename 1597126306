@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="李亚飞的博客">
 <meta property="og:description" content="常用的使用指令 导出整个数据库(包括整个数据库中的数据)  mysqldump -u username -p **dbname** &amp;gt; dbname.sql      导出数据库的结构（不含数据）  mysqldump -u username -p **-d** **dbname** &amp;gt; dbname.sql   导出数据库的某个表（包含数据）  mysqldump -u userna">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-28T09:01:12.674Z">
+<meta property="og:updated_time" content="2019-11-13T10:11:02.866Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mysqldump的使用——备份与恢复">
 <meta name="twitter:description" content="常用的使用指令 导出整个数据库(包括整个数据库中的数据)  mysqldump -u username -p **dbname** &amp;gt; dbname.sql      导出数据库的结构（不含数据）  mysqldump -u username -p **-d** **dbname** &amp;gt; dbname.sql   导出数据库的某个表（包含数据）  mysqldump -u userna">
@@ -624,7 +624,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">46</span>
+                  <span class="site-state-item-count">47</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -646,7 +646,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -729,7 +729,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">26.2k</span>
+    <span title="Site words total count">26.4k</span>
   
 </div>
 
