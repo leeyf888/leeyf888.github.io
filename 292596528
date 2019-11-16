@@ -105,19 +105,19 @@
 
 
 
-<meta name="description" content="杨辉三角 II描述给定一个非负索引 k，其中 k ≤ 33，返回杨辉三角的第 k 行。   在杨辉三角中，每个数是它左上方和右上方的数的和。 示例:12输入: 3输出: [1,3,3,1]  进阶：你可以优化你的算法到 O(k) 空间复杂度吗？ 笔记 递归算法，实现的">
+<meta name="description" content="杨辉三角 II描述给定一个非负索引 k，其中 k ≤ 33，返回杨辉三角的第 k 行。   在杨辉三角中，每个数是它左上方和右上方的数的和。 示例:12输入: 3输出: [1,3,3,1]  进阶：你可以优化你的算法到 O(k) 空间复杂度吗？ 代码1234567891011121314151617181920212223class Solution &amp;#123;    public List&amp;l">
 <meta name="keywords" content="easy">
 <meta property="og:type" content="article">
 <meta property="og:title" content="算法小练——杨辉三角 II">
 <meta property="og:url" content="https://liyafei.top/292596528">
 <meta property="og:site_name" content="李亚飞的博客">
-<meta property="og:description" content="杨辉三角 II描述给定一个非负索引 k，其中 k ≤ 33，返回杨辉三角的第 k 行。   在杨辉三角中，每个数是它左上方和右上方的数的和。 示例:12输入: 3输出: [1,3,3,1]  进阶：你可以优化你的算法到 O(k) 空间复杂度吗？ 笔记 递归算法，实现的">
+<meta property="og:description" content="杨辉三角 II描述给定一个非负索引 k，其中 k ≤ 33，返回杨辉三角的第 k 行。   在杨辉三角中，每个数是它左上方和右上方的数的和。 示例:12输入: 3输出: [1,3,3,1]  进阶：你可以优化你的算法到 O(k) 空间复杂度吗？ 代码1234567891011121314151617181920212223class Solution &amp;#123;    public List&amp;l">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif">
-<meta property="og:updated_time" content="2019-11-14T10:41:51.235Z">
+<meta property="og:updated_time" content="2019-11-15T04:20:38.496Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法小练——杨辉三角 II">
-<meta name="twitter:description" content="杨辉三角 II描述给定一个非负索引 k，其中 k ≤ 33，返回杨辉三角的第 k 行。   在杨辉三角中，每个数是它左上方和右上方的数的和。 示例:12输入: 3输出: [1,3,3,1]  进阶：你可以优化你的算法到 O(k) 空间复杂度吗？ 笔记 递归算法，实现的">
+<meta name="twitter:description" content="杨辉三角 II描述给定一个非负索引 k，其中 k ≤ 33，返回杨辉三角的第 k 行。   在杨辉三角中，每个数是它左上方和右上方的数的和。 示例:12输入: 3输出: [1,3,3,1]  进阶：你可以优化你的算法到 O(k) 空间复杂度吗？ 代码1234567891011121314151617181920212223class Solution &amp;#123;    public List&amp;l">
 <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif">
 
 
@@ -384,7 +384,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  93字
+                  185字
                 </span>
               
 
@@ -428,6 +428,8 @@
 <h3 id="示例"><a href="#示例" class="headerlink" title="示例:"></a><strong>示例:</strong></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: 3</span><br><span class="line">输出: [1,3,3,1]</span><br></pre></td></tr></table></figure>
 
 <h3 id="进阶："><a href="#进阶：" class="headerlink" title="进阶："></a><strong>进阶：</strong></h3><p>你可以优化你的算法到 <em>O</em>(<em>k</em>) 空间复杂度吗？</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;Integer&gt; <span class="title">getRow</span><span class="params">(<span class="keyword">int</span> rowIndex)</span> </span>&#123;</span><br><span class="line">       </span><br><span class="line">        List&lt;Integer&gt; ans = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        <span class="keyword">if</span>(rowIndex==<span class="number">0</span>)&#123;</span><br><span class="line">            ans.add(<span class="number">1</span>);</span><br><span class="line">            <span class="keyword">return</span> ans;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(rowIndex&gt;=<span class="number">1</span>)&#123;</span><br><span class="line">            <span class="keyword">int</span> time =rowIndex;</span><br><span class="line">            List&lt;Integer&gt; alist =getRow(--rowIndex);</span><br><span class="line">            List&lt;Integer&gt; blist = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">            blist.add(<span class="number">1</span>);</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; time; i++) &#123;</span><br><span class="line">                blist.add(alist.get(i-<span class="number">1</span>)+alist.get(i));</span><br><span class="line">            &#125;</span><br><span class="line">            blist.add(<span class="number">1</span>);</span><br><span class="line">            <span class="keyword">return</span> blist;</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> ans;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <h3 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h3><blockquote>
 <p>递归算法，实现的</p>
 </blockquote>
@@ -518,6 +520,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2692321336" rel="prev" title="算法小练——买卖股票的最佳时机">
+                算法小练——买卖股票的最佳时机 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -600,7 +606,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">49</span>
+                  <span class="site-state-item-count">53</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -622,7 +628,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -671,7 +677,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#杨辉三角-II"><span class="nav-number">1.</span> <span class="nav-text">杨辉三角 II</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述"><span class="nav-number">1.0.1.</span> <span class="nav-text">描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#示例"><span class="nav-number">1.0.2.</span> <span class="nav-text">示例:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进阶："><span class="nav-number">1.0.3.</span> <span class="nav-text">进阶：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#笔记"><span class="nav-number">1.0.4.</span> <span class="nav-text">笔记</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#杨辉三角-II"><span class="nav-number">1.</span> <span class="nav-text">杨辉三角 II</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述"><span class="nav-number">1.0.1.</span> <span class="nav-text">描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#示例"><span class="nav-number">1.0.2.</span> <span class="nav-text">示例:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进阶："><span class="nav-number">1.0.3.</span> <span class="nav-text">进阶：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码"><span class="nav-number">1.0.4.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#笔记"><span class="nav-number">1.0.5.</span> <span class="nav-text">笔记</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -705,7 +711,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">26.7k</span>
+    <span title="Site words total count">28.8k</span>
   
 </div>
 
