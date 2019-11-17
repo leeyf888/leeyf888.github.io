@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="李亚飞的博客">
 <meta property="og:description" content="验证回文串描述给定一个字符串，验证它是否是回文串，只考虑字母和数字字符，可以忽略字母的大小写。 说明：本题中，我们将空字符串定义为有效的回文串。示例示例 1: 输入: “A man, a plan, a canal: Panama”输出: true  示例 2: 输入: “race a car”输出: false  代码123456789101112131415161718192021222324">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-16T14:46:07.234Z">
+<meta property="og:updated_time" content="2019-11-16T16:51:29.562Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法小练——验证回文串">
 <meta name="twitter:description" content="验证回文串描述给定一个字符串，验证它是否是回文串，只考虑字母和数字字符，可以忽略字母的大小写。 说明：本题中，我们将空字符串定义为有效的回文串。示例示例 1: 输入: “A man, a plan, a canal: Panama”输出: true  示例 2: 输入: “race a car”输出: false  代码123456789101112131415161718192021222324">
@@ -515,6 +515,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/4228242509" rel="prev" title="算法小练——只出现一次的数字验证回文串">
+                算法小练——只出现一次的数字验证回文串 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -597,7 +601,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">53</span>
+                  <span class="site-state-item-count">54</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -702,7 +706,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">28.8k</span>
+    <span title="Site words total count">29k</span>
   
 </div>
 
