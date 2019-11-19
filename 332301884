@@ -105,18 +105,18 @@
 
 
 
-<meta name="description" content="栈的定义栈只允许访问一个数据项：即最后插入的数据。移除这个数据项后才能访问倒数第二个插入的数据项。它是一种“后进先出”的数据结构。 栈最基本的操作是出栈（Pop）、入栈（Push），还有其他扩展操作，如查看栈顶元素，判断栈是否为空、是否已满，读取栈的大小等 下面我们就用数组来写一个栈操作的封装类 123456789101112131415161718192021222324252627282930">
+<meta name="description" content="栈的定义栈只允许访问一个数据项：即最后插入的数据。移除这个数据项后才能访问倒数第二个插入的数据项。它是一种“后进先出”的数据结构。 栈最基本的操作是出栈（Pop）、入栈（Push），还有其他扩展操作，如查看栈顶元素，判断栈是否为空、是否已满，读取栈的大小等 栈的实现下面我们就用数组来写一个栈操作的封装类 12345678910111213141516171819202122232425262728">
 <meta name="keywords" content="数据结构">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据结构——栈的使用">
 <meta property="og:url" content="https://liyafei.top/332301884">
 <meta property="og:site_name" content="李亚飞的博客">
-<meta property="og:description" content="栈的定义栈只允许访问一个数据项：即最后插入的数据。移除这个数据项后才能访问倒数第二个插入的数据项。它是一种“后进先出”的数据结构。 栈最基本的操作是出栈（Pop）、入栈（Push），还有其他扩展操作，如查看栈顶元素，判断栈是否为空、是否已满，读取栈的大小等 下面我们就用数组来写一个栈操作的封装类 123456789101112131415161718192021222324252627282930">
+<meta property="og:description" content="栈的定义栈只允许访问一个数据项：即最后插入的数据。移除这个数据项后才能访问倒数第二个插入的数据项。它是一种“后进先出”的数据结构。 栈最基本的操作是出栈（Pop）、入栈（Push），还有其他扩展操作，如查看栈顶元素，判断栈是否为空、是否已满，读取栈的大小等 栈的实现下面我们就用数组来写一个栈操作的封装类 12345678910111213141516171819202122232425262728">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-06T11:14:13.412Z">
+<meta property="og:updated_time" content="2019-11-17T13:17:50.140Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据结构——栈的使用">
-<meta name="twitter:description" content="栈的定义栈只允许访问一个数据项：即最后插入的数据。移除这个数据项后才能访问倒数第二个插入的数据项。它是一种“后进先出”的数据结构。 栈最基本的操作是出栈（Pop）、入栈（Push），还有其他扩展操作，如查看栈顶元素，判断栈是否为空、是否已满，读取栈的大小等 下面我们就用数组来写一个栈操作的封装类 123456789101112131415161718192021222324252627282930">
+<meta name="twitter:description" content="栈的定义栈只允许访问一个数据项：即最后插入的数据。移除这个数据项后才能访问倒数第二个插入的数据项。它是一种“后进先出”的数据结构。 栈最基本的操作是出栈（Pop）、入栈（Push），还有其他扩展操作，如查看栈顶元素，判断栈是否为空、是否已满，读取栈的大小等 栈的实现下面我们就用数组来写一个栈操作的封装类 12345678910111213141516171819202122232425262728">
 
 
 
@@ -382,7 +382,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  244字
+                  267字
                 </span>
               
 
@@ -421,10 +421,11 @@
       
         <h2 id="栈的定义"><a href="#栈的定义" class="headerlink" title="栈的定义"></a>栈的定义</h2><p>栈只允许访问一个数据项：即最后插入的数据。移除这个数据项后才能访问倒数第二个插入的数据项。它是一种“后进先出”的数据结构。</p>
 <p>栈最基本的操作是出栈（Pop）、入栈（Push），还有其他扩展操作，如查看栈顶元素，判断栈是否为空、是否已满，读取栈的大小等</p>
-<p>下面我们就用数组来写一个栈操作的封装类</p>
+<h3 id="栈的实现"><a href="#栈的实现" class="headerlink" title="栈的实现"></a>栈的实现</h3><p>下面我们就用数组来写一个栈操作的封装类</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.leeyf.stack;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 初始化一个栈</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Stack</span>&lt;<span class="title">T</span>&gt; </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> size; <span class="comment">//栈的大小</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> top; <span class="comment">//栈顶下标</span></span><br><span class="line">    <span class="keyword">private</span> Object[] stackArray;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//构造函数</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Stack</span><span class="params">(<span class="keyword">int</span> size)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.size = size;</span><br><span class="line">        <span class="keyword">this</span>.top = -<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">this</span>.stackArray = <span class="keyword">new</span> Object[size];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//入栈，同时，栈顶元素下标加一</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">push</span><span class="params">(T elem)</span></span>&#123;</span><br><span class="line">        stackArray[++top] = elem;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//出栈，删除栈顶元素，下标减一</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">pop</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> stackArray[top--];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//判断为空</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isEmpty</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> (top==-<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isFull</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> (top == size-<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-
+<h3 id="栈的应用"><a href="#栈的应用" class="headerlink" title="栈的应用"></a>栈的应用</h3><h4 id="平衡字符"><a href="#平衡字符" class="headerlink" title="平衡字符"></a>平衡字符</h4><p><a href="https://liyafei.top/3705571124">平衡字符详解</a></p>
+<h3 id="后缀表达式"><a href="#后缀表达式" class="headerlink" title="后缀表达式"></a>后缀表达式</h3>
       
     </div>
     
@@ -597,7 +598,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">54</span>
+                  <span class="site-state-item-count">59</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -608,7 +609,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -668,7 +669,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#栈的定义"><span class="nav-number">1.</span> <span class="nav-text">栈的定义</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#栈的定义"><span class="nav-number">1.</span> <span class="nav-text">栈的定义</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#栈的实现"><span class="nav-number">1.1.</span> <span class="nav-text">栈的实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#栈的应用"><span class="nav-number">1.2.</span> <span class="nav-text">栈的应用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#平衡字符"><span class="nav-number">1.2.1.</span> <span class="nav-text">平衡字符</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#后缀表达式"><span class="nav-number">1.3.</span> <span class="nav-text">后缀表达式</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -702,7 +703,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">29k</span>
+    <span title="Site words total count">31.5k</span>
   
 </div>
 

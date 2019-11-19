@@ -94,7 +94,7 @@
 
 
 
-  <meta name="keywords" content="linux,">
+  <meta name="keywords" content="JAVA,Linux,程序,李亚飞,技术,博客">
 
 
 
@@ -105,18 +105,18 @@
 
 
 
-<meta name="description" content="安装下载最新版的frp github安装地址 内网配置(通俗讲本地)修改frp.ini文件 1234567891011121314151617181920[common]server_addr = 127.0.0.1  //服务器地址server_port = 7000   //服务器端监听frps端口[ssh]type = tcplocal_ip = 127.0.0.1  //本地iplocal">
-<meta name="keywords" content="linux">
+<meta name="description" content="自动化测试什么是自动化测试 通过测试工具来执行测试用例，完成测试工作。  自动化测试与测试自动化   自动化测试 测试自动化    焦点集中在测试执行，主要由测试工具自动地完成测试 一切由计算机系统自动完成的测试任务都已经由计算机系统或软件工具、程序来承担并自动执行   自动化测试的特点 运行速度快 测试结果准确 高复用性 永不疲惫 可靠 能力  自动化测试的好处 测试周期短 更高质量的产品 软件">
+<meta name="keywords" content="java,linux,数据结构,算法,云顶书院">
 <meta property="og:type" content="article">
-<meta property="og:title" content="frp内网穿透">
-<meta property="og:url" content="https://liyafei.top/3228035043">
+<meta property="og:title" content="软件测试_自动化测试">
+<meta property="og:url" content="https://liyafei.top/2476721513">
 <meta property="og:site_name" content="李亚飞的博客">
-<meta property="og:description" content="安装下载最新版的frp github安装地址 内网配置(通俗讲本地)修改frp.ini文件 1234567891011121314151617181920[common]server_addr = 127.0.0.1  //服务器地址server_port = 7000   //服务器端监听frps端口[ssh]type = tcplocal_ip = 127.0.0.1  //本地iplocal">
+<meta property="og:description" content="自动化测试什么是自动化测试 通过测试工具来执行测试用例，完成测试工作。  自动化测试与测试自动化   自动化测试 测试自动化    焦点集中在测试执行，主要由测试工具自动地完成测试 一切由计算机系统自动完成的测试任务都已经由计算机系统或软件工具、程序来承担并自动执行   自动化测试的特点 运行速度快 测试结果准确 高复用性 永不疲惫 可靠 能力  自动化测试的好处 测试周期短 更高质量的产品 软件">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-25T12:22:05.690Z">
+<meta property="og:updated_time" content="2019-11-19T07:18:45.685Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="frp内网穿透">
-<meta name="twitter:description" content="安装下载最新版的frp github安装地址 内网配置(通俗讲本地)修改frp.ini文件 1234567891011121314151617181920[common]server_addr = 127.0.0.1  //服务器地址server_port = 7000   //服务器端监听frps端口[ssh]type = tcplocal_ip = 127.0.0.1  //本地iplocal">
+<meta name="twitter:title" content="软件测试_自动化测试">
+<meta name="twitter:description" content="自动化测试什么是自动化测试 通过测试工具来执行测试用例，完成测试工作。  自动化测试与测试自动化   自动化测试 测试自动化    焦点集中在测试执行，主要由测试工具自动地完成测试 一切由计算机系统自动完成的测试任务都已经由计算机系统或软件工具、程序来承担并自动执行   自动化测试的特点 运行速度快 测试结果准确 高复用性 永不疲惫 可靠 能力  自动化测试的好处 测试周期短 更高质量的产品 软件">
 
 
 
@@ -146,13 +146,13 @@
 
 
 
-  <link rel="canonical" href="https://liyafei.top/3228035043">
+  <link rel="canonical" href="https://liyafei.top/2476721513">
 
 
 
 
 
-  <title>frp内网穿透 | 李亚飞的博客</title>
+  <title>软件测试_自动化测试 | 李亚飞的博客</title>
   
 
 
@@ -299,7 +299,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://liyafei.top/3228035043">
+    <link itemprop="mainEntityOfPage" href="https://liyafei.top/2476721513">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Leeyf">
@@ -316,7 +316,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">frp内网穿透</h1>
+          <h1 class="post-title" itemprop="name headline">软件测试_自动化测试</h1>
         
 
         <div class="post-meta">
@@ -328,8 +328,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-24T21:45:39+08:00">
-                2019-10-24
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-19T15:18:25+08:00">
+                2019-11-19
               </time>
             
 
@@ -351,8 +351,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/linux/" itemprop="url" rel="index">
-                    <span itemprop="name">linux</span>
+                  <a href="/categories/软件测试/" itemprop="url" rel="index">
+                    <span itemprop="name">软件测试</span>
                   </a>
                 </span>
 
@@ -382,7 +382,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  132字
+                  574字
                 </span>
               
 
@@ -398,7 +398,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1分钟
+                  2分钟
                 </span>
               
             </div>
@@ -419,16 +419,114 @@
       
 
       
-        <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>下载最新版的frp</p>
-<p><a href="https://github.com/fatedier/frp/releases" target="_blank" rel="noopener">github安装地址</a></p>
-<h2 id="内网配置-通俗讲本地"><a href="#内网配置-通俗讲本地" class="headerlink" title="内网配置(通俗讲本地)"></a>内网配置(通俗讲本地)</h2><p>修改frp.ini文件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">[common]</span><br><span class="line">server_addr = 127.0.0.1  //服务器地址</span><br><span class="line">server_port = 7000   //服务器端监听frps端口</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[ssh]</span><br><span class="line"><span class="built_in">type</span> = tcp</span><br><span class="line">local_ip = 127.0.0.1  //本地ip</span><br><span class="line">local_port = 22  //本地端口</span><br><span class="line">remote_port = 6000 // 转发端口</span><br><span class="line">[common]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[web]</span><br><span class="line"><span class="built_in">type</span> = http</span><br><span class="line">local_port =8081</span><br><span class="line">custom_domains = www.yundingshuyuan.com</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">~</span><br></pre></td></tr></table></figure>
+        <h2 id="自动化测试"><a href="#自动化测试" class="headerlink" title="自动化测试"></a>自动化测试</h2><h3 id="什么是自动化测试"><a href="#什么是自动化测试" class="headerlink" title="什么是自动化测试"></a>什么是自动化测试</h3><ul>
+<li>通过测试工具来执行测试用例，完成测试工作。</li>
+</ul>
+<h3 id="自动化测试与测试自动化"><a href="#自动化测试与测试自动化" class="headerlink" title="自动化测试与测试自动化"></a>自动化测试与测试自动化</h3><table>
+<thead>
+<tr>
+<th>自动化测试</th>
+<th>测试自动化</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>焦点集中在测试执行，主要由测试工具自动地完成测试</td>
+<td>一切由计算机系统自动完成的测试任务都已经由计算机系统或软件工具、程序来承担并自动执行</td>
+</tr>
+</tbody></table>
+<h3 id="自动化测试的特点"><a href="#自动化测试的特点" class="headerlink" title="自动化测试的特点"></a>自动化测试的特点</h3><ol>
+<li>运行速度快</li>
+<li>测试结果准确</li>
+<li>高复用性</li>
+<li>永不疲惫</li>
+<li>可靠</li>
+<li>能力</li>
+</ol>
+<h3 id="自动化测试的好处"><a href="#自动化测试的好处" class="headerlink" title="自动化测试的好处"></a>自动化测试的好处</h3><ol>
+<li>测试周期短</li>
+<li>更高质量的产品</li>
+<li>软件过程更规范</li>
+<li>高昂的团队士气</li>
+<li>节省人力资源、降低成本</li>
+<li>充分利用硬件资源，降低成本</li>
+</ol>
+<h3 id="手动测试VS自动测试"><a href="#手动测试VS自动测试" class="headerlink" title="手动测试VS自动测试"></a>手动测试VS自动测试</h3><table>
+<thead>
+<tr>
+<th>手动测试</th>
+<th>自动测试</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>发现缺陷率高</td>
+<td>高效率</td>
+</tr>
+<tr>
+<td>容易实施</td>
+<td>高复用性</td>
+</tr>
+<tr>
+<td>创造性、灵活性</td>
+<td>覆盖率容易度量</td>
+</tr>
+<tr>
+<td><strong>覆盖率量化困难</strong></td>
+<td>准确、可靠</td>
+</tr>
+<tr>
+<td><strong>重复测试效率低</strong></td>
+<td>激励团队士气</td>
+</tr>
+<tr>
+<td><strong>不一致性、可靠性低</strong></td>
+<td>不知疲劳</td>
+</tr>
+<tr>
+<td>依赖人力资源****</td>
+<td><strong>机械、难以发现缺陷</strong></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>一次性投入大</strong></td>
+</tr>
+</tbody></table>
+<h3 id="自动化测试原理"><a href="#自动化测试原理" class="headerlink" title="自动化测试原理"></a>自动化测试原理</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">	subgraph one</span><br><span class="line">	启动应用</span><br><span class="line">	end</span><br><span class="line">    subgraph two</span><br><span class="line">    启动应用 -.-&gt; 创建脚本</span><br><span class="line">    创建脚本 --&gt; 录制对象及操作</span><br><span class="line">    录制对象及操作 --&gt; 插入验证点</span><br><span class="line">    插入验证点 --&gt; 调试脚本</span><br><span class="line">    end</span><br><span class="line">    subgraph three</span><br><span class="line">    调试脚本 --&gt; 保存脚本</span><br><span class="line">    end</span><br><span class="line">	subgraph four </span><br><span class="line">	调用脚本 -.-&gt;保存脚本</span><br><span class="line">	调用脚本 --&gt; 启动应用执行脚本</span><br><span class="line">	启动应用执行脚本 --&gt; 验证测试结果</span><br><span class="line">	验证测试结果 --&gt;记录执行log</span><br><span class="line">	end</span><br><span class="line">	subgraph five</span><br><span class="line">	记录执行log --&gt; 测试报告</span><br><span class="line">	end</span><br></pre></td></tr></table></figure>
 
-<p>启动命令<code>./frpc -c ./ frpc.ini</code></p>
-<h2 id="公网配置-通俗讲服务端"><a href="#公网配置-通俗讲服务端" class="headerlink" title="公网配置(通俗讲服务端)"></a>公网配置(通俗讲服务端)</h2><p>修改frps.ini </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># frps.ini</span></span><br><span class="line">[common]</span><br><span class="line">bind_port = 7000  //内网frp监听地址</span><br><span class="line">vhost_http_port = 8080  // 服务端访问地址</span><br></pre></td></tr></table></figure>
-
-<p>启动命令<code>./frps -c ./ frps.ini</code></p>
+<h3 id="测试工具的实现原理"><a href="#测试工具的实现原理" class="headerlink" title="测试工具的实现原理"></a>测试工具的实现原理</h3><ul>
+<li><p>代码扫描及分析</p>
+</li>
+<li><p>对象识别</p>
+</li>
+<li><p>捕获和回放(record&amp;playback)</p>
+</li>
+<li><p>脚本技术</p>
+</li>
+<li><p>自动结果比较</p>
+</li>
+</ul>
+<h3 id="测试工具的分类"><a href="#测试工具的分类" class="headerlink" title="测试工具的分类"></a>测试工具的分类</h3><ul>
+<li>根据测试方法分为<ul>
+<li>黑盒测试工具</li>
+<li>白盒测试工具</li>
+<li>静态测试工具</li>
+<li>动态测试工具</li>
+</ul>
+</li>
+<li>根据来源分为<ul>
+<li>开源</li>
+<li>商业</li>
+<li>自主开发</li>
+<li>第三方</li>
+</ul>
+</li>
+<li>根据对象和目的分为<ul>
+<li>单元测试工具</li>
+<li>功能测试工具</li>
+<li>性能测试工具</li>
+<li>测试管理工具</li>
+</ul>
+</li>
+</ul>
 
       
     </div>
@@ -491,12 +589,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/linux/" rel="tag"># linux</a>
-          
-        </div>
-      
 
       
       
@@ -506,8 +598,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2391132726" rel="next" title="OSS文件上传+进度条">
-                <i class="fa fa-chevron-left"></i> OSS文件上传+进度条
+              <a href="/2962004373" rel="next" title="软件测试_用例设计">
+                <i class="fa fa-chevron-left"></i> 软件测试_用例设计
               </a>
             
           </div>
@@ -515,10 +607,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/652256356" rel="prev" title="获取请求真实ip并找到中文地址">
-                获取请求真实ip并找到中文地址 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -673,7 +761,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内网配置-通俗讲本地"><span class="nav-number">2.</span> <span class="nav-text">内网配置(通俗讲本地)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#公网配置-通俗讲服务端"><span class="nav-number">3.</span> <span class="nav-text">公网配置(通俗讲服务端)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#自动化测试"><span class="nav-number">1.</span> <span class="nav-text">自动化测试</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是自动化测试"><span class="nav-number">1.1.</span> <span class="nav-text">什么是自动化测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自动化测试与测试自动化"><span class="nav-number">1.2.</span> <span class="nav-text">自动化测试与测试自动化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自动化测试的特点"><span class="nav-number">1.3.</span> <span class="nav-text">自动化测试的特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自动化测试的好处"><span class="nav-number">1.4.</span> <span class="nav-text">自动化测试的好处</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#手动测试VS自动测试"><span class="nav-number">1.5.</span> <span class="nav-text">手动测试VS自动测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自动化测试原理"><span class="nav-number">1.6.</span> <span class="nav-text">自动化测试原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试工具的实现原理"><span class="nav-number">1.7.</span> <span class="nav-text">测试工具的实现原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试工具的分类"><span class="nav-number">1.8.</span> <span class="nav-text">测试工具的分类</span></a></li></ol></li></ol></div>
             
 
           </div>

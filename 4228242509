@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="李亚飞的博客">
 <meta property="og:description" content="只出现一次的数字描述给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。 说明你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？ 示例示例 1:  输入: [2,2,1]输出: 1   示例 2: 输入: [4,1,2,1,2]输出: 4  代码123456789101112131415class Solution &amp;#123;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-17T11:54:45.226Z">
+<meta property="og:updated_time" content="2019-11-17T11:57:54.726Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法小练——只出现一次的数字验证回文串">
 <meta name="twitter:description" content="只出现一次的数字描述给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。 说明你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？ 示例示例 1:  输入: [2,2,1]输出: 1   示例 2: 输入: [4,1,2,1,2]输出: 4  代码123456789101112131415class Solution &amp;#123;">
@@ -519,6 +519,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2213989909" rel="prev" title="算法基础——排序算法">
+                算法基础——排序算法 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -601,7 +605,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">54</span>
+                  <span class="site-state-item-count">59</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -612,7 +616,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -706,7 +710,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">29k</span>
+    <span title="Site words total count">31.5k</span>
   
 </div>
 
