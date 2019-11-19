@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="李亚飞的博客">
 <meta property="og:description" content="自动化测试什么是自动化测试 通过测试工具来执行测试用例，完成测试工作。  自动化测试与测试自动化   自动化测试 测试自动化    焦点集中在测试执行，主要由测试工具自动地完成测试 一切由计算机系统自动完成的测试任务都已经由计算机系统或软件工具、程序来承担并自动执行   自动化测试的特点 运行速度快 测试结果准确 高复用性 永不疲惫 可靠 能力  自动化测试的好处 测试周期短 更高质量的产品 软件">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-19T07:18:45.685Z">
+<meta property="og:updated_time" content="2019-11-19T07:18:54.021Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="软件测试_自动化测试">
 <meta name="twitter:description" content="自动化测试什么是自动化测试 通过测试工具来执行测试用例，完成测试工作。  自动化测试与测试自动化   自动化测试 测试自动化    焦点集中在测试执行，主要由测试工具自动地完成测试 一切由计算机系统自动完成的测试任务都已经由计算机系统或软件工具、程序来承担并自动执行   自动化测试的特点 运行速度快 测试结果准确 高复用性 永不疲惫 可靠 能力  自动化测试的好处 测试周期短 更高质量的产品 软件">
@@ -608,6 +608,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/1481737516" rel="prev" title="算法小练——对称二叉树">
+                算法小练——对称二叉树 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -690,7 +694,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">59</span>
+                  <span class="site-state-item-count">61</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -712,7 +716,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -795,7 +799,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">31.5k</span>
+    <span title="Site words total count">32.4k</span>
   
 </div>
 
