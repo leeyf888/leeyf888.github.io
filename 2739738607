@@ -94,7 +94,7 @@
 
 
 
-  <meta name="keywords" content="esay,">
+  <meta name="keywords" content="easy,">
 
 
 
@@ -106,14 +106,14 @@
 
 
 <meta name="description" content="爬楼梯描述假设你正在爬楼梯。需要 n 阶你才能到达楼顶。 每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？ 注意：给定 n 是一个正整数。示例示例 1： 输入： 2输出： 2解释： 有两种方法可以爬到楼顶。  121.  1 阶 + 1 阶2.  2 阶  示例2： 输入： 3输出： 3解释： 有三种方法可以爬到楼顶。  1231.  1 阶 + 1 阶 + 1 阶2.  1">
-<meta name="keywords" content="esay">
+<meta name="keywords" content="easy">
 <meta property="og:type" content="article">
 <meta property="og:title" content="算法小练——爬楼梯">
 <meta property="og:url" content="https://liyafei.top/2739738607">
 <meta property="og:site_name" content="李亚飞的博客">
 <meta property="og:description" content="爬楼梯描述假设你正在爬楼梯。需要 n 阶你才能到达楼顶。 每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？ 注意：给定 n 是一个正整数。示例示例 1： 输入： 2输出： 2解释： 有两种方法可以爬到楼顶。  121.  1 阶 + 1 阶2.  2 阶  示例2： 输入： 3输出： 3解释： 有三种方法可以爬到楼顶。  1231.  1 阶 + 1 阶 + 1 阶2.  1">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-12T09:37:57.910Z">
+<meta property="og:updated_time" content="2019-11-24T12:13:49.057Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法小练——爬楼梯">
 <meta name="twitter:description" content="爬楼梯描述假设你正在爬楼梯。需要 n 阶你才能到达楼顶。 每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？ 注意：给定 n 是一个正整数。示例示例 1： 输入： 2输出： 2解释： 有两种方法可以爬到楼顶。  121.  1 阶 + 1 阶2.  2 阶  示例2： 输入： 3输出： 3解释： 有三种方法可以爬到楼顶。  1231.  1 阶 + 1 阶 + 1 阶2.  1">
@@ -498,7 +498,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/esay/" rel="tag"># esay</a>
+            <a href="/tags/easy/" rel="tag"># easy</a>
           
         </div>
       
@@ -607,7 +607,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">65</span>
+                  <span class="site-state-item-count">66</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -629,7 +629,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -712,7 +712,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">34.8k</span>
+    <span title="Site words total count">35.8k</span>
   
 </div>
 

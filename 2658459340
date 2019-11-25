@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon16x16.ico?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="JAVA,Linux,程序,李亚飞,技术,博客">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="单元测试和集成测试什么是单元测试 单元测试就是对已实现的软件最小单元进行测试，以保证构成软件的各个单元的质量。  单元测试的目的 单元实现其特定功能 单元的运行能够覆盖预先设定的各种逻辑 在单元工作过程中，其内部数据能够保持完整性。 可接收正确数据，也能处理非法数据 该单元的算法的合理性 单元代码经过扫描，无安全性问题  单元测试的方法黑盒测试 是把程序看做一个不能打开的盒子，不考虑内部架构和内部">
+<meta name="keywords" content="java,linux,数据结构,算法,云顶书院">
+<meta property="og:type" content="article">
+<meta property="og:title" content="软件测试_单元测试和集成测试">
+<meta property="og:url" content="https://liyafei.top/2658459340">
+<meta property="og:site_name" content="李亚飞的博客">
+<meta property="og:description" content="单元测试和集成测试什么是单元测试 单元测试就是对已实现的软件最小单元进行测试，以保证构成软件的各个单元的质量。  单元测试的目的 单元实现其特定功能 单元的运行能够覆盖预先设定的各种逻辑 在单元工作过程中，其内部数据能够保持完整性。 可接收正确数据，也能处理非法数据 该单元的算法的合理性 单元代码经过扫描，无安全性问题  单元测试的方法黑盒测试 是把程序看做一个不能打开的盒子，不考虑内部架构和内部">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-11-25T11:38:49.666Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="软件测试_单元测试和集成测试">
+<meta name="twitter:description" content="单元测试和集成测试什么是单元测试 单元测试就是对已实现的软件最小单元进行测试，以保证构成软件的各个单元的质量。  单元测试的目的 单元实现其特定功能 单元的运行能够覆盖预先设定的各种逻辑 在单元工作过程中，其内部数据能够保持完整性。 可接收正确数据，也能处理非法数据 该单元的算法的合理性 单元代码经过扫描，无安全性问题  单元测试的方法黑盒测试 是把程序看做一个不能打开的盒子，不考虑内部架构和内部">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://liyafei.top/2658459340">
+
+
+
+
+
+  <title>软件测试_单元测试和集成测试 | 李亚飞的博客</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?32e0d3c6b1cd79c9d8270086407ca0ca";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">李亚飞的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">——漫漫程序人生路</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://liyafei.top/2658459340">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Leeyf">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="李亚飞的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">软件测试_单元测试和集成测试</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-25T15:58:23+08:00">
+                2019-11-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/软件测试/" itemprop="url" rel="index">
+                    <span itemprop="name">软件测试</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1k字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  3分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="单元测试和集成测试"><a href="#单元测试和集成测试" class="headerlink" title="单元测试和集成测试"></a>单元测试和集成测试</h1><h3 id="什么是单元测试"><a href="#什么是单元测试" class="headerlink" title="什么是单元测试"></a>什么是单元测试</h3><ul>
+<li>单元测试就是对已实现的软件最小单元进行测试，以保证构成软件的各个单元的质量。</li>
+</ul>
+<h3 id="单元测试的目的"><a href="#单元测试的目的" class="headerlink" title="单元测试的目的"></a>单元测试的目的</h3><ol>
+<li>单元实现其特定功能</li>
+<li>单元的运行能够覆盖预先设定的各种逻辑</li>
+<li>在单元工作过程中，其内部数据能够保持完整性。</li>
+<li>可接收正确数据，也能处理非法数据</li>
+<li>该单元的算法的合理性</li>
+<li>单元代码经过扫描，无安全性问题</li>
+</ol>
+<h3 id="单元测试的方法"><a href="#单元测试的方法" class="headerlink" title="单元测试的方法"></a>单元测试的方法</h3><h4 id="黑盒测试"><a href="#黑盒测试" class="headerlink" title="黑盒测试"></a>黑盒测试</h4><ul>
+<li>是把程序看做一个不能打开的盒子，不考虑内部架构和内部特性，而是考察数据的输入、条件的限制、数据的输出，完成测试</li>
+</ul>
+<h4 id="白盒测试"><a href="#白盒测试" class="headerlink" title="白盒测试"></a>白盒测试</h4><ul>
+<li><p>是根据模块内部结构了解，基于内部逻辑结构，针对程序语句、路径、变量状态等进行测试。</p>
+</li>
+<li><p>代码评审也是一种白盒测试方法，属于静态测试，包括相互评审、走查、评审会议等。</p>
+</li>
+</ul>
+<blockquote>
+<p>  白盒测试关注代码，容易忽略单元的实际结果是否满足用户需求</p>
+</blockquote>
+<h3 id="驱动程序和桩程序"><a href="#驱动程序和桩程序" class="headerlink" title="驱动程序和桩程序"></a>驱动程序和桩程序</h3><h4 id="什么是驱动程序"><a href="#什么是驱动程序" class="headerlink" title="什么是驱动程序"></a>什么是驱动程序</h4><ul>
+<li>对底层或子层模块进行测试时所编制的调用被测模块的程序，用来模拟被测模块的上级模块</li>
+</ul>
+<h4 id="什么是桩程序"><a href="#什么是桩程序" class="headerlink" title="什么是桩程序"></a>什么是桩程序</h4><ul>
+<li>存根程序，对顶层或上层模块进行测试时，所编制的替代下层模块的程序，用来模拟被测模块工作时调用的模块。</li>
+</ul>
+<h3 id="白盒测试的用例设计"><a href="#白盒测试的用例设计" class="headerlink" title="白盒测试的用例设计"></a>白盒测试的用例设计</h3><h4 id="分支覆盖"><a href="#分支覆盖" class="headerlink" title="分支覆盖"></a>分支覆盖</h4><ul>
+<li>设计若干用例，使得运行被测程序时，所有的分支至少调用一次</li>
+</ul>
+<h4 id="语句覆盖"><a href="#语句覆盖" class="headerlink" title="语句覆盖"></a>语句覆盖</h4><ul>
+<li>使得程序中的每一条语句至少被执行一次</li>
+</ul>
+<h4 id="条件覆盖"><a href="#条件覆盖" class="headerlink" title="条件覆盖"></a>条件覆盖</h4><ul>
+<li>程序中的每一个条件至少有一次是满足的<ul>
+<li>条件覆盖不一定会分支覆盖</li>
+</ul>
+</li>
+</ul>
+<h4 id="基本路径覆盖"><a href="#基本路径覆盖" class="headerlink" title="基本路径覆盖"></a>基本路径覆盖</h4><ul>
+<li>设计所有的测试用例，来覆盖程序中所有可能的执行路径</li>
+<li>具体步骤<ul>
+<li>程序的流程图</li>
+<li>计算程序环境复杂性<ul>
+<li>独立路径条数 V(G) = 区域数目，区域是由边界和节点包围起来的形状构成</li>
+<li>独立路径条数 V(G) = 边界数目 - 节点数目 + 2</li>
+<li>独立路径条数 V(G) = 判断节点 数目 + 1</li>
+</ul>
+</li>
+<li>确定基本路径</li>
+<li>准备测试用例</li>
+<li>图形矩阵</li>
+</ul>
+</li>
+</ul>
+<h3 id="代码审查"><a href="#代码审查" class="headerlink" title="代码审查"></a>代码审查</h3><ul>
+<li><p>包括走查、互查、会议评审等形式</p>
+</li>
+<li><p>审查内容</p>
+<ul>
+<li>业务逻辑</li>
+<li>算法效率</li>
+<li>代码风格、命名规则等</li>
+<li>编程规则</li>
+</ul>
+</li>
+</ul>
+<h4 id="代码审查的好处"><a href="#代码审查的好处" class="headerlink" title="代码审查的好处"></a>代码审查的好处</h4><ul>
+<li><p>互相学习程序设计思想、方法、技巧</p>
+</li>
+<li><p>及时发现代码问题</p>
+</li>
+<li><p>使更多人明白代码意思</p>
+</li>
+</ul>
+<h4 id="代码规范性审查"><a href="#代码规范性审查" class="headerlink" title="代码规范性审查"></a>代码规范性审查</h4><ol>
+<li>命令规则</li>
+<li>缩进与对齐</li>
+<li>空行和空格</li>
+<li>注释</li>
+<li>函数处理</li>
+</ol>
+<h3 id="集成测试的模式"><a href="#集成测试的模式" class="headerlink" title="集成测试的模式"></a>集成测试的模式</h3><p>集成模式是软件集成测试中的策略体现，直接关系到开发和测试的效率。</p>
+<ul>
+<li>非渐进式测试模式： 先分别测试每个模块，再把所有模块按设计要求放一起结合测试</li>
+<li>渐进式测试： 把下一个要测试的模块同已经测试好的模块结合起来测试,测试完以后把下一个应该测试的模块结合起来进行测试</li>
+</ul>
+<h3 id="自定向下测试"><a href="#自定向下测试" class="headerlink" title="自定向下测试"></a>自定向下测试</h3><ul>
+<li>从主模块开始，沿着软件的控制层向下移动，从而逐渐把各个模块结合起来。</li>
+<li>需要桩程序</li>
+</ul>
+<h3 id="自底向上测试"><a href="#自底向上测试" class="headerlink" title="自底向上测试"></a>自底向上测试</h3><ul>
+<li>从底层模块开始，向上推进，不断进行集成测试的方法</li>
+<li>需要驱动程序</li>
+</ul>
+<h3 id="混合策略"><a href="#混合策略" class="headerlink" title="混合策略"></a>混合策略</h3><p>自顶向下集成和自底向上集成两种方法有机地结合，采用混合策略来完成系统的集成测试。</p>
+<h3 id="持续集成测试"><a href="#持续集成测试" class="headerlink" title="持续集成测试"></a>持续集成测试</h3><ul>
+<li>持续构建、集成、测试</li>
+<li>包括自动构建、自动部署、自动生成报告</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    <div>
+  	
+    	 <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-heart"></i>感谢阅读-------------</div>
+    
+</div>
+
+        
+    </div>
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode2.jpg" alt="Leeyf wechat" style="width: 200px; max-width: 100%;">
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="Leeyf 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Leeyf 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/752527107" rel="next" title="算法小练——二叉树的层次遍历II">
+                <i class="fa fa-chevron-left"></i> 算法小练——二叉树的层次遍历II
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80Njg4Ni8yMzM4Nw"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="Leeyf">
+            
+              <p class="site-author-name" itemprop="name">Leeyf</p>
+              <p class="site-description motion-element" itemprop="description">——漫漫程序人生路</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">66</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/leeyf888" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:lee1042245208@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#单元测试和集成测试"><span class="nav-number">1.</span> <span class="nav-text">单元测试和集成测试</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是单元测试"><span class="nav-number">1.0.1.</span> <span class="nav-text">什么是单元测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单元测试的目的"><span class="nav-number">1.0.2.</span> <span class="nav-text">单元测试的目的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单元测试的方法"><span class="nav-number">1.0.3.</span> <span class="nav-text">单元测试的方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#黑盒测试"><span class="nav-number">1.0.3.1.</span> <span class="nav-text">黑盒测试</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#白盒测试"><span class="nav-number">1.0.3.2.</span> <span class="nav-text">白盒测试</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#驱动程序和桩程序"><span class="nav-number">1.0.4.</span> <span class="nav-text">驱动程序和桩程序</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#什么是驱动程序"><span class="nav-number">1.0.4.1.</span> <span class="nav-text">什么是驱动程序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#什么是桩程序"><span class="nav-number">1.0.4.2.</span> <span class="nav-text">什么是桩程序</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#白盒测试的用例设计"><span class="nav-number">1.0.5.</span> <span class="nav-text">白盒测试的用例设计</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#分支覆盖"><span class="nav-number">1.0.5.1.</span> <span class="nav-text">分支覆盖</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#语句覆盖"><span class="nav-number">1.0.5.2.</span> <span class="nav-text">语句覆盖</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#条件覆盖"><span class="nav-number">1.0.5.3.</span> <span class="nav-text">条件覆盖</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基本路径覆盖"><span class="nav-number">1.0.5.4.</span> <span class="nav-text">基本路径覆盖</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码审查"><span class="nav-number">1.0.6.</span> <span class="nav-text">代码审查</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#代码审查的好处"><span class="nav-number">1.0.6.1.</span> <span class="nav-text">代码审查的好处</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码规范性审查"><span class="nav-number">1.0.6.2.</span> <span class="nav-text">代码规范性审查</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#集成测试的模式"><span class="nav-number">1.0.7.</span> <span class="nav-text">集成测试的模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定向下测试"><span class="nav-number">1.0.8.</span> <span class="nav-text">自定向下测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自底向上测试"><span class="nav-number">1.0.9.</span> <span class="nav-text">自底向上测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#混合策略"><span class="nav-number">1.0.10.</span> <span class="nav-text">混合策略</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#持续集成测试"><span class="nav-number">1.0.11.</span> <span class="nav-text">持续集成测试</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder"><a href="https://www.liyafei.top/">www.liyafei.top</a> <a href="https://blog.csdn.net/qq_34691097" target="_blank" style="color:#DDAA00">李亚飞的CSDN</a> All Rights Reserved  备案号:晋ICP备19005844号-1   联系方式：QQ1042245208 友情链接：<a href="http://www.lichuachua.com" target="_blank" style="color:#DDAA00">李歘歘个人博客</a></span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">35.8k</span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=66475294";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

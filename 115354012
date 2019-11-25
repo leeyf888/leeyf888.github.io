@@ -94,7 +94,7 @@
 
 
 
-  <meta name="keywords" content="esay,">
+  <meta name="keywords" content="easy,">
 
 
 
@@ -106,14 +106,14 @@
 
 
 <meta name="description" content="描述给出两个整数 aa 和 bb , 求他们的和。 你不需要从输入流读入数据，只需要根据aplusb的两个参数a和b，计算他们的和并返回就行。 您在真实的面试中是否遇到过这个题？ 是 题目纠错 说明a和b都是 32位 整数么？  是的  我可以使用位运算符么？  当然可以  样例样例 1: 123输入:  a = 1, b = 2输出: 3	样例解释: 返回a+b的结果.  样例 2: 123输">
-<meta name="keywords" content="esay">
+<meta name="keywords" content="easy">
 <meta property="og:type" content="article">
 <meta property="og:title" content="算法小练——A + B 问题">
 <meta property="og:url" content="https://liyafei.top/115354012">
 <meta property="og:site_name" content="李亚飞的博客">
 <meta property="og:description" content="描述给出两个整数 aa 和 bb , 求他们的和。 你不需要从输入流读入数据，只需要根据aplusb的两个参数a和b，计算他们的和并返回就行。 您在真实的面试中是否遇到过这个题？ 是 题目纠错 说明a和b都是 32位 整数么？  是的  我可以使用位运算符么？  当然可以  样例样例 1: 123输入:  a = 1, b = 2输出: 3	样例解释: 返回a+b的结果.  样例 2: 123输">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-02T05:30:14.296Z">
+<meta property="og:updated_time" content="2019-11-24T12:14:47.971Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法小练——A + B 问题">
 <meta name="twitter:description" content="描述给出两个整数 aa 和 bb , 求他们的和。 你不需要从输入流读入数据，只需要根据aplusb的两个参数a和b，计算他们的和并返回就行。 您在真实的面试中是否遇到过这个题？ 是 题目纠错 说明a和b都是 32位 整数么？  是的  我可以使用位运算符么？  当然可以  样例样例 1: 123输入:  a = 1, b = 2输出: 3	样例解释: 返回a+b的结果.  样例 2: 123输">
@@ -515,7 +515,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/esay/" rel="tag"># esay</a>
+            <a href="/tags/easy/" rel="tag"># easy</a>
           
         </div>
       
@@ -624,7 +624,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">65</span>
+                  <span class="site-state-item-count">66</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -646,7 +646,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -729,7 +729,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">34.8k</span>
+    <span title="Site words total count">35.8k</span>
   
 </div>
 
