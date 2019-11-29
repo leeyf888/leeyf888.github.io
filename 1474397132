@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="李亚飞的博客">
 <meta property="og:description" content="Excel表列名称描述给定一个正整数，返回它在 Excel 表中相对应的列名称。 例如， 1 -&amp;gt; A 2 -&amp;gt; B 3 -&amp;gt; C ... 26 -&amp;gt; Z 27 -&amp;gt; AA 28 -&amp;gt; AB  ...举例   示例 1:   输入: 1  输出: “A”     示例 2:   输入: 28  输出: “AB”     示例 3:   输入: 701  输出:">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-27T13:12:46.826Z">
+<meta property="og:updated_time" content="2019-11-29T09:38:52.825Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法小练——Excel表列名称">
 <meta name="twitter:description" content="Excel表列名称描述给定一个正整数，返回它在 Excel 表中相对应的列名称。 例如， 1 -&amp;gt; A 2 -&amp;gt; B 3 -&amp;gt; C ... 26 -&amp;gt; Z 27 -&amp;gt; AA 28 -&amp;gt; AB  ...举例   示例 1:   输入: 1  输出: “A”     示例 2:   输入: 28  输出: “AB”     示例 3:   输入: 701  输出:">
@@ -618,7 +618,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">71</span>
+                  <span class="site-state-item-count">72</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -640,7 +640,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">18</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -723,7 +723,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">38.3k</span>
+    <span title="Site words total count">38.5k</span>
   
 </div>
 
