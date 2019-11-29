@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="李亚飞的博客">
 <meta property="og:description" content="系统功能测试和非系统功能测试功能测试 依据产品设计规范说明书完成对产品功能的操作，以验证系统是否满足用户的功能性需求  系统测试是区别与功能测试的，表示对用户的非功能性需求进行验证，包括安全性、性能、兼容性等来测试  一般采用黑盒测试方法   等价划分法 把所有可能输入的数据，即程序的输入数据集合划分分成若干个子集，然后从每一个等价类中选取少数具有代表性的数据作为测试用例  有效等价类 是指==完">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-26T09:20:01.317Z">
+<meta property="og:updated_time" content="2019-11-26T13:44:20.486Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="软件测试_系统测试和非系统测试">
 <meta name="twitter:description" content="系统功能测试和非系统功能测试功能测试 依据产品设计规范说明书完成对产品功能的操作，以验证系统是否满足用户的功能性需求  系统测试是区别与功能测试的，表示对用户的非功能性需求进行验证，包括安全性、性能、兼容性等来测试  一般采用黑盒测试方法   等价划分法 把所有可能输入的数据，即程序的输入数据集合划分分成若干个子集，然后从每一个等价类中选取少数具有代表性的数据作为测试用例  有效等价类 是指==完">
@@ -575,6 +575,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/1521462689" rel="prev" title="算法小练——移动零">
+                算法小练——移动零 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -657,7 +661,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">67</span>
+                  <span class="site-state-item-count">71</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -762,7 +766,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">36.8k</span>
+    <span title="Site words total count">38.3k</span>
   
 </div>
 
