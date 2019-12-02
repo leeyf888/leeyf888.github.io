@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon16x16.ico?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="概述,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="系统概述及特性 概述  系统是一组实现某些结果相互联系、相互作用的部件的集合体 信息系统即信息管理系统，是一组以收集、处理、存储信息为基础啊，并输出完成业务任务所需信息为提交的相互联系、相互作用的集合体。   特性  可分解性 功能分解 系统是由可分解的、相互联系的部件在系统中一起作用   边界性 每一个系统与其所在环境都是有边界的，任何输入输出都必须通过这个系统的边界 系统的自动部分和手动部分之">
+<meta name="keywords" content="概述">
+<meta property="og:type" content="article">
+<meta property="og:title" content="系统分析与设计概述">
+<meta property="og:url" content="https://liyafei.top/1609347213">
+<meta property="og:site_name" content="李亚飞的博客">
+<meta property="og:description" content="系统概述及特性 概述  系统是一组实现某些结果相互联系、相互作用的部件的集合体 信息系统即信息管理系统，是一组以收集、处理、存储信息为基础啊，并输出完成业务任务所需信息为提交的相互联系、相互作用的集合体。   特性  可分解性 功能分解 系统是由可分解的、相互联系的部件在系统中一起作用   边界性 每一个系统与其所在环境都是有边界的，任何输入输出都必须通过这个系统的边界 系统的自动部分和手动部分之">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-12-02T11:43:01.394Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="系统分析与设计概述">
+<meta name="twitter:description" content="系统概述及特性 概述  系统是一组实现某些结果相互联系、相互作用的部件的集合体 信息系统即信息管理系统，是一组以收集、处理、存储信息为基础啊，并输出完成业务任务所需信息为提交的相互联系、相互作用的集合体。   特性  可分解性 功能分解 系统是由可分解的、相互联系的部件在系统中一起作用   边界性 每一个系统与其所在环境都是有边界的，任何输入输出都必须通过这个系统的边界 系统的自动部分和手动部分之">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://liyafei.top/1609347213">
+
+
+
+
+
+  <title>系统分析与设计概述 | 李亚飞的博客</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?32e0d3c6b1cd79c9d8270086407ca0ca";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">李亚飞的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">——漫漫程序人生路</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://liyafei.top/1609347213">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Leeyf">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="李亚飞的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">系统分析与设计概述</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-02T17:33:46+08:00">
+                2019-12-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/系统分析与设计/" itemprop="url" rel="index">
+                    <span itemprop="name">系统分析与设计</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.3k字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  4分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="系统概述及特性"><a href="#系统概述及特性" class="headerlink" title="系统概述及特性"></a>系统概述及特性</h3><ul>
+<li><p>概述</p>
+<ul>
+<li>系统是一组<strong>实现</strong>某些结果相互联系、相互作用的<strong>部件</strong>的<strong>集合体</strong></li>
+<li><strong>信息系统</strong>即信息管理系统，是一组以收集、处理、存储信息为基础啊，并输出完成业务任务所需信息为提交的相互联系、相互作用的集合体。</li>
+</ul>
+</li>
+<li><p>特性</p>
+<ul>
+<li>可分解性<ul>
+<li>功能分解</li>
+<li>系统是由可分解的、相互联系的部件在系统中一起作用</li>
+</ul>
+</li>
+<li>边界性<ul>
+<li>每一个系统与其所在环境都是有边界的，任何输入输出都必须通过这个系统的边界</li>
+<li>系统的自动部分和手动部分之间的分界，也称<strong>自动化边界</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="系统分类与环境"><a href="#系统分类与环境" class="headerlink" title="系统分类与环境"></a>系统分类与环境</h3><ul>
+<li>信息系统的分类：事务处理系统、管理信息系统、智能决策支持系统、办公自动化系统</li>
+<li>环境<ul>
+<li>信息系统的发展经历了<strong>数据处理、管理信息、决策支持</strong>三个阶段</li>
+<li>高速的计算机网络环境</li>
+<li>对象技术和协作技术<ul>
+<li>面向对象开发的优点：对象是可以复用的、对象是可扩展的 </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="系统模型"><a href="#系统模型" class="headerlink" title="系统模型"></a>系统模型</h3><ul>
+<li><p>模型一般是系统的一种图形表示，描述了系统的实际情况或者期望情形。</p>
+</li>
+<li><p>模型是对所研究的系统、过程、事务或概念的一种表达形式</p>
+</li>
+<li><p>在信息系统中，模型一般用于对系统的输入、输出、过程、数据、对象、对象之间的相互作用、位置、网络与设备，以及其他相关事物的表达。</p>
+</li>
+<li><p>常见的构件模型</p>
+<ul>
+<li>流程图</li>
+<li>数据流图</li>
+<li>实体关系图（ER图）</li>
+<li>结构图</li>
+<li>用例图（UML图）</li>
+<li>类图</li>
+<li>顺序图</li>
+<li>PERT图和甘特图一般用于管理系统开发的过程中</li>
+</ul>
+</li>
+</ul>
+<h3 id="系统模型的类型"><a href="#系统模型的类型" class="headerlink" title="系统模型的类型"></a>系统模型的类型</h3><h4 id="1-上下文模型-过程模型"><a href="#1-上下文模型-过程模型" class="headerlink" title="1.上下文模型(过程模型)"></a>1.上下文模型(过程模型)</h4><ul>
+<li>关注于“过程”，有助于消除非技术人员与用户与技术人员的交流隔阂</li>
+<li><ul>
+<li>流程图</li>
+<li>数据流图</li>
+<li>结构图</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-数据模型"><a href="#2-数据模型" class="headerlink" title="2.数据模型"></a>2.数据模型</h4><ul>
+<li>必不可少的部分，增加“知识”是信息系统框架必不可少的部分</li>
+<li>实例<ul>
+<li>数据库的设计</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-对象模型"><a href="#3-对象模型" class="headerlink" title="3.对象模型"></a>3.对象模型</h4><ul>
+<li>基于面向对象技术的发展，是想对先进的系统开发方法</li>
+<li><ul>
+<li>类图</li>
+<li>实体关系图</li>
+<li>用例图</li>
+</ul>
+</li>
+</ul>
+<h3 id="系统关联人员"><a href="#系统关联人员" class="headerlink" title="系统关联人员"></a>系统关联人员</h3><ul>
+<li>系统所有者</li>
+<li>系统用户</li>
+<li>系统分析设计人员</li>
+<li>系统外部服务人员</li>
+<li>项目经理</li>
+</ul>
+<h3 id="系统分析过程"><a href="#系统分析过程" class="headerlink" title="系统分析过程"></a>系统分析过程</h3><h4 id="1-范围定义"><a href="#1-范围定义" class="headerlink" title="1.范围定义"></a>1.范围定义</h4><ul>
+<li>确定“系统是否存在开发的价值”</li>
+<li>任务<ul>
+<li>确定系统项目开发动机</li>
+<li>协商系统项目初步范围</li>
+<li>评估系统项目的价值</li>
+<li>制订系统项目计划</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-问题分析"><a href="#2-问题分析" class="headerlink" title="2.问题分析"></a>2.问题分析</h4><ul>
+<li>确定“系统真的具有开发价值吗”</li>
+<li>任务<ul>
+<li>研究问题领域</li>
+<li>分析问题和机会</li>
+<li>分析业务过程</li>
+<li>制订系统改进目标</li>
+<li>修改项目计划与汇报</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-需求分析"><a href="#3-需求分析" class="headerlink" title="3.需求分析"></a>3.需求分析</h4><ul>
+<li>为新系统定义业务需求</li>
+<li>步骤<ul>
+<li>定义需求</li>
+<li>排列需求的优先次序</li>
+<li>修改项目计划</li>
+<li>交流需求陈述</li>
+</ul>
+</li>
+</ul>
+<h4 id="4-决策分析"><a href="#4-决策分析" class="headerlink" title="4.决策分析"></a>4.决策分析</h4><ul>
+<li>确定候选方案，分析候选方案，选择其一为设计、构造和实现的目标系统</li>
+<li>任务<ul>
+<li>确定候选方案</li>
+<li>分析候选方案</li>
+<li>比较候选方案</li>
+<li>修改项目计划并推荐系统方案</li>
+</ul>
+</li>
+</ul>
+<h3 id="信息领域"><a href="#信息领域" class="headerlink" title="信息领域"></a>信息领域</h3><h4 id="1-问题域与系统责任"><a href="#1-问题域与系统责任" class="headerlink" title="1. 问题域与系统责任"></a>1. 问题域与系统责任</h4><ul>
+<li>问题域指被开发系统的应用领域，即在现实世界这个系统进行处理的业务范围</li>
+<li>系统责任是所开发系统应具备的职能</li>
+</ul>
+<h4 id="2-交流问题"><a href="#2-交流问题" class="headerlink" title="2.交流问题"></a>2.交流问题</h4><ul>
+<li>人与人的交流是分析工作面临的另一个重要问题</li>
+<li>各个系统关联人员之间的交流</li>
+</ul>
+<h4 id="3-需求的不断变化"><a href="#3-需求的不断变化" class="headerlink" title="3.需求的不断变化"></a>3.需求的不断变化</h4><h4 id="4-复用的要求"><a href="#4-复用的要求" class="headerlink" title="4.复用的要求"></a>4.复用的要求</h4><ul>
+<li>软件复用是提高系统开发效率，改善软件质量的重要途径</li>
+</ul>
+<h3 id="建模和模拟"><a href="#建模和模拟" class="headerlink" title="建模和模拟"></a>建模和模拟</h3><ul>
+<li><p><strong>模型</strong>是对所研究系统、过程、事物或概念的一种表达形式，是对被研究对象的一种<strong>抽象</strong>。</p>
+</li>
+<li><p>系统分析从建模的角度讲，分为</p>
+<ul>
+<li>模型驱动分析法<ul>
+<li>强调绘制图形化系统来记录和验证现有的或建议的系统</li>
+</ul>
+</li>
+<li>模拟分析法<ul>
+<li>首先模拟原型系统，原型是用户提供响应需求的一个快速而粗略的实现，用来确定用户需求</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="系统开发的生存周期"><a href="#系统开发的生存周期" class="headerlink" title="系统开发的生存周期"></a>系统开发的生存周期</h3><h4 id="1-系统启动阶段"><a href="#1-系统启动阶段" class="headerlink" title="1.系统启动阶段"></a>1.系统启动阶段</h4><ul>
+<li>定义问题域</li>
+<li>制定项目的进度表</li>
+<li>确认项目的可行性</li>
+<li>安排项目人员</li>
+<li>启动项目</li>
+</ul>
+<h4 id="2-分析阶段"><a href="#2-分析阶段" class="headerlink" title="2.分析阶段"></a>2.分析阶段</h4><ul>
+<li>收集信息</li>
+<li>定义系统需求</li>
+<li>建立需求发现的原型</li>
+<li>划分需求的优先级</li>
+<li>产生并评价可选方案</li>
+<li>审查并推荐方案</li>
+</ul>
+<h4 id="3-设计阶段"><a href="#3-设计阶段" class="headerlink" title="3.设计阶段"></a>3.设计阶段</h4><ul>
+<li>设计和集成网络</li>
+<li>设计应用和结构</li>
+<li>设计用户界面</li>
+<li>设计系统界面</li>
+<li>设计和集成数据库</li>
+<li>设计细节的原型化</li>
+<li>设计和集成系统控制</li>
+</ul>
+<h4 id="4-实现与维护阶段"><a href="#4-实现与维护阶段" class="headerlink" title="4.实现与维护阶段"></a>4.实现与维护阶段</h4><ul>
+<li>构造软件部件</li>
+<li>检验和测试</li>
+<li>培训用户和制作文档</li>
+<li>安装系统</li>
+</ul>
+<h3 id="系统开发方法"><a href="#系统开发方法" class="headerlink" title="系统开发方法"></a>系统开发方法</h3><h4 id="1-结构化系统开发"><a href="#1-结构化系统开发" class="headerlink" title="1.结构化系统开发"></a>1.结构化系统开发</h4><h4 id="2-原型法"><a href="#2-原型法" class="headerlink" title="2.原型法"></a>2.原型法</h4><h4 id="3-面向对象方法"><a href="#3-面向对象方法" class="headerlink" title="3.面向对象方法"></a>3.面向对象方法</h4><h4 id="4-敏捷开发"><a href="#4-敏捷开发" class="headerlink" title="4.敏捷开发"></a>4.敏捷开发</h4>
+      
+    </div>
+    
+    
+    
+
+    <div>
+  	
+    	 <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-heart"></i>感谢阅读-------------</div>
+    
+</div>
+
+        
+    </div>
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode2.jpg" alt="Leeyf wechat" style="width: 200px; max-width: 100%;">
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="Leeyf 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Leeyf 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/概述/" rel="tag"># 概述</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/1615299737" rel="next" title="算法小练——盛最多水的容器">
+                <i class="fa fa-chevron-left"></i> 算法小练——盛最多水的容器
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/1687200905" rel="prev" title="算法小练——最接近的三数之和">
+                算法小练——最接近的三数之和 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80Njg4Ni8yMzM4Nw"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="Leeyf">
+            
+              <p class="site-author-name" itemprop="name">Leeyf</p>
+              <p class="site-description motion-element" itemprop="description">——漫漫程序人生路</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">75</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/leeyf888" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:lee1042245208@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#系统概述及特性"><span class="nav-number">1.</span> <span class="nav-text">系统概述及特性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#系统分类与环境"><span class="nav-number">2.</span> <span class="nav-text">系统分类与环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#系统模型"><span class="nav-number">3.</span> <span class="nav-text">系统模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#系统模型的类型"><span class="nav-number">4.</span> <span class="nav-text">系统模型的类型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-上下文模型-过程模型"><span class="nav-number">4.1.</span> <span class="nav-text">1.上下文模型(过程模型)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-数据模型"><span class="nav-number">4.2.</span> <span class="nav-text">2.数据模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-对象模型"><span class="nav-number">4.3.</span> <span class="nav-text">3.对象模型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#系统关联人员"><span class="nav-number">5.</span> <span class="nav-text">系统关联人员</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#系统分析过程"><span class="nav-number">6.</span> <span class="nav-text">系统分析过程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-范围定义"><span class="nav-number">6.1.</span> <span class="nav-text">1.范围定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-问题分析"><span class="nav-number">6.2.</span> <span class="nav-text">2.问题分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-需求分析"><span class="nav-number">6.3.</span> <span class="nav-text">3.需求分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-决策分析"><span class="nav-number">6.4.</span> <span class="nav-text">4.决策分析</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#信息领域"><span class="nav-number">7.</span> <span class="nav-text">信息领域</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-问题域与系统责任"><span class="nav-number">7.1.</span> <span class="nav-text">1. 问题域与系统责任</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-交流问题"><span class="nav-number">7.2.</span> <span class="nav-text">2.交流问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-需求的不断变化"><span class="nav-number">7.3.</span> <span class="nav-text">3.需求的不断变化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-复用的要求"><span class="nav-number">7.4.</span> <span class="nav-text">4.复用的要求</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#建模和模拟"><span class="nav-number">8.</span> <span class="nav-text">建模和模拟</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#系统开发的生存周期"><span class="nav-number">9.</span> <span class="nav-text">系统开发的生存周期</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-系统启动阶段"><span class="nav-number">9.1.</span> <span class="nav-text">1.系统启动阶段</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-分析阶段"><span class="nav-number">9.2.</span> <span class="nav-text">2.分析阶段</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-设计阶段"><span class="nav-number">9.3.</span> <span class="nav-text">3.设计阶段</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-实现与维护阶段"><span class="nav-number">9.4.</span> <span class="nav-text">4.实现与维护阶段</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#系统开发方法"><span class="nav-number">10.</span> <span class="nav-text">系统开发方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-结构化系统开发"><span class="nav-number">10.1.</span> <span class="nav-text">1.结构化系统开发</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-原型法"><span class="nav-number">10.2.</span> <span class="nav-text">2.原型法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-面向对象方法"><span class="nav-number">10.3.</span> <span class="nav-text">3.面向对象方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-敏捷开发"><span class="nav-number">10.4.</span> <span class="nav-text">4.敏捷开发</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder"><a href="https://www.liyafei.top/">www.liyafei.top</a> <a href="https://blog.csdn.net/qq_34691097" target="_blank" style="color:#DDAA00">李亚飞的CSDN</a> All Rights Reserved  备案号:晋ICP备19005844号-1   联系方式：QQ1042245208 友情链接：<a href="http://www.lichuachua.com" target="_blank" style="color:#DDAA00">李歘歘个人博客</a></span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">40.6k</span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=66475294";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

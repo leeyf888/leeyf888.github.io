@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="李亚飞的博客">
 <meta property="og:description" content="二叉树的层次遍历 II描述给定一个二叉树，返回其节点值自底向上的层次遍历。 （即按从叶子节点所在层到根节点所在的层，逐层从左向右遍历） 示例例如：给定二叉树 [3,9,20,null,null,15,7],     3      / \   9  20        /  \      15   7 返回其自底向上的层次遍历为：   [    [15,7],    [9,20],    [3]">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-24T12:07:41.605Z">
+<meta property="og:updated_time" content="2019-12-02T12:45:39.068Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法小练——二叉树的层次遍历II">
 <meta name="twitter:description" content="二叉树的层次遍历 II描述给定一个二叉树，返回其节点值自底向上的层次遍历。 （即按从叶子节点所在层到根节点所在的层，逐层从左向右遍历） 示例例如：给定二叉树 [3,9,20,null,null,15,7],     3      / \   9  20        /  \      15   7 返回其自底向上的层次遍历为：   [    [15,7],    [9,20],    [3]">
@@ -608,7 +608,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">73</span>
+                  <span class="site-state-item-count">75</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -619,7 +619,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -630,7 +630,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">19</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -713,7 +713,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">39k</span>
+    <span title="Site words total count">40.6k</span>
   
 </div>
 

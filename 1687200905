@@ -94,7 +94,7 @@
 
 
 
-  <meta name="keywords" content="JAVA,Linux,程序,李亚飞,技术,博客">
+  <meta name="keywords" content="medium,">
 
 
 
@@ -105,18 +105,18 @@
 
 
 
-<meta name="description" content="要求系统中装有curl，建议提前安装，安装命令： 12345# CentOS：yum update -y &amp;amp;&amp;amp; yum install curl -y# Debian/Ubuntu：apt-get update -y &amp;amp;&amp;amp; apt-get install curl -y  1bash &amp;lt;(curl -s -L https://git.io/v2ray.sh)">
-<meta name="keywords" content="java,linux,数据结构,算法,云顶书院">
+<meta name="description" content="最接近的三数之和描述给定一个包括 n 个整数的数组 nums 和 一个目标值 target。找出 nums 中的三个整数，使得它们的和与 target 最接近。返回这三个数的和。假定每组输入只存在唯一答案。 举例   例如，给定数组 nums = [-1，2，1，-4], 和 target = 1.   与 target 最接近的三个数的和为 2. (-1 + 2 + 1 = 2).  代码123">
+<meta name="keywords" content="medium">
 <meta property="og:type" content="article">
-<meta property="og:title" content="一个idea">
-<meta property="og:url" content="https://liyafei.top/1831510864">
+<meta property="og:title" content="算法小练——最接近的三数之和">
+<meta property="og:url" content="https://liyafei.top/1687200905">
 <meta property="og:site_name" content="李亚飞的博客">
-<meta property="og:description" content="要求系统中装有curl，建议提前安装，安装命令： 12345# CentOS：yum update -y &amp;amp;&amp;amp; yum install curl -y# Debian/Ubuntu：apt-get update -y &amp;amp;&amp;amp; apt-get install curl -y  1bash &amp;lt;(curl -s -L https://git.io/v2ray.sh)">
+<meta property="og:description" content="最接近的三数之和描述给定一个包括 n 个整数的数组 nums 和 一个目标值 target。找出 nums 中的三个整数，使得它们的和与 target 最接近。返回这三个数的和。假定每组输入只存在唯一答案。 举例   例如，给定数组 nums = [-1，2，1，-4], 和 target = 1.   与 target 最接近的三个数的和为 2. (-1 + 2 + 1 = 2).  代码123">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-10T13:11:24.105Z">
+<meta property="og:updated_time" content="2019-12-02T12:51:35.726Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="一个idea">
-<meta name="twitter:description" content="要求系统中装有curl，建议提前安装，安装命令： 12345# CentOS：yum update -y &amp;amp;&amp;amp; yum install curl -y# Debian/Ubuntu：apt-get update -y &amp;amp;&amp;amp; apt-get install curl -y  1bash &amp;lt;(curl -s -L https://git.io/v2ray.sh)">
+<meta name="twitter:title" content="算法小练——最接近的三数之和">
+<meta name="twitter:description" content="最接近的三数之和描述给定一个包括 n 个整数的数组 nums 和 一个目标值 target。找出 nums 中的三个整数，使得它们的和与 target 最接近。返回这三个数的和。假定每组输入只存在唯一答案。 举例   例如，给定数组 nums = [-1，2，1，-4], 和 target = 1.   与 target 最接近的三个数的和为 2. (-1 + 2 + 1 = 2).  代码123">
 
 
 
@@ -146,13 +146,13 @@
 
 
 
-  <link rel="canonical" href="https://liyafei.top/1831510864">
+  <link rel="canonical" href="https://liyafei.top/1687200905">
 
 
 
 
 
-  <title>一个idea | 李亚飞的博客</title>
+  <title>算法小练——最接近的三数之和 | 李亚飞的博客</title>
   
 
 
@@ -299,7 +299,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://liyafei.top/1831510864">
+    <link itemprop="mainEntityOfPage" href="https://liyafei.top/1687200905">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Leeyf">
@@ -316,7 +316,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">一个idea</h1>
+          <h1 class="post-title" itemprop="name headline">算法小练——最接近的三数之和</h1>
         
 
         <div class="post-meta">
@@ -328,8 +328,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-10T18:32:50+08:00">
-                2018-10-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-02T20:43:54+08:00">
+                2019-12-02
               </time>
             
 
@@ -338,6 +338,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Algorithms/" itemprop="url" rel="index">
+                    <span itemprop="name">Algorithms</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -360,7 +382,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  106字
+                  351字
                 </span>
               
 
@@ -397,16 +419,15 @@
       
 
       
-        <p>要求系统中装有curl，建议提前安装，安装命令：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># CentOS：</span><br><span class="line">yum update -y &amp;&amp; yum install curl -y</span><br><span class="line"></span><br><span class="line"># Debian/Ubuntu：</span><br><span class="line">apt-get update -y &amp;&amp; apt-get install curl -y</span><br></pre></td></tr></table></figure>
+        <h1 id="最接近的三数之和"><a href="#最接近的三数之和" class="headerlink" title="最接近的三数之和"></a><a href="https://leetcode-cn.com/problems/3sum-closest/" target="_blank" rel="noopener">最接近的三数之和</a></h1><h3 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h3><p>给定一个包括 n 个整数的数组 nums 和 一个目标值 target。找出 nums 中的三个整数，使得它们的和与 target 最接近。返回这三个数的和。假定每组输入只存在唯一答案。</p>
+<h3 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h3><blockquote>
+<p>  例如，给定数组 nums = [-1，2，1，-4], 和 target = 1.</p>
+<p>  与 target 最接近的三个数的和为 2. (-1 + 2 + 1 = 2).</p>
+</blockquote>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">threeSumClosest</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">       <span class="keyword">int</span> max_int = Integer.MAX_VALUE;</span><br><span class="line">       <span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length-<span class="number">2</span>; i++) &#123;</span><br><span class="line">           <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt; nums.length-<span class="number">1</span>; j++) &#123;</span><br><span class="line">               <span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">2</span>; k &lt; nums.length; k++) &#123;</span><br><span class="line">                   <span class="keyword">if</span>(i&lt;j &amp;&amp; j&lt;k)&#123;</span><br><span class="line">                       <span class="keyword">int</span> c = nums[i]+nums[j]+nums[k];</span><br><span class="line">                       <span class="keyword">int</span> min = Math.max(target,c)-Math.min(target,c);</span><br><span class="line">                       <span class="keyword">if</span>(min&lt;max_int)&#123;</span><br><span class="line">                           max_int = min;</span><br><span class="line">                           ans = c;</span><br><span class="line">                       &#125;</span><br><span class="line"></span><br><span class="line">                   &#125;</span><br><span class="line">               &#125;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">return</span> ans;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash &lt;(curl -s -L https://git.io/v2ray.sh)</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkcp开头的</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">端口</span><br><span class="line">广告拦截</span><br><span class="line">是否配置</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">https://cloud.tencent.com/developer/article/1405737</span><br><span class="line"></span><br><span class="line">wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh</span><br><span class="line">chmod +x shadowsocks-all.sh</span><br><span class="line">./shadowsocks-all.sh 2&gt;&amp;1 | tee shadowsocks-all.log</span><br></pre></td></tr></table></figure>
+<p>代码优化</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">threeSumClosest</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target)</span> </span>&#123;</span><br><span class="line">        Arrays.sort(nums);</span><br><span class="line">        <span class="keyword">int</span> ans = nums[<span class="number">0</span>] + nums[<span class="number">1</span>] + nums[<span class="number">2</span>];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;nums.length;i++) &#123;</span><br><span class="line">            <span class="keyword">int</span> start = i+<span class="number">1</span>, end = nums.length - <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">while</span>(start &lt; end) &#123;</span><br><span class="line">                <span class="keyword">int</span> sum = nums[start] + nums[end] + nums[i];</span><br><span class="line">                <span class="keyword">if</span>(Math.abs(target - sum) &lt; Math.abs(target - ans))</span><br><span class="line">                    ans = sum;</span><br><span class="line">                <span class="keyword">if</span>(sum &gt; target)</span><br><span class="line">                    end--;</span><br><span class="line">                <span class="keyword">else</span> <span class="keyword">if</span>(sum &lt; target)</span><br><span class="line">                    start++;</span><br><span class="line">                <span class="keyword">else</span></span><br><span class="line">                    <span class="keyword">return</span> ans;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">作者：guanpengchn</span><br><span class="line">链接：https:<span class="comment">//leetcode-cn.com/problems/3sum-closest/solution/hua-jie-suan-fa-16-zui-jie-jin-de-san-shu-zhi-he-b/</span></span><br><span class="line">来源：力扣（LeetCode）</span><br><span class="line">著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</span><br></pre></td></tr></table></figure>
 
 
       
@@ -470,6 +491,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/medium/" rel="tag"># medium</a>
+          
+        </div>
+      
 
       
       
@@ -479,15 +506,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/1609347213" rel="next" title="系统分析与设计概述">
+                <i class="fa fa-chevron-left"></i> 系统分析与设计概述
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/3997432119" rel="prev" title="GitHub快速学习(一)">
-                GitHub快速学习(一) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -544,8 +571,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -623,6 +659,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#最接近的三数之和"><span class="nav-number">1.</span> <span class="nav-text">最接近的三数之和</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述"><span class="nav-number">1.0.1.</span> <span class="nav-text">描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#举例"><span class="nav-number">1.0.2.</span> <span class="nav-text">举例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码"><span class="nav-number">1.0.3.</span> <span class="nav-text">代码</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
