@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="李亚飞的博客">
 <meta property="og:description" content="系统概述及特性 概述  系统是一组实现某些结果相互联系、相互作用的部件的集合体 信息系统即信息管理系统，是一组以收集、处理、存储信息为基础啊，并输出完成业务任务所需信息为提交的相互联系、相互作用的集合体。   特性  可分解性 功能分解 系统是由可分解的、相互联系的部件在系统中一起作用   边界性 每一个系统与其所在环境都是有边界的，任何输入输出都必须通过这个系统的边界 系统的自动部分和手动部分之">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-02T11:43:01.394Z">
+<meta property="og:updated_time" content="2019-12-02T12:51:44.857Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="系统分析与设计概述">
 <meta name="twitter:description" content="系统概述及特性 概述  系统是一组实现某些结果相互联系、相互作用的部件的集合体 信息系统即信息管理系统，是一组以收集、处理、存储信息为基础啊，并输出完成业务任务所需信息为提交的相互联系、相互作用的集合体。   特性  可分解性 功能分解 系统是由可分解的、相互联系的部件在系统中一起作用   边界性 每一个系统与其所在环境都是有边界的，任何输入输出都必须通过这个系统的边界 系统的自动部分和手动部分之">
@@ -776,7 +776,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">75</span>
+                  <span class="site-state-item-count">76</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -881,7 +881,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">40.6k</span>
+    <span title="Site words total count">41.8k</span>
   
 </div>
 
