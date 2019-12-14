@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon16x16.ico?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="JAVA,Linux,程序,李亚飞,技术,博客">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="11． 进程高级通信的主要方式 共享存储器系统 互相通信的进程共享某些数据结构或共享存储区，进程之间能够通过这些空间进行通信  管道通信系统 “管道”是用于连接一个读进程和一个写入进程以实现他们之间的通信的一个共享文件。 输入进程 ——&amp;gt; 数据  ——&amp;gt; 管道 |  ——&amp;gt; 数据 ——&amp;gt; 接收进程  消息传递系统 以格式化的（Message）==消息==为单位，将通信的数据">
+<meta name="keywords" content="java,linux,数据结构,算法,云顶书院">
+<meta property="og:type" content="article">
+<meta property="og:title" content="操作系统（三）">
+<meta property="og:url" content="https://liyafei.top/3458262505">
+<meta property="og:site_name" content="李亚飞的博客">
+<meta property="og:description" content="11． 进程高级通信的主要方式 共享存储器系统 互相通信的进程共享某些数据结构或共享存储区，进程之间能够通过这些空间进行通信  管道通信系统 “管道”是用于连接一个读进程和一个写入进程以实现他们之间的通信的一个共享文件。 输入进程 ——&amp;gt; 数据  ——&amp;gt; 管道 |  ——&amp;gt; 数据 ——&amp;gt; 接收进程  消息传递系统 以格式化的（Message）==消息==为单位，将通信的数据">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20191213172654440.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70">
+<meta property="og:updated_time" content="2019-12-14T13:53:05.206Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="操作系统（三）">
+<meta name="twitter:description" content="11． 进程高级通信的主要方式 共享存储器系统 互相通信的进程共享某些数据结构或共享存储区，进程之间能够通过这些空间进行通信  管道通信系统 “管道”是用于连接一个读进程和一个写入进程以实现他们之间的通信的一个共享文件。 输入进程 ——&amp;gt; 数据  ——&amp;gt; 管道 |  ——&amp;gt; 数据 ——&amp;gt; 接收进程  消息传递系统 以格式化的（Message）==消息==为单位，将通信的数据">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20191213172654440.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://liyafei.top/3458262505">
+
+
+
+
+
+  <title>操作系统（三） | 李亚飞的博客</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?32e0d3c6b1cd79c9d8270086407ca0ca";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">李亚飞的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">——漫漫程序人生路</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://liyafei.top/3458262505">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Leeyf">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="李亚飞的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">操作系统（三）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-13T16:28:30+08:00">
+                2019-12-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/操作系统/" itemprop="url" rel="index">
+                    <span itemprop="name">操作系统</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2.3k字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  7分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="11．-进程高级通信的主要方式"><a href="#11．-进程高级通信的主要方式" class="headerlink" title="11． 进程高级通信的主要方式"></a>11． 进程高级通信的主要方式</h2><ul>
+<li><p>共享存储器系统</p>
+<p>互相通信的进程共享某些数据结构或共享存储区，进程之间能够通过这些空间进行通信</p>
+</li>
+<li><p>管道通信系统</p>
+<p>“管道”是用于连接一个读进程和一个写入进程以实现他们之间的通信的一个共享文件。</p>
+<p>输入进程 ——&gt; 数据  ——&gt; 管道 |  ——&gt; 数据 ——&gt; 接收进程</p>
+</li>
+<li><p>消息传递系统</p>
+<p>以格式化的（Message）==消息==为单位，将通信的数据封装在消息中，并利用操作系统提供的一组通信命令，在进程间进行消息传递</p>
+<ul>
+<li><p>直接通信</p>
+<p>发送进程利用OS通过的发送命令，直接发送消息给目标进程</p>
+</li>
+<li><p>间接通信</p>
+<p>通过某个中间实体进行消息传递。</p>
+<p><strong>信箱通信</strong>（数据结构）</p>
+<ul>
+<li>信箱头 存放有关信箱的描述</li>
+<li>信箱体 存放若干消息的信箱格组成，数目与大小在创建信箱时确定</li>
+</ul>
+<p><img src="https://img-blog.csdnimg.cn/20191213172654440.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70" alt></p>
+</li>
+</ul>
+</li>
+<li><p>客户机-服务器系统</p>
+<ul>
+<li><p>套接字（Socket） 一个通信标识类型的数据结构</p>
+<ul>
+<li>通信目的地址</li>
+<li>通信使用的端口号</li>
+<li>通信网络的传输层协议</li>
+<li>进程所在的网络地址</li>
+<li>针对客户或服务器程序提供的不同系统调用（API函数）</li>
+</ul>
+</li>
+<li><p>远程过程调用和远程方法调用</p>
+<ul>
+<li><p>过程调用 通信协议</p>
+<p>该协议允许一台主机系统上的进程调用另一台主机系统上的进程，而对程序员表现为常规的过程调用</p>
+</li>
+<li><p>两个进程：<strong>本地客户进程 、远程服务器进程</strong> 统称为<strong>网络守护进程</strong></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="12-线程的定义、引入线程的目的，线程与进程的比较"><a href="#12-线程的定义、引入线程的目的，线程与进程的比较" class="headerlink" title="12. 线程的定义、引入线程的目的，线程与进程的比较"></a>12. 线程的定义、引入线程的目的，线程与进程的比较</h2><h3 id="进程的两个基本属性"><a href="#进程的两个基本属性" class="headerlink" title="进程的两个基本属性"></a>进程的两个基本属性</h3><ul>
+<li><strong>资源分配的单位</strong>：给每个进程分配一虚拟地址空间，保存进程映像，控制一些资源（文件，I/O设备），有状态、优先级、调度。</li>
+<li><strong>调度单位</strong>：进程是一个执行轨迹。</li>
+</ul>
+<h3 id="线程的定义"><a href="#线程的定义" class="headerlink" title="线程的定义"></a>线程的定义</h3><p>在多任务的环境中，为了减少处理机的空转时间以及处理机调度切换时的时间和空间开销，提高系统的并行能力，因此产生了更小的控制单位：线程。</p>
+<h3 id="引入线程的目的"><a href="#引入线程的目的" class="headerlink" title="引入线程的目的"></a>引入线程的目的</h3><ul>
+<li><p>在操作系统中，进程的引入提高了计算机资源的利用效率。但在进一步提高进程的并发性时，人们发现进程切换开销占的比重越来越大，同时进程间通信的效率也受到限制。</p>
+</li>
+<li><p>线程的引入正是为了简化进程间的通信，以小的开销来提高进程内的并发程度。</p>
+</li>
+</ul>
+<h3 id="进程与线程的比较"><a href="#进程与线程的比较" class="headerlink" title="进程与线程的比较"></a>进程与线程的比较</h3><ul>
+<li>调度性：线程作为调度的基本单位，同进程中线程切换不引起进程切换；不同进程的线程切换才引起进程切换</li>
+<li>并发性：一个进程间的多个线程可以并发</li>
+<li>拥有资源：线程仅拥有隶属进程的资源；进程是拥有资源的独立单位</li>
+<li>系统开销：进程大；线程小</li>
+<li>地址空间和其他资源：进程的地址空间相互独立，同一进程的多个线程共享进程资源，某进程的线程对其他进程不可见</li>
+<li>通信方面：进程间通信需要<strong>进程同步和互斥</strong>手段辅助，以保证数据一致性，而线程间可以直接读/写进程<strong>数据段</strong>来进行通信</li>
+</ul>
+<h3 id="线程的特点"><a href="#线程的特点" class="headerlink" title="线程的特点"></a>线程的特点</h3><ul>
+<li>是进程的一个实体，可作为系统独立调度和分派的基本单位。 </li>
+<li>不拥有系统资源（只拥有从属进程的全部资源，资源是分配给进程）。 </li>
+<li>一个进程中的多个线程可并发执行。（进程可创建线程执行同一程序的不同部分） </li>
+<li>系统开销小、切换快。（进程的多个线程都在进程的地址空间活动）</li>
+</ul>
+<h2 id="13．-处理机的调度层次及主要任务"><a href="#13．-处理机的调度层次及主要任务" class="headerlink" title="13． 处理机的调度层次及主要任务"></a>13． 处理机的调度层次及主要任务</h2><ul>
+<li>高级调度（作业调度、长程调度）<ul>
+<li>按照一定原则选择若干个后备作业调入==主存==，分配资源，并建立响应的进程，投入运行。当作业执行完毕时，还负责回收资源</li>
+<li>==作业==：是用户一次请求计算机系统为它完成任务所进行的工作总和<ul>
+<li>脱机作业：使用作业控制语言书写一份作业说明书，规定如何控制作业的执行</li>
+<li>联机作业：使用OS提供的命令语言<strong>直接</strong>提出对作业的控制要求</li>
+</ul>
+</li>
+<li>作业步：作业加工工作中的一个相对独立的步骤</li>
+</ul>
+</li>
+<li>中级调度（交换调度、中程调度、均衡调度）<ul>
+<li>按照给定的原则实现进程在主存和外村交换区之间的==换金换出==，以解决内存紧张问题，特别是具有虚拟存储器的系统中</li>
+</ul>
+</li>
+<li>低级调度（进程调度、短程调度）<ul>
+<li>按照某种策略从进程就绪队列中选择一个就绪进程，使其战友处理机运行</li>
+</ul>
+</li>
+</ul>
+<h2 id="14．-处理机调度算法的目标"><a href="#14．-处理机调度算法的目标" class="headerlink" title="14． 处理机调度算法的目标"></a>14． 处理机调度算法的目标</h2><h3 id="共同目的"><a href="#共同目的" class="headerlink" title="共同目的"></a>共同目的</h3><ul>
+<li>资源利用率</li>
+<li>公平性</li>
+<li>平衡性</li>
+<li>策略强制执行</li>
+</ul>
+<h3 id="批处理目的"><a href="#批处理目的" class="headerlink" title="批处理目的"></a>批处理目的</h3><ul>
+<li><p>平均周转时间短</p>
+</li>
+<li><p>系统吞吐量高</p>
+</li>
+<li><p>处理机利用率高</p>
+</li>
+</ul>
+<h3 id="分时系统的目标"><a href="#分时系统的目标" class="headerlink" title="分时系统的目标"></a>分时系统的目标</h3><ul>
+<li>响应时间快</li>
+<li>均衡性</li>
+</ul>
+<h2 id="实时系统的目标"><a href="#实时系统的目标" class="headerlink" title="实时系统的目标"></a>实时系统的目标</h2><ul>
+<li>截止时间的保证</li>
+<li>可预测性</li>
+</ul>
+<h2 id="15．-作业调度性能的衡量"><a href="#15．-作业调度性能的衡量" class="headerlink" title="15． 作业调度性能的衡量"></a>15． 作业调度性能的衡量</h2><ol>
+<li><p>接纳多少个作业</p>
+<p>每次进行作业调度时，应当从后备队列中获取多少作业调入内存，取决于多道<strong>程序度</strong></p>
+</li>
+<li><p>接纳哪些作业</p>
+<p>取决于作业调度算法</p>
+<ul>
+<li>先来先服务  简单</li>
+<li>短作业优先  常用</li>
+<li>给予作业优先级  较常用</li>
+<li>响应比高者优先  比较好</li>
+</ul>
+</li>
+</ol>
+<h2 id="16．-常用的作业调度及进程调度算法"><a href="#16．-常用的作业调度及进程调度算法" class="headerlink" title="16． 常用的作业调度及进程调度算法"></a>16． 常用的作业调度及进程调度算法</h2><h3 id="先来先服务调度算法（FCFS）"><a href="#先来先服务调度算法（FCFS）" class="headerlink" title="先来先服务调度算法（FCFS）"></a>先来先服务调度算法（FCFS）</h3><ul>
+<li>算法：先进先出，队列</li>
+<li>对于作业调度：从后备作业队列中（按进入的时间顺序排队）选择队首一个或几个作业，调入内存，创建进程，放入就绪队列。</li>
+<li>对于进程调度：从就绪队列中选择一个最先进入队列的进程，将CPU分配于它。</li>
+<li>==优点==: 实现简单 </li>
+<li>==缺点==: 没考虑进程的优先级</li>
+</ul>
+<h3 id="短作业-进程-优先调度算法（SJ-P-F）"><a href="#短作业-进程-优先调度算法（SJ-P-F）" class="headerlink" title="短作业(进程)优先调度算法（SJ(P)F）"></a>短作业(进程)优先调度算法（SJ(P)F）</h3><ul>
+<li>作业越短越优先调用</li>
+<li>优点：易于实现，效率比较高，降低作业的平均等待时间。</li>
+<li>缺点：<ul>
+<li>1、只照顾短作业而不考虑长作业的利益，长作业长时间等待而“饿死”</li>
+<li>2、未考虑作业的紧迫程度 </li>
+<li>3、估计执行时间不足，算法无法真正实现</li>
+</ul>
+</li>
+</ul>
+<h3 id="高优先权优先调度算法（HPF）"><a href="#高优先权优先调度算法（HPF）" class="headerlink" title="高优先权优先调度算法（HPF）"></a>高优先权优先调度算法（HPF）</h3><ul>
+<li><p>算法：总是把处理机分配给就绪队列中具有最高优先权的进程。</p>
+</li>
+<li><p>分类：</p>
+<ul>
+<li>非抢占式优先权算法</li>
+<li>抢占式优先权调度算法</li>
+</ul>
+</li>
+<li><p>优先权的类型</p>
+<ul>
+<li>静态优先权 创建进程时确定<ul>
+<li>优点  简单 </li>
+<li>缺点 不够精确</li>
+</ul>
+</li>
+<li>动态优先权<ul>
+<li>在进程创建时创立一个优先权，但在其生命周期内优先数可以动态变化。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="高响应比优先调度算法（-HRP-）"><a href="#高响应比优先调度算法（-HRP-）" class="headerlink" title="高响应比优先调度算法（ HRP ）"></a>高响应比优先调度算法（ HRP ）</h3><ul>
+<li><p>==响应比==是指==作业的响应时间==与==作业估计运行时间==的比值。</p>
+</li>
+<li><p>选择原则</p>
+<ul>
+<li>优先选取<strong>响应比值最大</strong>的作业。即兼顾等待时间长和运行时间短的作业，它是FCFS和SJF算法的结合。</li>
+</ul>
+</li>
+</ul>
+<h3 id="基于时间片的轮转调度算法（RR）"><a href="#基于时间片的轮转调度算法（RR）" class="headerlink" title="基于时间片的轮转调度算法（RR）"></a>基于时间片的轮转调度算法（RR）</h3><ul>
+<li><p>在分时系统中，为了满足系统对响应时间的要求，通常采用<strong>时间片轮转调度算法。</strong></p>
+</li>
+<li><p>简单轮转法(固定时间片轮转法）</p>
+<ul>
+<li>原理：系统把所有就绪进程按到达的先后顺序（ FIFO ）形成一个就绪队列，就绪队列中的所有进程按时间片依次轮流获得处理机。系统能在给定的时间内响应所有用户的请求。 </li>
+</ul>
+</li>
+<li><p>时间片大小的确定</p>
+<ul>
+<li><p>对系统性能有很大影响</p>
+</li>
+<li><p>可行选取</p>
+<p>$q= \frac T  N $</p>
+<p>q是时间片的大小，T是系统的响应时间，N是进入系统的进程数。</p>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">例：</span><br><span class="line">      有五个任务A,  B,  C,  D,   E，它们几乎同时先后到达，预计它们运行时间为10，6，2，4，8min，采用时间片轮转算法，令时间片为2min，计算其平均进程周转时间。（进程切换可不考虑）</span><br><span class="line">解：5个任务轮流执行的情况为：</span><br><span class="line">         第1轮  (A,   B,    C,   D,    E)  </span><br><span class="line">         第2轮  (A,   B,   D,    E)</span><br><span class="line">         第3轮  (A,   B,   E)</span><br><span class="line">         第4轮  (A,   E)</span><br><span class="line">         第5轮  (A)</span><br><span class="line">        </span><br><span class="line">         平均周转时间 T=(30+22+6+16+28)/5=20.4min</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    
+    
+    
+
+    <div>
+  	
+    	 <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-heart"></i>感谢阅读-------------</div>
+    
+</div>
+
+        
+    </div>
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode2.jpg" alt="Leeyf wechat" style="width: 200px; max-width: 100%;">
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="Leeyf 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Leeyf 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2201896635" rel="next" title="操作系统（二）">
+                <i class="fa fa-chevron-left"></i> 操作系统（二）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80Njg4Ni8yMzM4Nw"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="Leeyf">
+            
+              <p class="site-author-name" itemprop="name">Leeyf</p>
+              <p class="site-description motion-element" itemprop="description">——漫漫程序人生路</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">79</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/leeyf888" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:lee1042245208@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#11．-进程高级通信的主要方式"><span class="nav-number">1.</span> <span class="nav-text">11． 进程高级通信的主要方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-线程的定义、引入线程的目的，线程与进程的比较"><span class="nav-number">2.</span> <span class="nav-text">12. 线程的定义、引入线程的目的，线程与进程的比较</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#进程的两个基本属性"><span class="nav-number">2.1.</span> <span class="nav-text">进程的两个基本属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#线程的定义"><span class="nav-number">2.2.</span> <span class="nav-text">线程的定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引入线程的目的"><span class="nav-number">2.3.</span> <span class="nav-text">引入线程的目的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进程与线程的比较"><span class="nav-number">2.4.</span> <span class="nav-text">进程与线程的比较</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#线程的特点"><span class="nav-number">2.5.</span> <span class="nav-text">线程的特点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#13．-处理机的调度层次及主要任务"><span class="nav-number">3.</span> <span class="nav-text">13． 处理机的调度层次及主要任务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#14．-处理机调度算法的目标"><span class="nav-number">4.</span> <span class="nav-text">14． 处理机调度算法的目标</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#共同目的"><span class="nav-number">4.1.</span> <span class="nav-text">共同目的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#批处理目的"><span class="nav-number">4.2.</span> <span class="nav-text">批处理目的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分时系统的目标"><span class="nav-number">4.3.</span> <span class="nav-text">分时系统的目标</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实时系统的目标"><span class="nav-number">5.</span> <span class="nav-text">实时系统的目标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#15．-作业调度性能的衡量"><span class="nav-number">6.</span> <span class="nav-text">15． 作业调度性能的衡量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#16．-常用的作业调度及进程调度算法"><span class="nav-number">7.</span> <span class="nav-text">16． 常用的作业调度及进程调度算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#先来先服务调度算法（FCFS）"><span class="nav-number">7.1.</span> <span class="nav-text">先来先服务调度算法（FCFS）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#短作业-进程-优先调度算法（SJ-P-F）"><span class="nav-number">7.2.</span> <span class="nav-text">短作业(进程)优先调度算法（SJ(P)F）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#高优先权优先调度算法（HPF）"><span class="nav-number">7.3.</span> <span class="nav-text">高优先权优先调度算法（HPF）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#高响应比优先调度算法（-HRP-）"><span class="nav-number">7.4.</span> <span class="nav-text">高响应比优先调度算法（ HRP ）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基于时间片的轮转调度算法（RR）"><span class="nav-number">7.5.</span> <span class="nav-text">基于时间片的轮转调度算法（RR）</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder"><a href="https://www.liyafei.top/">www.liyafei.top</a> <a href="https://blog.csdn.net/qq_34691097" target="_blank" style="color:#DDAA00">李亚飞的CSDN</a> All Rights Reserved  备案号:晋ICP备19005844号-1   联系方式：QQ1042245208 友情链接：<a href="http://www.lichuachua.com" target="_blank" style="color:#DDAA00">李歘歘个人博客</a></span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">46.8k</span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=66475294";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

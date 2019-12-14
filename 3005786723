@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="李亚飞的博客">
 <meta property="og:description" content="1． 操作系统的定义及主要目标 定义： 操作系统是配置在计算机硬件上的第一层软件 目标 方便性 易于使用 有效性  提高系统资源的利用率 提高系统的吞吐量   可扩充性 方便增加新功能与模块   开放性 兼容性好      2． 操作系统的基本类型及特征 单道批处理系统 一批作业，一个作业一个作业的处理 缺点：系统中资源得不到充分利用   多道批处理系统 一批作业，多个作业批处理 优缺点： 资源利">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-10T12:36:13.804Z">
+<meta property="og:updated_time" content="2019-12-11T10:13:43.425Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="操作系统（一）">
 <meta name="twitter:description" content="1． 操作系统的定义及主要目标 定义： 操作系统是配置在计算机硬件上的第一层软件 目标 方便性 易于使用 有效性  提高系统资源的利用率 提高系统的吞吐量   可扩充性 方便增加新功能与模块   开放性 兼容性好      2． 操作系统的基本类型及特征 单道批处理系统 一批作业，一个作业一个作业的处理 缺点：系统中资源得不到充分利用   多道批处理系统 一批作业，多个作业批处理 优缺点： 资源利">
@@ -829,7 +829,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">78</span>
+                  <span class="site-state-item-count">79</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -934,7 +934,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">44.6k</span>
+    <span title="Site words total count">46.8k</span>
   
 </div>
 
