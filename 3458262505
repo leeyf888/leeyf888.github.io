@@ -114,7 +114,7 @@
 <meta property="og:description" content="11． 进程高级通信的主要方式 共享存储器系统 互相通信的进程共享某些数据结构或共享存储区，进程之间能够通过这些空间进行通信  管道通信系统 “管道”是用于连接一个读进程和一个写入进程以实现他们之间的通信的一个共享文件。 输入进程 ——&amp;gt; 数据  ——&amp;gt; 管道 |  ——&amp;gt; 数据 ——&amp;gt; 接收进程  消息传递系统 以格式化的（Message）==消息==为单位，将通信的数据">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20191213172654440.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70">
-<meta property="og:updated_time" content="2019-12-14T13:53:05.206Z">
+<meta property="og:updated_time" content="2019-12-19T08:09:36.835Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="操作系统（三）">
 <meta name="twitter:description" content="11． 进程高级通信的主要方式 共享存储器系统 互相通信的进程共享某些数据结构或共享存储区，进程之间能够通过这些空间进行通信  管道通信系统 “管道”是用于连接一个读进程和一个写入进程以实现他们之间的通信的一个共享文件。 输入进程 ——&amp;gt; 数据  ——&amp;gt; 管道 |  ——&amp;gt; 数据 ——&amp;gt; 接收进程  消息传递系统 以格式化的（Message）==消息==为单位，将通信的数据">
@@ -603,16 +603,15 @@
 <li><p>在分时系统中，为了满足系统对响应时间的要求，通常采用<strong>时间片轮转调度算法。</strong></p>
 </li>
 <li><p>简单轮转法(固定时间片轮转法）</p>
-<ul>
-<li>原理：系统把所有就绪进程按到达的先后顺序（ FIFO ）形成一个就绪队列，就绪队列中的所有进程按时间片依次轮流获得处理机。系统能在给定的时间内响应所有用户的请求。 </li>
-</ul>
+</li>
+<li><p>原理：系统把所有就绪进程按到达的先后顺序（ FIFO ）形成一个就绪队列，就绪队列中的所有进程按时间片依次轮流获得处理机。系统能在给定的时间内响应所有用户的请求。 </p>
 </li>
 <li><p>时间片大小的确定</p>
 <ul>
 <li><p>对系统性能有很大影响</p>
 </li>
 <li><p>可行选取</p>
-<p>$q= \frac T  N $</p>
+<p>$$q= \frac T  N $$</p>
 <p>q是时间片的大小，T是系统的响应时间，N是进入系统的进程数。</p>
 </li>
 </ul>
@@ -701,6 +700,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/3557352379" rel="prev" title="计算机网络的概述">
+                计算机网络的概述 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -783,7 +786,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">79</span>
+                  <span class="site-state-item-count">80</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -794,7 +797,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -888,7 +891,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">46.8k</span>
+    <span title="Site words total count">48.2k</span>
   
 </div>
 

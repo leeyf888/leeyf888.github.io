@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon16x16.ico?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="JAVA,Linux,程序,李亚飞,技术,博客">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="计算机网络的概述计算机网络的产生与发展计算机网络的重要功能 连通性 彼此连通，交换信息 共享  信息共享、软硬件共享  网络、互联网、因特网网络 ： 结点与链路构成 互联网：internet连接组成 网络的网络    网络被路由器连接构成的网络 因特网：Internet 特指全球最大的网    主机和互联网 构成 互联网发展历程123graph TBARPAnet --&amp;gt; 因特网(&amp;quot">
+<meta name="keywords" content="java,linux,数据结构,算法,云顶书院">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机网络的概述">
+<meta property="og:url" content="https://liyafei.top/3557352379">
+<meta property="og:site_name" content="李亚飞的博客">
+<meta property="og:description" content="计算机网络的概述计算机网络的产生与发展计算机网络的重要功能 连通性 彼此连通，交换信息 共享  信息共享、软硬件共享  网络、互联网、因特网网络 ： 结点与链路构成 互联网：internet连接组成 网络的网络    网络被路由器连接构成的网络 因特网：Internet 特指全球最大的网    主机和互联网 构成 互联网发展历程123graph TBARPAnet --&amp;gt; 因特网(&amp;quot">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20191218204530651.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20191218204817853.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2019121821270922.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3957645454,604904669&fm=173&app=25&f=JPEG?w=640&h=315&s=1AAA702383F5498A5AFC35CA0000E0B1">
+<meta property="og:image" content="https://bkimg.cdn.bcebos.com/pic/2f738bd4b31c8701a1dd8397287f9e2f0708ff53@wm_1,g_7,k_d2F0ZXIvYmFpa2U4MA==,xp_5,yp_5">
+<meta property="og:image" content="https://bkimg.cdn.bcebos.com/pic/6d81800a19d8bc3e6016fdb58c8ba61ea8d345b7@wm_1,g_7,k_d2F0ZXIvYmFpa2U4MA==,xp_5,yp_5">
+<meta property="og:updated_time" content="2019-12-19T11:26:22.402Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="计算机网络的概述">
+<meta name="twitter:description" content="计算机网络的概述计算机网络的产生与发展计算机网络的重要功能 连通性 彼此连通，交换信息 共享  信息共享、软硬件共享  网络、互联网、因特网网络 ： 结点与链路构成 互联网：internet连接组成 网络的网络    网络被路由器连接构成的网络 因特网：Internet 特指全球最大的网    主机和互联网 构成 互联网发展历程123graph TBARPAnet --&amp;gt; 因特网(&amp;quot">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20191218204530651.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://liyafei.top/3557352379">
+
+
+
+
+
+  <title>计算机网络的概述 | 李亚飞的博客</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?32e0d3c6b1cd79c9d8270086407ca0ca";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">李亚飞的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">——漫漫程序人生路</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://liyafei.top/3557352379">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Leeyf">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="李亚飞的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">计算机网络的概述</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-18T19:27:06+08:00">
+                2019-12-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/计算机网络/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机网络</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.4k字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  4分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="计算机网络的概述"><a href="#计算机网络的概述" class="headerlink" title="计算机网络的概述"></a>计算机网络的概述</h1><h2 id="计算机网络的产生与发展"><a href="#计算机网络的产生与发展" class="headerlink" title="计算机网络的产生与发展"></a>计算机网络的产生与发展</h2><h3 id="计算机网络的重要功能"><a href="#计算机网络的重要功能" class="headerlink" title="计算机网络的重要功能"></a>计算机网络的重要功能</h3><ul>
+<li>连通性 彼此连通，交换信息</li>
+<li>共享  信息共享、软硬件共享</li>
+</ul>
+<h3 id="网络、互联网、因特网"><a href="#网络、互联网、因特网" class="headerlink" title="网络、互联网、因特网"></a>网络、互联网、因特网</h3><p>网络 ： 结点与链路构成</p>
+<p>互联网：internet连接组成 网络的网络    网络被路由器连接构成的网络</p>
+<p>因特网：Internet 特指全球最大的网    主机和互联网 构成</p>
+<h3 id="互联网发展历程"><a href="#互联网发展历程" class="headerlink" title="互联网发展历程"></a>互联网发展历程</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">graph TB</span><br><span class="line">ARPAnet --&gt; 因特网(&quot;（三级结构）因特网&quot;)</span><br><span class="line">因特网 --&gt; ISP(&quot;（多层次结构）ISP&quot;)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>三级结构</p>
+<p>主干网、地区网、校园网（企业网）</p>
+</li>
+<li><p>ISP：互联网服务提供商</p>
+</li>
+<li><p>中国互联网</p>
+</li>
+</ul>
+<p><img src="https://img-blog.csdnimg.cn/20191218204530651.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="因特网标准化工作"><a href="#因特网标准化工作" class="headerlink" title="因特网标准化工作"></a>因特网标准化工作</h3><ul>
+<li>因特网研究部</li>
+<li>因特网工程部</li>
+</ul>
+<p><img src="https://img-blog.csdnimg.cn/20191218204817853.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="互联网的组成"><a href="#互联网的组成" class="headerlink" title="互联网的组成"></a>互联网的组成</h2><h3 id="核心部分"><a href="#核心部分" class="headerlink" title="核心部分"></a>核心部分</h3><h4 id="数据交换方式"><a href="#数据交换方式" class="headerlink" title="数据交换方式"></a>数据交换方式</h4><ul>
+<li><p>电路交换   打电话例子</p>
+<ul>
+<li>建立连接</li>
+<li>通话</li>
+<li>释放连接</li>
+</ul>
+<p>适合实时通讯场景</p>
+</li>
+<li><p>报文交换   </p>
+<ul>
+<li>要发送的整块数据称为报文</li>
+<li>一般比分组长的多，时延较长</li>
+</ul>
+</li>
+<li><p>分组交换</p>
+<ul>
+<li><p>发送端 将报文分成多块，每个由<strong>首部</strong>和<strong>数据</strong>构成，然后分组发送</p>
+</li>
+<li><p>接收端 将每个包的首部去掉，然后获取数据</p>
+</li>
+<li><p>线路公用，不会被占用</p>
+</li>
+<li><p><strong>路由器</strong>存储转发功能，是用来转发分组的</p>
+</li>
+<li><p>优点：高效、灵活、迅速、可靠</p>
+</li>
+<li><p>问题：时延、开销</p>
+</li>
+</ul>
+</li>
+<li><p><img src="https://img-blog.csdnimg.cn/2019121821270922.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+</li>
+</ul>
+<h3 id="边缘部分"><a href="#边缘部分" class="headerlink" title="边缘部分"></a>边缘部分</h3><h4 id="主机通信方式"><a href="#主机通信方式" class="headerlink" title="主机通信方式"></a>主机通信方式</h4><ul>
+<li>客户-服务器方式(C-S)</li>
+<li>对等连接方式（P2P）</li>
+</ul>
+<h2 id="计算机网络的分类"><a href="#计算机网络的分类" class="headerlink" title="计算机网络的分类"></a>计算机网络的分类</h2><table>
+<thead>
+<tr>
+<th>作用范围</th>
+<th>使用者</th>
+<th>拓扑结构</th>
+<th>交换方式</th>
+<th>工作方式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>广域网</td>
+<td>共用网</td>
+<td>总线型</td>
+<td>电路交换</td>
+<td>资源子网</td>
+</tr>
+<tr>
+<td>城域网MAN</td>
+<td>专用网</td>
+<td>环型</td>
+<td>报文交换</td>
+<td>通信子网</td>
+</tr>
+<tr>
+<td>局域网LAN</td>
+<td></td>
+<td>星型</td>
+<td>分组交换</td>
+<td>接入网</td>
+</tr>
+<tr>
+<td>个人区域PAN</td>
+<td></td>
+<td>树型</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>网状</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="计算机网络的性能"><a href="#计算机网络的性能" class="headerlink" title="计算机网络的性能"></a>计算机网络的性能</h2><h3 id="速率"><a href="#速率" class="headerlink" title="速率"></a>速率</h3><ul>
+<li><p>数据（比特）的传送速率，数据率</p>
+</li>
+<li><p>信道内的速率，信道即从发送端到输出端的描述</p>
+</li>
+</ul>
+<h3 id="带宽"><a href="#带宽" class="headerlink" title="带宽"></a>带宽</h3><ul>
+<li>一般的指某个信号具有的频带宽度，单位HZ</li>
+<li>计网中，表示<strong>单位时间</strong>内网络中某信道的<strong>最大数据率</strong></li>
+</ul>
+<h3 id="吞吐量"><a href="#吞吐量" class="headerlink" title="吞吐量"></a>吞吐量</h3><ul>
+<li>表示单位时间通过某个网络的实际的数据量</li>
+</ul>
+<h3 id="时延"><a href="#时延" class="headerlink" title="时延"></a>时延</h3><ul>
+<li>发送时延<ul>
+<li>数据块长度（比特）/信道带宽（比特/秒）</li>
+</ul>
+</li>
+<li>传播时延<ul>
+<li>信道长度（米）/信号在信道上的传播速率（米/秒）</li>
+</ul>
+</li>
+<li>处理时延<ul>
+<li>主机或路由器在接收到分组是要花费一定时间做处理</li>
+</ul>
+</li>
+<li>排队时延<ul>
+<li>分组在进入路由器后先在输入队列中排队等待处理</li>
+<li>在路由器确认了转发端口后，在输出队列中排队等待转发</li>
+</ul>
+</li>
+</ul>
+<h3 id="时延带宽积"><a href="#时延带宽积" class="headerlink" title="时延带宽积"></a>时延带宽积</h3><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">时延带宽积 = 传播时延 x 带宽</span><br></pre></td></tr></table></figure>
+
+<h3 id="往返时间RTT"><a href="#往返时间RTT" class="headerlink" title="往返时间RTT"></a>往返时间RTT</h3><p>从发送方发送数据开始，到发送方接收到确认的时间</p>
+<h3 id="利用率"><a href="#利用率" class="headerlink" title="利用率"></a>利用率</h3><ul>
+<li><p>通道利用率</p>
+<p>有数据通过时间 /（有+无）数据通过时间</p>
+</li>
+<li><p>网络利用率：信道利用率的加权平均值</p>
+</li>
+</ul>
+<h3 id="计算机网络体系结构"><a href="#计算机网络体系结构" class="headerlink" title="计算机网络体系结构"></a>计算机网络体系结构</h3><h3 id="相关概念"><a href="#相关概念" class="headerlink" title="相关概念"></a>相关概念</h3><ul>
+<li>ISO国际标准化组织</li>
+<li>OSI互联网法律上国际标准</li>
+<li>TCP/IP Suite 实际上国际标准</li>
+<li>Network Protocols 数据交换遵守协议</li>
+<li>网络体系结构 计算机网络各层及协议的集合</li>
+<li><img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3957645454,604904669&fm=173&app=25&f=JPEG?w=640&h=315&s=1AAA702383F5498A5AFC35CA0000E0B1" alt="img"></li>
+</ul>
+<h4 id="OSI参考模型"><a href="#OSI参考模型" class="headerlink" title="OSI参考模型"></a>OSI参考模型</h4><p><img src="https://bkimg.cdn.bcebos.com/pic/2f738bd4b31c8701a1dd8397287f9e2f0708ff53@wm_1,g_7,k_d2F0ZXIvYmFpa2U4MA==,xp_5,yp_5" alt="img"></p>
+<ul>
+<li><p>应用层    能产生网络流量、能与用户交互的应用程序</p>
+</li>
+<li><p>表示层    加密、压缩  开发人员处理 </p>
+</li>
+<li><p>会话层    服务和客户端建立的会话 </p>
+<ul>
+<li>例子  浏览器session  ssh建立服务器间会话等等   </li>
+<li>能够查木马   linux<code>netstat -nut</code> window<code>netstat -nb</code></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>传输层 （运输层）</p>
+<p>负责<strong>两台主机中进程之间的通信</strong>提供<strong>通用的数据传输</strong>服务</p>
+<ul>
+<li>可靠传输 TCP协议<ul>
+<li><strong>控制传输协议TCP</strong> 提供面向连接、可靠的数据传输服务</li>
+<li>建立回话 需要完整的数据，如果丢包需要重新传输</li>
+</ul>
+</li>
+<li>不可靠传输<ul>
+<li><strong>用户数据报协议 UDP</strong> 提供无限连接、尽最大努力的数据传输服务</li>
+<li>qq信息传输等，多次传输，失败才提醒数据发送失败</li>
+<li>域名解析</li>
+</ul>
+</li>
+<li>流量控制<ul>
+<li>接收方处理不过来，告诉服务器暂停传输</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>网络层（使用IP协议）</p>
+<p>负责为分组交换网上的不同主机提供通信服务。</p>
+<p>发送数据时，把传输层产生的报文段或数据报封装成 <strong>分组</strong>或<strong>包</strong>传送</p>
+<ul>
+<li>IP地址编址</li>
+<li>选择最佳路径</li>
+</ul>
+</li>
+<li><p>数据链路层</p>
+<ul>
+<li><p>数据如何封装</p>
+<p>将网络层交下来的<strong>IP数据报</strong>组装成帧（framing）,在两个相邻结点之间的链路上传输帧。</p>
+<p>帧包含<strong>数据</strong>和<strong>必要控制信息</strong>（同步信息、地址信息、差错控制等）</p>
+</li>
+<li><p>添加物理层地址 MAC</p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>物理层</p>
+<ul>
+<li>电压</li>
+<li>接口标准</li>
+</ul>
+</li>
+</ul>
+<h4 id="网络排除"><a href="#网络排除" class="headerlink" title="网络排除"></a>网络排除</h4><p>从底向上逐一排除错误</p>
+<h4 id="网络安全和OSI参考模型"><a href="#网络安全和OSI参考模型" class="headerlink" title="网络安全和OSI参考模型"></a>网络安全和OSI参考模型</h4><ul>
+<li>物理层安全 </li>
+<li>数据链路层安全 ADSL（） AP密码</li>
+<li>网络层安全  </li>
+<li>应用层安全  SQL注入漏洞  上传漏洞</li>
+</ul>
+<h4 id="TCP-IP协议"><a href="#TCP-IP协议" class="headerlink" title="TCP/IP协议"></a>TCP/IP协议</h4><p><img src="https://bkimg.cdn.bcebos.com/pic/6d81800a19d8bc3e6016fdb58c8ba61ea8d345b7@wm_1,g_7,k_d2F0ZXIvYmFpa2U4MA==,xp_5,yp_5" alt="img"></p>
+<h4 id="开放式系统信息交换涉及概念"><a href="#开放式系统信息交换涉及概念" class="headerlink" title="开放式系统信息交换涉及概念"></a>开放式系统信息交换涉及概念</h4><ul>
+<li>实体 交换信息的硬件或软件进程</li>
+<li>协议  控制两个对等实体通信的规则</li>
+<li>服务 下层向上层提供服务 上层需要下层的服务来实现本层功能</li>
+<li>服务访问点  相邻两层实体间交换信息的地方</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    <div>
+  	
+    	 <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-heart"></i>感谢阅读-------------</div>
+    
+</div>
+
+        
+    </div>
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode2.jpg" alt="Leeyf wechat" style="width: 200px; max-width: 100%;">
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="Leeyf 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Leeyf 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/3458262505" rel="next" title="操作系统（三）">
+                <i class="fa fa-chevron-left"></i> 操作系统（三）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80Njg4Ni8yMzM4Nw"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="Leeyf">
+            
+              <p class="site-author-name" itemprop="name">Leeyf</p>
+              <p class="site-description motion-element" itemprop="description">——漫漫程序人生路</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">80</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/leeyf888" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:lee1042245208@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#计算机网络的概述"><span class="nav-number">1.</span> <span class="nav-text">计算机网络的概述</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#计算机网络的产生与发展"><span class="nav-number">1.1.</span> <span class="nav-text">计算机网络的产生与发展</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#计算机网络的重要功能"><span class="nav-number">1.1.1.</span> <span class="nav-text">计算机网络的重要功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网络、互联网、因特网"><span class="nav-number">1.1.2.</span> <span class="nav-text">网络、互联网、因特网</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#互联网发展历程"><span class="nav-number">1.1.3.</span> <span class="nav-text">互联网发展历程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#因特网标准化工作"><span class="nav-number">1.1.4.</span> <span class="nav-text">因特网标准化工作</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#互联网的组成"><span class="nav-number">1.2.</span> <span class="nav-text">互联网的组成</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#核心部分"><span class="nav-number">1.2.1.</span> <span class="nav-text">核心部分</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#数据交换方式"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">数据交换方式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#边缘部分"><span class="nav-number">1.2.2.</span> <span class="nav-text">边缘部分</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#主机通信方式"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">主机通信方式</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计算机网络的分类"><span class="nav-number">1.3.</span> <span class="nav-text">计算机网络的分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计算机网络的性能"><span class="nav-number">1.4.</span> <span class="nav-text">计算机网络的性能</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#速率"><span class="nav-number">1.4.1.</span> <span class="nav-text">速率</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#带宽"><span class="nav-number">1.4.2.</span> <span class="nav-text">带宽</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#吞吐量"><span class="nav-number">1.4.3.</span> <span class="nav-text">吞吐量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#时延"><span class="nav-number">1.4.4.</span> <span class="nav-text">时延</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#时延带宽积"><span class="nav-number">1.4.5.</span> <span class="nav-text">时延带宽积</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#往返时间RTT"><span class="nav-number">1.4.6.</span> <span class="nav-text">往返时间RTT</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#利用率"><span class="nav-number">1.4.7.</span> <span class="nav-text">利用率</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#计算机网络体系结构"><span class="nav-number">1.4.8.</span> <span class="nav-text">计算机网络体系结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#相关概念"><span class="nav-number">1.4.9.</span> <span class="nav-text">相关概念</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#OSI参考模型"><span class="nav-number">1.4.9.1.</span> <span class="nav-text">OSI参考模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#网络排除"><span class="nav-number">1.4.9.2.</span> <span class="nav-text">网络排除</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#网络安全和OSI参考模型"><span class="nav-number">1.4.9.3.</span> <span class="nav-text">网络安全和OSI参考模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#TCP-IP协议"><span class="nav-number">1.4.9.4.</span> <span class="nav-text">TCP/IP协议</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#开放式系统信息交换涉及概念"><span class="nav-number">1.4.9.5.</span> <span class="nav-text">开放式系统信息交换涉及概念</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder"><a href="https://www.liyafei.top/">www.liyafei.top</a> <a href="https://blog.csdn.net/qq_34691097" target="_blank" style="color:#DDAA00">李亚飞的CSDN</a> All Rights Reserved  备案号:晋ICP备19005844号-1   联系方式：QQ1042245208 友情链接：<a href="http://www.lichuachua.com" target="_blank" style="color:#DDAA00">李歘歘个人博客</a></span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">48.2k</span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=66475294";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
