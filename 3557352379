@@ -119,7 +119,7 @@
 <meta property="og:image" content="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3957645454,604904669&fm=173&app=25&f=JPEG?w=640&h=315&s=1AAA702383F5498A5AFC35CA0000E0B1">
 <meta property="og:image" content="https://bkimg.cdn.bcebos.com/pic/2f738bd4b31c8701a1dd8397287f9e2f0708ff53@wm_1,g_7,k_d2F0ZXIvYmFpa2U4MA==,xp_5,yp_5">
 <meta property="og:image" content="https://bkimg.cdn.bcebos.com/pic/6d81800a19d8bc3e6016fdb58c8ba61ea8d345b7@wm_1,g_7,k_d2F0ZXIvYmFpa2U4MA==,xp_5,yp_5">
-<meta property="og:updated_time" content="2019-12-19T11:26:22.402Z">
+<meta property="og:updated_time" content="2019-12-19T13:45:59.677Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="计算机网络的概述">
 <meta name="twitter:description" content="计算机网络的概述计算机网络的产生与发展计算机网络的重要功能 连通性 彼此连通，交换信息 共享  信息共享、软硬件共享  网络、互联网、因特网网络 ： 结点与链路构成 互联网：internet连接组成 网络的网络    网络被路由器连接构成的网络 因特网：Internet 特指全球最大的网    主机和互联网 构成 互联网发展历程123graph TBARPAnet --&amp;gt; 因特网(&amp;quot">
@@ -740,6 +740,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/3276784980" rel="prev" title="算法小练——下一个排列">
+                算法小练——下一个排列 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -822,7 +826,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">80</span>
+                  <span class="site-state-item-count">82</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -927,7 +931,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">48.2k</span>
+    <span title="Site words total count">50.3k</span>
   
 </div>
 
