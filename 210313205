@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="李亚飞的博客">
 <meta property="og:description" content="树基础 树的定义方式有很多。定义一棵树一般的通过递归的方式来实现。  树是由root根节点以及多个或0个的子树组成  每个子树的根都由根root的一条有向边所连结  每个子树的跟是root的儿子，而root是子树的跟的父亲 具有相同父亲节点的是兄弟   节点n1到nk的路径是n1,n2,…,nk构成的一个序列，使得对于1&amp;lt;=i&amp;lt;=k的节点ni是ni+1的父亲  对任意节点的ni，ni的">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-24T12:34:40.692Z">
+<meta property="og:updated_time" content="2020-01-11T08:48:50.778Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据结构——树、二叉树">
 <meta name="twitter:description" content="树基础 树的定义方式有很多。定义一棵树一般的通过递归的方式来实现。  树是由root根节点以及多个或0个的子树组成  每个子树的根都由根root的一条有向边所连结  每个子树的跟是root的儿子，而root是子树的跟的父亲 具有相同父亲节点的是兄弟   节点n1到nk的路径是n1,n2,…,nk构成的一个序列，使得对于1&amp;lt;=i&amp;lt;=k的节点ni是ni+1的父亲  对任意节点的ni，ni的">
@@ -382,7 +382,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  514字
+                  520字
                 </span>
               
 
@@ -461,6 +461,7 @@
 </li>
 </ul>
 <h3 id="二叉查找树ADT"><a href="#二叉查找树ADT" class="headerlink" title="二叉查找树ADT"></a>二叉查找树ADT</h3><p>性质： 对于树中的每个节点X，它的左子树中所有项的值都小于X中的项，它的右子树中所有项的值都大于X中的项。</p>
+<p><a href="http://liyafei.top/1587207490">详情点击查看</a></p>
 
       
     </div>
