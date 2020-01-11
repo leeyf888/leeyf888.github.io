@@ -114,7 +114,7 @@
 <meta property="og:description" content="下载wget https://github.com/microsoftarchive/redis/archive/win-3.2.100.tar.gz 解压tar -zxvf win-3.2.100.tar.gz cd   Redis-x64-3.2.100/ cd utlis 安装./install_server.sh 默认安装就一直回车就可以  配置redisvi  /etc/redis/63">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://liyafei.top/pic/image-20200111203057659.png">
-<meta property="og:updated_time" content="2020-01-11T12:33:20.963Z">
+<meta property="og:updated_time" content="2020-01-11T12:33:28.199Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="redis配置">
 <meta name="twitter:description" content="下载wget https://github.com/microsoftarchive/redis/archive/win-3.2.100.tar.gz 解压tar -zxvf win-3.2.100.tar.gz cd   Redis-x64-3.2.100/ cd utlis 安装./install_server.sh 默认安装就一直回车就可以  配置redisvi  /etc/redis/63">

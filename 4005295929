@@ -114,7 +114,7 @@
 <meta property="og:description" content="终于有时间来写文章了～ 今天介绍一款linux必备的shell 话不多说直接上图  这个shelld的特点  美观 功能强大，可以添加各类插件（一键解压、压缩、历史命令等） 适合初学者用来掌握命令  那么直接上安装过程：  centos系统：yum install zsh ubuntu系统：apt-get install ubuntu 注：如果是要全系统使用，则使用root帐号执行该指令  启用z">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/2020011117132693.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70">
-<meta property="og:updated_time" content="2020-01-11T12:03:31.510Z">
+<meta property="og:updated_time" content="2020-01-11T12:33:28.203Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一个美观好用的zsh">
 <meta name="twitter:description" content="终于有时间来写文章了～ 今天介绍一款linux必备的shell 话不多说直接上图  这个shelld的特点  美观 功能强大，可以添加各类插件（一键解压、压缩、历史命令等） 适合初学者用来掌握命令  那么直接上安装过程：  centos系统：yum install zsh ubuntu系统：apt-get install ubuntu 注：如果是要全系统使用，则使用root帐号执行该指令  启用z">
