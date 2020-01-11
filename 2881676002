@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon16x16.ico?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="JAVA,Linux,程序,李亚飞,技术,博客">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="网络层提供的两种服务 网络层关注如何将分组从源端沿着网络路径送达目的端 争论实质：在计算机通信中，可靠交付应当由谁来负责？  虚电路服务 是逻辑上的连接，并不是简历一条物理连接 通俗的理解：一条流水线，是传什么的就传什么，中间不更改，只不过是传输前才做逻辑上指定的流水线  数据报服务（==现在使用服务==） 根据数据报上的地址，路由器接收地址信息临时选择传递，最终到达目的地址 通俗的理解：一个无向">
+<meta name="keywords" content="java,linux,数据结构,算法,云顶书院">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机网络——网络层">
+<meta property="og:url" content="https://liyafei.top/2881676002">
+<meta property="og:site_name" content="李亚飞的博客">
+<meta property="og:description" content="网络层提供的两种服务 网络层关注如何将分组从源端沿着网络路径送达目的端 争论实质：在计算机通信中，可靠交付应当由谁来负责？  虚电路服务 是逻辑上的连接，并不是简历一条物理连接 通俗的理解：一条流水线，是传什么的就传什么，中间不更改，只不过是传输前才做逻辑上指定的流水线  数据报服务（==现在使用服务==） 根据数据报上的地址，路由器接收地址信息临时选择传递，最终到达目的地址 通俗的理解：一个无向">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20191224173152831.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2019122418111095.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20191224182426106.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20191224183316979.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20191224184041694.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70">
+<meta property="og:updated_time" content="2019-12-24T10:41:18.891Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="计算机网络——网络层">
+<meta name="twitter:description" content="网络层提供的两种服务 网络层关注如何将分组从源端沿着网络路径送达目的端 争论实质：在计算机通信中，可靠交付应当由谁来负责？  虚电路服务 是逻辑上的连接，并不是简历一条物理连接 通俗的理解：一条流水线，是传什么的就传什么，中间不更改，只不过是传输前才做逻辑上指定的流水线  数据报服务（==现在使用服务==） 根据数据报上的地址，路由器接收地址信息临时选择传递，最终到达目的地址 通俗的理解：一个无向">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20191224173152831.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://liyafei.top/2881676002">
+
+
+
+
+
+  <title>计算机网络——网络层 | 李亚飞的博客</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?32e0d3c6b1cd79c9d8270086407ca0ca";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">李亚飞的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">——漫漫程序人生路</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://liyafei.top/2881676002">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Leeyf">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="李亚飞的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">计算机网络——网络层</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-23T21:23:30+08:00">
+                2019-12-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/计算机网络/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机网络</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  845字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="网络层提供的两种服务"><a href="#网络层提供的两种服务" class="headerlink" title="网络层提供的两种服务"></a>网络层提供的两种服务</h1><ul>
+<li>网络层关注如何将<strong>分组</strong>从源端沿着网络路径送达目的端</li>
+<li>争论实质：在计算机通信中，可靠交付应当由谁来负责？</li>
+</ul>
+<h2 id="虚电路服务"><a href="#虚电路服务" class="headerlink" title="虚电路服务"></a>虚电路服务</h2><ul>
+<li>是逻辑上的连接，并不是简历一条物理连接</li>
+<li>通俗的理解：一条流水线，是传什么的就传什么，中间不更改，只不过是传输前才做逻辑上指定的流水线</li>
+</ul>
+<h2 id="数据报服务（-现在使用服务-）"><a href="#数据报服务（-现在使用服务-）" class="headerlink" title="数据报服务（==现在使用服务==）"></a>数据报服务（==现在使用服务==）</h2><ul>
+<li>根据数据报上的地址，路由器接收地址信息临时选择传递，最终到达目的地址</li>
+<li>通俗的理解：一个无向图，中间有若干的路，随机的走，最终到达终点</li>
+</ul>
+<h2 id="比较"><a href="#比较" class="headerlink" title="比较"></a>比较</h2><table>
+<thead>
+<tr>
+<th>对比的方面</th>
+<th>虚电路服务</th>
+<th>数据报服务</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>思路</td>
+<td>可靠通信由网络保证</td>
+<td>可靠通信由用户主机保证</td>
+</tr>
+<tr>
+<td>连接的建立</td>
+<td>必须有</td>
+<td>不需要</td>
+</tr>
+<tr>
+<td>终点地址</td>
+<td>仅在连接建立阶段使用，每个分钟用短的虚电路号</td>
+<td>每个分组有终点的完整地址</td>
+</tr>
+<tr>
+<td>分组的转发</td>
+<td>同一个虚电路的分组均按照同一个路由转发</td>
+<td>每一个分组独立选择路由进行转发</td>
+</tr>
+<tr>
+<td>当结点故障时</td>
+<td>所有通过出故障结点的虚电路均不能工作</td>
+<td>出故障的结点可能会丢失分组，一些路由可能会发生变化</td>
+</tr>
+<tr>
+<td>分组的顺序</td>
+<td>总是按发送顺序到达</td>
+<td>不一定按发送顺序到达</td>
+</tr>
+<tr>
+<td>端到端的差错处理和流量控制</td>
+<td>可由网络负责，也可由用户主机负责</td>
+<td>由用户主机负责</td>
+</tr>
+</tbody></table>
+<h1 id="网际协议IP"><a href="#网际协议IP" class="headerlink" title="网际协议IP"></a>网际协议IP</h1><h2 id="虚拟互联网"><a href="#虚拟互联网" class="headerlink" title="虚拟互联网"></a>虚拟互联网</h2><h3 id="网络互联的设备"><a href="#网络互联的设备" class="headerlink" title="网络互联的设备"></a>网络互联的设备</h3><h4 id="中间设备（中间系统-中继系统）"><a href="#中间设备（中间系统-中继系统）" class="headerlink" title="中间设备（中间系统|中继系统）"></a>中间设备（中间系统|中继系统）</h4><ul>
+<li>物理层中继系统:转发器</li>
+<li>数据链路层中继系统：网桥或桥接器</li>
+<li>网络层中继系统：路由器</li>
+<li>网络层以上的中继系统：网关（非路由器接口的意思）</li>
+</ul>
+<h3 id="网络互联的问题"><a href="#网络互联的问题" class="headerlink" title="网络互联的问题"></a>网络互联的问题</h3><ul>
+<li>不同的寻址方案</li>
+<li>不同的最大分组长度</li>
+<li>不同的网络接入机制</li>
+<li>不同的超时控制</li>
+<li>不同的差错恢复方法</li>
+<li>不同的状态报告方法</li>
+<li>不同的路由选择技术</li>
+<li>不同的永辉接入控制</li>
+<li>不同的服务（面向连接服务和无连接服务）</li>
+<li>不同的管理与控制方式</li>
+</ul>
+<h3 id="分组在互联网中的传送"><a href="#分组在互联网中的传送" class="headerlink" title="分组在互联网中的传送"></a>分组在互联网中的传送</h3><p><img src="https://img-blog.csdnimg.cn/20191224173152831.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="互联网络与虚拟互联网络"><a href="#互联网络与虚拟互联网络" class="headerlink" title="互联网络与虚拟互联网络"></a>互联网络与虚拟互联网络</h3><ul>
+<li>实际的有物理设备组建的网络</li>
+<li>虚拟的互联网络（互联网）</li>
+</ul>
+<h3 id="IP协议简介"><a href="#IP协议简介" class="headerlink" title="IP协议简介"></a>IP协议简介</h3><p>网络协议IP是TCP/IP体系中两个最重要的协议之一</p>
+<p>与其配合的还有四个协议</p>
+<ul>
+<li>地址解析协议ARP</li>
+<li>逆地址解析协议RARP</li>
+<li>网际控制报文协议ICMP</li>
+<li>网际组管理协议IGMP</li>
+</ul>
+<p><img src="https://img-blog.csdnimg.cn/2019122418111095.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="IP地址"><a href="#IP地址" class="headerlink" title="IP地址"></a>IP地址</h2><h3 id="IP层次结构"><a href="#IP层次结构" class="headerlink" title="IP层次结构"></a>IP层次结构</h3><p>层次化IP将32位的IP地址分为网络ID和主机ID</p>
+<h3 id="网络地址（网络号）"><a href="#网络地址（网络号）" class="headerlink" title="网络地址（网络号）"></a>网络地址（网络号）</h3><ul>
+<li>唯一指定了每个网络。同一网络中的每台计算机都共享相同的网络地址，并用它作为IP的一部分</li>
+</ul>
+<p><img src="https://img-blog.csdnimg.cn/20191224182426106.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="网络号字段和主机号字段"><a href="#网络号字段和主机号字段" class="headerlink" title="网络号字段和主机号字段"></a>网络号字段和主机号字段</h3><p><img src="https://img-blog.csdnimg.cn/20191224183316979.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="三种常用的类别IP地址"><a href="#三种常用的类别IP地址" class="headerlink" title="三种常用的类别IP地址"></a>三种常用的类别IP地址</h3><p><img src="https://img-blog.csdnimg.cn/20191224184041694.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h1 id="网际控制报文协议ICMP"><a href="#网际控制报文协议ICMP" class="headerlink" title="网际控制报文协议ICMP"></a>网际控制报文协议ICMP</h1><h1 id="因特网的路由选择协议"><a href="#因特网的路由选择协议" class="headerlink" title="因特网的路由选择协议"></a>因特网的路由选择协议</h1><h1 id="IP多播"><a href="#IP多播" class="headerlink" title="IP多播"></a>IP多播</h1><h1 id="虚拟专用网VPN和网络地址转换NAT"><a href="#虚拟专用网VPN和网络地址转换NAT" class="headerlink" title="虚拟专用网VPN和网络地址转换NAT"></a>虚拟专用网VPN和网络地址转换NAT</h1>
+      
+    </div>
+    
+    
+    
+
+    <div>
+  	
+    	 <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-heart"></i>感谢阅读-------------</div>
+    
+</div>
+
+        
+    </div>
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode2.jpg" alt="Leeyf wechat" style="width: 200px; max-width: 100%;">
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="Leeyf 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Leeyf 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2172443077" rel="next" title="计算机网络——数据链路层">
+                <i class="fa fa-chevron-left"></i> 计算机网络——数据链路层
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/826691920" rel="prev" title="Oralce介绍与安装">
+                Oralce介绍与安装 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80Njg4Ni8yMzM4Nw"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="Leeyf">
+            
+              <p class="site-author-name" itemprop="name">Leeyf</p>
+              <p class="site-description motion-element" itemprop="description">——漫漫程序人生路</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">87</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/leeyf888" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:lee1042245208@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#网络层提供的两种服务"><span class="nav-number">1.</span> <span class="nav-text">网络层提供的两种服务</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#虚电路服务"><span class="nav-number">1.1.</span> <span class="nav-text">虚电路服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据报服务（-现在使用服务-）"><span class="nav-number">1.2.</span> <span class="nav-text">数据报服务（==现在使用服务==）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#比较"><span class="nav-number">1.3.</span> <span class="nav-text">比较</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#网际协议IP"><span class="nav-number">2.</span> <span class="nav-text">网际协议IP</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#虚拟互联网"><span class="nav-number">2.1.</span> <span class="nav-text">虚拟互联网</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#网络互联的设备"><span class="nav-number">2.1.1.</span> <span class="nav-text">网络互联的设备</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#中间设备（中间系统-中继系统）"><span class="nav-number">2.1.1.1.</span> <span class="nav-text">中间设备（中间系统|中继系统）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网络互联的问题"><span class="nav-number">2.1.2.</span> <span class="nav-text">网络互联的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分组在互联网中的传送"><span class="nav-number">2.1.3.</span> <span class="nav-text">分组在互联网中的传送</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#互联网络与虚拟互联网络"><span class="nav-number">2.1.4.</span> <span class="nav-text">互联网络与虚拟互联网络</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#IP协议简介"><span class="nav-number">2.1.5.</span> <span class="nav-text">IP协议简介</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#IP地址"><span class="nav-number">2.2.</span> <span class="nav-text">IP地址</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#IP层次结构"><span class="nav-number">2.2.1.</span> <span class="nav-text">IP层次结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网络地址（网络号）"><span class="nav-number">2.2.2.</span> <span class="nav-text">网络地址（网络号）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网络号字段和主机号字段"><span class="nav-number">2.2.3.</span> <span class="nav-text">网络号字段和主机号字段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三种常用的类别IP地址"><span class="nav-number">2.2.4.</span> <span class="nav-text">三种常用的类别IP地址</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#网际控制报文协议ICMP"><span class="nav-number">3.</span> <span class="nav-text">网际控制报文协议ICMP</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#因特网的路由选择协议"><span class="nav-number">4.</span> <span class="nav-text">因特网的路由选择协议</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#IP多播"><span class="nav-number">5.</span> <span class="nav-text">IP多播</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#虚拟专用网VPN和网络地址转换NAT"><span class="nav-number">6.</span> <span class="nav-text">虚拟专用网VPN和网络地址转换NAT</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder"><a href="https://www.liyafei.top/">www.liyafei.top</a> <a href="https://blog.csdn.net/qq_34691097" target="_blank" style="color:#DDAA00">李亚飞的CSDN</a> All Rights Reserved  备案号:晋ICP备19005844号-1   联系方式：QQ1042245208 友情链接：<a href="http://www.lichuachua.com" target="_blank" style="color:#DDAA00">李歘歘个人博客</a></span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">56.7k</span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=66475294";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

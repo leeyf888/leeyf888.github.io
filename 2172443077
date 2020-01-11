@@ -123,7 +123,7 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20191223194320881.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20191223201331318.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20191223204515780.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70">
-<meta property="og:updated_time" content="2019-12-23T12:53:56.819Z">
+<meta property="og:updated_time" content="2019-12-23T13:05:33.815Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="计算机网络——数据链路层">
 <meta name="twitter:description" content="数据链路层基本概念及问题基本概念数据发送模型 信道类型 点对点信道。使用一对一的点对点通信方式 广播信道。使用一对多的广播通信方式  链路 是一条点到点的物理线路段，中间没有任何其他的交换结点 一个链路只是一条通路的一个组成部分    数据链路 除物理线路外，还必须有通信协议来控制数据的传输。若把实现这些协议的硬件和软件加到链路上，就构成了数据链路  最常用的方法是使用适配器（网卡）来实现这些协议">
@@ -763,6 +763,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2881676002" rel="prev" title="计算机网络——网络层">
+                计算机网络——网络层 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -845,7 +849,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">83</span>
+                  <span class="site-state-item-count">87</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -856,7 +860,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -936,7 +940,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -950,7 +954,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">52.9k</span>
+    <span title="Site words total count">56.7k</span>
   
 </div>
 
