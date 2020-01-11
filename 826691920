@@ -116,7 +116,7 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200101154712495.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200101154906633.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200101154930821.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NjkxMDk3,size_16,color_FFFFFF,t_70">
-<meta property="og:updated_time" content="2020-01-01T07:49:56.447Z">
+<meta property="og:updated_time" content="2020-01-11T07:17:56.468Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Oralce介绍与安装">
 <meta name="twitter:description" content="基础概念数据库系统数据库（DB）数据存放的仓库 数据库管理系统（DBMS）按一定的数据模型组织数据形成数据库，并对数据库进行管理 数据库系统数据、数据库、数据库管理系统的应用加上支撑他们的硬件、软件平台与人员构成的完整的数据库系统 数据模型层次模型网状模型关系模型关系型数据库语言DDL数据定义语言 CREATE 创建库或对象 ALTER 修改 DROP 删除  DML数据操作语言 SELECT">
@@ -655,7 +655,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">87</span>
+                  <span class="site-state-item-count">88</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -760,7 +760,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">56.7k</span>
+    <span title="Site words total count">58k</span>
   
 </div>
 
