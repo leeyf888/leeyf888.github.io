@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="李亚飞的博客">
 <meta property="og:description" content="不同的二叉搜索树描述给定一个整数 n，求以 1 … n 为节点组成的二叉搜索树有多少种？ 示例12345678910输入: 3输出: 5解释:给定 n = 3, 一共有 5 种不同结构的二叉搜索树:   1         3     3      2      1    \       /     /      / \      \     3     2     1      1   3">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-01-12T13:53:50.051Z">
+<meta property="og:updated_time" content="2020-01-13T05:59:11.272Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法小练——不同的二叉搜索树">
 <meta name="twitter:description" content="不同的二叉搜索树描述给定一个整数 n，求以 1 … n 为节点组成的二叉搜索树有多少种？ 示例12345678910输入: 3输出: 5解释:给定 n = 3, 一共有 5 种不同结构的二叉搜索树:   1         3     3      2      1    \       /     /      / \      \     3     2     1      1   3">
@@ -663,7 +663,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder"><a href="https://www.liyafei.top/">www.liyafei.top</a> <a href="https://blog.csdn.net/qq_34691097" target="_blank" style="color:#DDAA00">李亚飞的CSDN</a> All Rights Reserved  备案号:晋ICP备19005844号-1   联系方式：QQ1042245208 友情链接：<a href="http://www.lichuachua.com" target="_blank" style="color:#DDAA00">李歘歘个人博客</a></span>
+  <span class="author" itemprop="copyrightHolder"><a href="https://www.liyafei.top/">www.liyafei.top</a> <a href="https://blog.csdn.net/qq_34691097" target="_blank" style="color:#DDAA00">李亚飞的CSDN</a> All Rights Reserved  备案号:晋ICP备19005844号-1   联系方式：QQ1042245208 友情链接：<a href="http://www.lichuachua.com" target="_blank" style="color:#DDAA00">李歘歘个人博客</a> <a href="https://yundingshuyuan.com/" target="_blank" style="color:#DFCF20">云顶书院</a></span>
 
   
     <span class="post-meta-divider">|</span>
